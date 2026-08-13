@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admissions | Durgapur High School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(228, 226, 230, 0.5);
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#2e1500",
+                      "on-primary-container": "#8393c5",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed": "#2e1500",
+                      "on-primary-fixed": "#051944",
+                      "secondary-fixed": "#ffdcc2",
+                      "surface-dim": "#F8F9FA",
+                      "primary": "#021541",
+                      "surface-container-low": "#f5f3f7",
+                      "on-tertiary-fixed-variant": "#663d16",
+                      "on-surface": "#1b1b1f",
+                      "on-surface-variant": "#45464f",
+                      "error-container": "#ffdad6",
+                      "surface": "#fbf8fd",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#ffb77a",
+                      "tertiary-fixed-dim": "#f6ba88",
+                      "outline": "#757680",
+                      "primary-fixed": "#dae1ff",
+                      "tertiary": "#291300",
+                      "primary-fixed-dim": "#b5c5f9",
+                      "surface-variant": "#e4e2e6",
+                      "tertiary-fixed": "#ffdcc1",
+                      "outline-variant": "#c5c6d0",
+                      "inverse-on-surface": "#f2f0f4",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#efedf1",
+                      "on-tertiary-container": "#bf895b",
+                      "inverse-primary": "#b5c5f9",
+                      "secondary-container": "#fe9832",
+                      "primary-container": "#1a2b56",
+                      "surface-tint": "#4d5d8b",
+                      "on-secondary-fixed-variant": "#6d3a00",
+                      "secondary": "#8f4e00",
+                      "tertiary-container": "#472400",
+                      "error": "#D32F2F",
+                      "surface-bright": "#fbf8fd",
+                      "surface-container-high": "#e9e7ec",
+                      "success": "#28A745",
+                      "on-background": "#1b1b1f",
+                      "ash-gray": "#6C757D",
+                      "background": "#fbf8fd",
+                      "inverse-surface": "#303034",
+                      "on-primary-fixed-variant": "#354572",
+                      "warning": "#FFC107",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#e4e2e6",
+                      "info": "#17A2B8",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#683700",
+                      "surface-container-lowest": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "base": "8px",
+                      "margin-desktop": "64px",
+                      "container-max": "1200px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Noto Sans"],
+                      "headline-lg-mobile": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "bengali-body": ["Noto Sans"],
+                      "label-md": ["Noto Sans"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"]
+              },
+              "fontSize": {
+                      "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "bengali-body": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Utility Bar (UX4G Standard) -->
+<div class="bg-surface-container-high py-1 px-margin-desktop hidden md:flex justify-end gap-6 border-b border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="flex gap-2">
+<button class="font-label-sm text-label-sm px-2 border border-outline rounded hover:bg-surface-container">A-</button>
+<button class="font-label-sm text-label-sm px-2 border border-outline rounded hover:bg-surface-container">A</button>
+<button class="font-label-sm text-label-sm px-2 border border-outline rounded hover:bg-surface-container">A+</button>
+</div>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">language</span>
+<span class="font-label-sm text-label-sm">English | বাংলা</span>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<header class="fixed top-0 md:top-auto w-full z-50 flex flex-col items-center bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container shadow-md border-b-4 border-secondary">
+<div class="w-full max-w-container-max flex items-center justify-between py-4 px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<div class="bg-white p-1 rounded-sm">
+<img class="h-12 w-auto" data-alt="Official National Emblem of India, the Lion Capital of Ashoka, rendered in high detail with metallic gold textures against a clean white background, reflecting digital authority and national prestige for a government institution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_3DY3iF8zw671dX_qLokADPWgB6YGJxT7YOWZYJmvtGshOlnyzgzjn4mco7jYDI9tNjaqgJpUqhZp4k8nW28BfJXmx23BqsZkZCeN6Vo72gjlGit8QZ26IPC2pHuUOGCM9Shmmmid8REEP7Q3M_knc_6tp8uGS69UpK1WgB_p78YvlGtaYMPbvdfSX8SFWUa5uxXz7wNqWfvXxQ4smbZNJ6C1lUihxrR40prBVzosMrH4AdHwFWvC0g"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold leading-tight">Durgapur High School | দুর্গাপুর উচ্চ বিদ্যালয়</h1>
+<p class="font-label-sm text-label-sm uppercase tracking-wider opacity-90">Govt. of West Bengal</p>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Academics</a>
+<a class="font-label-md text-label-md text-on-primary border-b-2 border-secondary-fixed pb-1" href="#">Admissions</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Student Corner</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">RTI</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Contact</a>
+<div class="flex items-center gap-3 ml-4">
+<span class="material-symbols-outlined cursor-pointer hover:bg-primary-container/50 p-2 rounded-full transition-colors">contrast</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-primary-container/50 p-2 rounded-full transition-colors">format_size</span>
+</div>
+</nav>
+<button class="lg:hidden material-symbols-outlined p-2">menu</button>
+</div>
+</header>
+<!-- SideNavBar (Mobile/Tablet) -->
+<div class="hidden lg:hidden fixed inset-y-0 left-0 w-64 bg-surface z-[60] shadow-lg p-4 flex flex-col" id="mobile-nav">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 border-b border-surface-variant pb-4">
+<img class="w-10 h-10" data-alt="National Emblem of India as a professional crest, sharp lines and clear definition for official usage, styled for a modern government website header." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu6pqxwIpqQDoi0LFkRQjxegA7qpoUl_IYrxG-sJvN0WD7w5KeUhTz1vo9DB8cG4P0HLX297vBgEClly1Zd5kqDSH7d_D-2RLhiI0RjWzr084QIBcptp-dKudpmwnXfzWS2AjdBeCDsRk-PaWMP0pWDk16fr3_eo7dTYeeq_byb00Mq1jNZgZTV6t9iHHUqei9Xtf1VSJ2zcr1n8V_W1thdlTZOH2qFLmr4f0N6rKcJyDUlBoZtJgKww"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">DHS</span>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined">home</span><span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-primary-container text-on-primary-container rounded-lg font-bold" href="#">
+<span class="material-symbols-outlined">person_add</span><span class="font-label-md text-label-md">Admission</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined">school</span><span class="font-label-md text-label-md">Academics</span>
+</a>
+</nav>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="pt-24 md:pt-16 min-h-screen">
+<!-- Hero Section -->
+<div class="relative w-full h-[300px] md:h-[400px] bg-primary-container overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center opacity-40" data-alt="A cinematic, wide-angle shot of a grand school building entrance with traditional Indian architecture elements, bathed in the soft golden light of late afternoon. Students in uniforms are walking towards the library, creating an atmosphere of academic excellence and heritage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbMIJvXY9xuZdJPVOp38Cxrao7ApBo5VY2-dBye2YWKPDxllN8WDkWSWZxx_tho1uuvvZxK_LXS8cmbMK1xdZHD2KgqZv5s6tljMA0zSM4jVufnJYUmudOf5t63przH1Wq6zxu5nT4HMCZJFMn5VdmJygZNw0eiWPH9ZWYpod6sUJnqiCQpl3yR3zvN5qmaVo7NpEY5UpRPJj0N2LbzmPeqdiNEHrgS1RJtRcC0u41HVVmSn_Rs4MsRQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-on-primary">
+<h2 class="font-display-lg text-display-lg font-bold mb-4">Admissions 2024-25</h2>
+<p class="font-body-lg text-body-lg max-w-2xl text-on-primary/90">Join our legacy of excellence. We invite applications from bright, motivated students for the upcoming academic session.</p>
+<div class="mt-8">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 font-label-md text-label-md font-bold rounded-lg shadow-lg hover:scale-105 active:scale-95 transition-transform flex items-center gap-2">
+                        Apply Online Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="bg-surface-container-low border-b border-outline-variant py-3 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex items-center gap-2 font-label-sm text-label-sm text-ash-gray">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface font-bold">Admissions</span>
+</div>
+</nav>
+<!-- Bento Grid Layout for Information -->
+<section class="max-w-container-max mx-auto py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Eligibility Criteria (Bento Large) -->
+<div class="md:col-span-8 glass-card rounded-xl p-8 shadow-sm border border-outline-variant">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<h3 class="font-headline-md text-headline-md text-primary">Eligibility Criteria</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-4 bg-surface-container rounded-lg border-l-4 border-primary">
+<h4 class="font-label-md text-label-md font-bold mb-2">Age Requirement</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Candidates must be between 5 to 16 years of age as of April 1st of the academic year.</p>
+</div>
+<div class="p-4 bg-surface-container rounded-lg border-l-4 border-secondary">
+<h4 class="font-label-md text-label-md font-bold mb-2">Academic Record</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Minimum 60% aggregate in the previous qualifying examination from a recognized board.</p>
+</div>
+<div class="p-4 bg-surface-container rounded-lg border-l-4 border-info">
+<h4 class="font-label-md text-label-md font-bold mb-2">Residency</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Priority given to residents of Durgapur and surrounding areas in West Bengal.</p>
+</div>
+<div class="p-4 bg-surface-container rounded-lg border-l-4 border-success">
+<h4 class="font-label-md text-label-md font-bold mb-2">Special Categories</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Reservations apply for SC/ST/OBC and PWD categories as per Govt. of WB norms.</p>
+</div>
+</div>
+</div>
+<!-- Important Dates (Bento Small) -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 shadow-lg">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">event</span>
+<h3 class="font-headline-md text-headline-md">Key Dates</h3>
+</div>
+<ul class="space-y-6">
+<li class="flex flex-col border-b border-on-primary/20 pb-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Registration Opens</span>
+<span class="font-headline-md text-headline-md">Dec 01, 2024</span>
+</li>
+<li class="flex flex-col border-b border-on-primary/20 pb-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Last Date to Apply</span>
+<span class="font-headline-md text-headline-md">Jan 15, 2025</span>
+</li>
+<li class="flex flex-col border-b border-on-primary/20 pb-3">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Entrance Exam</span>
+<span class="font-headline-md text-headline-md">Feb 05, 2025</span>
+</li>
+<li class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Result Declaration</span>
+<span class="font-headline-md text-headline-md">Feb 20, 2025</span>
+</li>
+</ul>
+</div>
+<!-- Admission Process (Step-by-step) -->
+<div class="md:col-span-12 py-8">
+<h3 class="font-headline-lg text-headline-lg text-center mb-12 text-primary">Step-by-step Admission Process</h3>
+<div class="flex flex-col md:flex-row gap-8 items-start relative">
+<div class="hidden md:block absolute top-12 left-0 right-0 h-1 bg-surface-container-high -z-10"></div>
+<!-- Step 1 -->
+<div class="flex-1 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xl mb-4 border-4 border-surface ring-4 ring-primary/20">1</div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-2">Online Registration</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Fill out the basic details on the portal and generate a unique ID.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xl mb-4 border-4 border-surface ring-4 ring-primary/20">2</div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-2">Document Upload</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Scan and upload all mandatory certificates and identification.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xl mb-4 border-4 border-surface ring-4 ring-primary/20">3</div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-2">Fee Payment</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Pay the registration fee securely via the integrated WBIFMS portal.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex-1 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xl mb-4 border-4 border-surface ring-4 ring-primary/20">4</div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-2">Verification</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Attend the physical document verification at school campus.</p>
+</div>
+</div>
+</div>
+<!-- Checklist & Application Preview -->
+<div class="md:col-span-5 glass-card rounded-xl p-8 border border-outline-variant">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">task_alt</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Required Documents</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-body-md text-body-md">Birth Certificate (Self-attested copy)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-body-md text-body-md">Previous School Transfer Certificate (Original)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-body-md text-body-md">Mark Sheets of last 3 years of study</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-body-md text-body-md">Passport size photographs (4 copies)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-body-md text-body-md">Aadhar Card of Student and Guardian</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-body-md text-body-md">Caste Certificate (if applicable)</span>
+</li>
+</ul>
+</div>
+<div class="md:col-span-7 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant shadow-inner">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Application Preview Form</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Full Name of Student</label>
+<input class="w-full p-2 border border-outline rounded focus:ring-2 focus:ring-primary focus:outline-none transition-all" placeholder="As per Birth Certificate" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Date of Birth</label>
+<input class="w-full p-2 border border-outline rounded focus:ring-2 focus:ring-primary focus:outline-none transition-all" type="date"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Guardian's Name</label>
+<input class="w-full p-2 border border-outline rounded focus:ring-2 focus:ring-primary focus:outline-none transition-all" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Class Applying For</label>
+<select class="w-full p-2 border border-outline rounded focus:ring-2 focus:ring-primary focus:outline-none transition-all">
+<option>Select Class</option>
+<option>Class V</option>
+<option>Class VI</option>
+<option>Class IX</option>
+<option>Class XI (Science/Arts/Commerce)</option>
+</select>
+</div>
+<div class="sm:col-span-2 space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Permanent Address</label>
+<textarea class="w-full p-2 border border-outline rounded focus:ring-2 focus:ring-primary focus:outline-none transition-all" rows="2"></textarea>
+</div>
+</div>
+<div class="mt-6 flex items-center gap-2">
+<input class="rounded border-outline text-primary focus:ring-primary" id="terms" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="terms">I hereby declare that the information provided is true and correct.</label>
+</div>
+<button class="mt-6 w-full py-3 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary-container transition-colors shadow-md">Submit Initial Inquiry</button>
+</div>
+<!-- FAQs Accordion -->
+<div class="md:col-span-12 mt-12">
+<h3 class="font-headline-md text-headline-md text-center mb-8">Frequently Asked Questions</h3>
+<div class="space-y-4 max-w-3xl mx-auto">
+<details class="group border border-outline-variant rounded-lg bg-surface-container overflow-hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-md text-label-md font-bold">What is the medium of instruction?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 bg-white font-body-md text-body-md text-on-surface-variant border-t border-outline-variant">
+                            The primary medium of instruction is Bengali, however, we offer English Medium sections for selected subjects in Higher Secondary classes as per WBCHSE guidelines.
+                        </div>
+</details>
+<details class="group border border-outline-variant rounded-lg bg-surface-container overflow-hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-md text-label-md font-bold">Is there a hostel facility available?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 bg-white font-body-md text-body-md text-on-surface-variant border-t border-outline-variant">
+                            Yes, Durgapur High School provides a safe and secure hostel facility for boys from classes VI to XII. Admission to the hostel is based on distance and merit.
+                        </div>
+</details>
+<details class="group border border-outline-variant rounded-lg bg-surface-container overflow-hidden">
+<summary class="flex justify-between items-center p-4 cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="font-label-md text-label-md font-bold">Can I apply offline?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-4 bg-white font-body-md text-body-md text-on-surface-variant border-t border-outline-variant">
+                            While online application is preferred, physical application forms are available at the school administrative office for those without internet access.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary text-on-primary py-12 px-margin-mobile md:px-margin-desktop border-t-4 border-secondary-fixed">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 bg-white p-1 rounded" data-alt="Official school logo for Durgapur High School, featuring academic motifs and state symbols, sharp and professional with deep blue and white colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBojNelqcE3zFwnVnw1MLCEAw4BVcJjDWmrF3lhka7PgvXbEi5tDriTiv7J_Com3Sqo9B_gvKsfpXudrSB2P8b62_TWT4lBkyLsw2Z-7omh93K-Yw5v_yjfgm59RG_579TO3W7aXz-gb1sv7onN2G1qRbapfDvpMebrcwn_PVVHI354QA5w8xlwp2nbk81c50jKmMx1-EcsLGifvagy-EEffJHSIzoHgBHw_R_JaOgiTZDFSDs7voMydw"/>
+<span class="font-headline-md text-headline-md font-bold">DHS</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary/80">Empowering future leaders through quality education and discipline since 1956.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed">Quick Links</h4>
+<ul class="space-y-2 font-label-sm text-label-sm">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">RTI Disclosure</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Contact Directory</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Holiday List</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed">Govt. Portals</h4>
+<ul class="space-y-2 font-label-sm text-label-sm">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">India.gov.in</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">MeitY</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">West Bengal Portal</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Banglar Shiksha</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed">Contact Us</h4>
+<div class="flex flex-col gap-2 font-label-sm text-label-sm text-on-primary/80">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">location_on</span> Durgapur, Paschim Bardhaman, WB</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +91 343 1234567</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> admission@durgapurhighschool.org</p>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-12 pt-8 border-t border-on-primary/20 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+<p class="font-label-sm text-label-sm text-on-primary/70">© 2024 Durgapur High School. All Rights Reserved. Designed as per GIGW 3.0 Guidelines.</p>
+<div class="flex gap-4">
+<img class="h-8 opacity-70 grayscale hover:grayscale-0 transition-all" data-alt="Digital India logo with vibrant blue and orange hues, professional vector style, demonstrating government compliance and technological advancement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChp5ydFbW4N99_A0aT53p24Udurg9P-Llp2rxe1X2pd6qDy9RTNihc5NiNZ6Noc1JE-JZWZXJiGuQ_BQmAWm36mW44zVdVg8HVkro1UTclTyZigTOdOIFO25SAJkKvS54xGwLIefvc45uxF8z_krBzD2FKM7aW2FBcLgOXvGdbBIXDDNK5rj5tfeRtqpPbb6h2xHHJOHac71H5C3IIW64haDcgQvcHz9qTCILIaDTjI0y8jDDItmz7Zg"/>
+<img class="h-8 opacity-70 grayscale hover:grayscale-0 transition-all" data-alt="West Bengal Government logo, the 'Biswa Bangla' globe crest, clean lines, professional branding for state institutions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbpunv0W_0NY2ZylAqemYH7sm2nj0uDdOfvwO3Lp5j9L6WNSib1E_6m_wmDbM6sAuaLF3ez1SL5AKkJO1Xa9H19EA_OH9gKRkS7jL8vZQdEdb4F7eexMR3pgRqzprk-BIfcGQQWS74sm0hJQ76hTBawYasI3kDR8WzfqVDgvhATP95LXnHyubSao5VSujwTCXxFjCLPcLqaS48X_9Z7jc51vGQgOKUcN0TZgFPcEpROoLUkti-xd_zwg"/>
+</div>
+</div>
+</footer>
+<!-- FAB for Admission Help -->
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform z-40 group">
+<span class="material-symbols-outlined">help_center</span>
+<span class="absolute right-16 bg-primary text-on-primary px-3 py-1 rounded text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Admission Support</span>
+</button>
+<script>
+        // Micro-interactions and UI logic
+        document.querySelectorAll('details').forEach((detail) => {
+            detail.addEventListener('toggle', () => {
+                if (detail.open) {
+                    document.querySelectorAll('details').forEach((other) => {
+                        if (other !== detail) other.open = false;
+                    });
+                }
+            });
+        });
+
+        // Sticky header logic
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>
