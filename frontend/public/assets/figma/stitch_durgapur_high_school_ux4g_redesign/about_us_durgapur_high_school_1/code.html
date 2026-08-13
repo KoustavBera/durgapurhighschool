@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Durgapur High School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#2e1500",
+                    "on-primary-container": "#8393c5",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-primary-fixed": "#051944",
+                    "secondary-fixed": "#ffdcc2",
+                    "surface-dim": "#F8F9FA",
+                    "primary": "#021541",
+                    "surface-container-low": "#f5f3f7",
+                    "on-tertiary-fixed-variant": "#663d16",
+                    "on-surface": "#1b1b1f",
+                    "on-surface-variant": "#45464f",
+                    "error-container": "#ffdad6",
+                    "surface": "#fbf8fd",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "tertiary-fixed-dim": "#f6ba88",
+                    "outline": "#757680",
+                    "primary-fixed": "#dae1ff",
+                    "tertiary": "#291300",
+                    "primary-fixed-dim": "#b5c5f9",
+                    "surface-variant": "#e4e2e6",
+                    "tertiary-fixed": "#ffdcc1",
+                    "outline-variant": "#c5c6d0",
+                    "inverse-on-surface": "#f2f0f4",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efedf1",
+                    "on-tertiary-container": "#bf895b",
+                    "inverse-primary": "#b5c5f9",
+                    "secondary-container": "#fe9832",
+                    "primary-container": "#1a2b56",
+                    "surface-tint": "#4d5d8b",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "secondary": "#8f4e00",
+                    "tertiary-container": "#472400",
+                    "error": "#D32F2F",
+                    "surface-bright": "#fbf8fd",
+                    "surface-container-high": "#e9e7ec",
+                    "success": "#28A745",
+                    "on-background": "#1b1b1f",
+                    "ash-gray": "#6C757D",
+                    "background": "#fbf8fd",
+                    "inverse-surface": "#303034",
+                    "on-primary-fixed-variant": "#354572",
+                    "warning": "#FFC107",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e4e2e6",
+                    "info": "#17A2B8",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#683700",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Noto Sans"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "bengali-body": ["Noto Sans"],
+                    "label-md": ["Noto Sans"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "bengali-body": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav-link {
+            border-bottom: 2px solid #fe9832; /* secondary-container / saffron-like */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex flex-col items-center bg-primary border-b-4 border-secondary shadow-md">
+<div class="w-full max-w-7xl flex flex-col md:flex-row items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4 mb-4 md:mb-0">
+<div class="h-12 w-12 flex items-center justify-center bg-white rounded-full">
+<img class="h-10 w-auto" data-alt="Official National Emblem of India, the Lion Capital of Ashoka, rendered in high-detail 3D gold finish against a clean white circle. The image follows a professional government aesthetic with sharp lines and symbolic dignity, perfectly centered and balanced for an official school website header." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJkdSh6MzOQCEKTaMMqaDndNOmGQ6lTyzdJsqDSDuWMqlcj9tvc5cmjhZFm2mYD96z5Ionaqiqa-jebqS7U7gLhWTL31RWjqt-PvAgp7ATIAOa1eHTO81k-lcul5svsUZvsZAppLQPfO0UrO6QE8sRt3H0DsYBsGwnQovBRfTIXy74pvVzjJtS2E-I_xKOyXbdwk_If-HjBM5WrjaKfAFRx9amrEVIJRQ2tc7ZvwvJNuI4y8XRMonZkw"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-on-primary">Durgapur High School | দুর্গাপুর উচ্চ বিদ্যালয়</h1>
+<p class="font-label-sm text-label-sm text-on-primary/80 uppercase tracking-wider">Govt. of West Bengal</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden lg:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Academics</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Admissions</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Student Corner</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">RTI</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-3 ml-4">
+<button class="p-2 text-on-primary hover:bg-primary-container/50 rounded-full transition-all">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+<button class="p-2 text-on-primary hover:bg-primary-container/50 rounded-full transition-all">
+<span class="material-symbols-outlined">format_size</span>
+</button>
+<button class="p-2 text-on-primary hover:bg-primary-container/50 rounded-full transition-all">
+<span class="material-symbols-outlined">language</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-16">
+<!-- Breadcrumbs -->
+<div class="max-w-7xl mx-auto px-6 mb-8">
+<nav class="flex text-ash-gray font-label-md text-label-md space-x-2">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span>›</span>
+<span class="text-on-surface font-bold">About Us</span>
+</nav>
+</div>
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-16">
+<div class="relative rounded-xl overflow-hidden h-[400px] flex items-end">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A grand, historic colonial-style red brick school building of Durgapur High School, surrounded by lush green lawns and ancient banyan trees. The afternoon sun casts soft shadows across the architecture, emphasizing a sense of heritage, academic excellence, and peaceful learning environment. The image is clean and professionally shot." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrGqw5C8njL92E1Xx3Cr_QqZ1D8k8CBaqAMUsvDcwOmoYiiSeeiWflBFOE4VFjmKAwSlQK1BBAUAlv9MlfROs4IngNqxYrsMnIfe2JxR3Zimr__2BD6J8HLhRNFNS2aK4wV3JOkrs6Vw2Lp7At-t4g_CZYIl2kcu98jq36JP5fj0DXFFtBc6NTIUJiGXczy-gdbV6oIO2T8J_WdQieEv2MKAwAaI7HRD1_Mt6oCaEpJXEk6UHWxXfwUw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="relative z-10 p-12 w-full">
+<h2 class="font-display-lg text-display-lg text-white mb-2">Educating Generations Since 1954</h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-2xl">A beacon of knowledge and character in the heart of West Bengal, committed to nurturing young minds for a brighter tomorrow.</p>
+</div>
+</div>
+</section>
+<!-- History, Vision, Mission - Bento Grid -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- History -->
+<div class="md:col-span-2 bg-surface-container p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-12 w-12 bg-primary-container rounded-lg flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined">history</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Our Rich History</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Founded in the post-independence era of 1954, Durgapur High School was established with a vision to provide quality education to the children of industrial workers and local residents. Over the decades, it has evolved from a small localized school into a premier higher secondary institution recognized by the West Bengal Board of Secondary Education. Our halls have seen generations of leaders, scientists, and citizens who have shaped the fabric of our nation.
+                    </p>
+</div>
+<!-- Vision & Mission Column -->
+<div class="flex flex-col gap-8">
+<div class="bg-primary text-on-primary p-8 rounded-xl shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary-fixed">visibility</span>
+<h3 class="font-headline-md text-headline-md">Our Vision</h3>
+</div>
+<p class="font-body-md text-body-md opacity-90">To be a leading center of excellence that empowers students with holistic education, ethics, and critical thinking skills.</p>
+</div>
+<div class="bg-secondary text-on-secondary p-8 rounded-xl shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined">target</span>
+<h3 class="font-headline-md text-headline-md">Our Mission</h3>
+</div>
+<p class="font-body-md text-body-md opacity-90">Fostering an inclusive environment where every child can discover their potential through academic rigor and creative expression.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Principal Profile -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="bg-white rounded-xl overflow-hidden border border-outline-variant flex flex-col md:flex-row shadow-sm">
+<div class="md:w-1/3">
+<img class="w-full h-full object-cover" data-alt="A professional, warm portrait of an experienced Indian male educator in his 50s, wearing a formal light blue shirt and dark blazer. He stands in a bright, modern school office with bookshelves and certificates in the background. The lighting is soft and flattering, conveying authority, wisdom, and approachability suitable for a High School Principal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD08g6j1h2PeMcJjDbVr-XlydPwq6o54FzsiUPH6-niVn5kSi183MD5CFGRutbJqqd8vcv1CvubPkYj9a5oDmSyXvq0J3PfQzFV8VL8RIlp7FAVUTu6czyzJNnEpGtN1vT_JeJlc4op7Bc9eACJ51TURwhSlkqnLS5x5fEMqt2Axv0BiGvJa0niBL4sDpf2OvNQY4jEWPAK6jBjQq5vD8lMB3yf5OcU0pMZsyGo2AFD8PWjjF-6jyF0hw"/>
+</div>
+<div class="md:w-2/3 p-10 flex flex-col justify-center">
+<span class="font-label-md text-label-md text-secondary font-bold mb-2 uppercase tracking-widest">Message from the Principal</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Dr. S. K. Mukherjee</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-6">"Education is not the learning of facts, but the training of the mind to think. At Durgapur High School, we strive to build not just scholars, but compassionate human beings ready to face the world's challenges."</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">With over 25 years in the field of education, Dr. Mukherjee has led various initiatives in digital literacy and vocational training across West Bengal. Under his leadership, the school has consistently achieved 100% pass results in Board examinations.</p>
+<div class="flex gap-4">
+<div class="bg-surface-container-high px-4 py-2 rounded-lg text-primary font-bold font-label-md">PhD in Educational Leadership</div>
+<div class="bg-surface-container-high px-4 py-2 rounded-lg text-primary font-bold font-label-md">Former State Advisor</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SMC Table -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="mb-8 text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">School Management Committee</h2>
+<p class="font-body-md text-body-md text-ash-gray">The governing body ensuring transparency and growth.</p>
+</div>
+<div class="overflow-x-auto rounded-xl border border-outline-variant shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container-high text-primary font-bold">
+<tr>
+<th class="p-4 border-b border-outline-variant">Name</th>
+<th class="p-4 border-b border-outline-variant">Designation</th>
+<th class="p-4 border-b border-outline-variant">Role</th>
+<th class="p-4 border-b border-outline-variant">Tenure Since</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant font-body-md">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-bold">Sri Aloke Ghoshal</td>
+<td class="p-4">President</td>
+<td class="p-4">Nominated Member</td>
+<td class="p-4">2021</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-bold">Dr. S. K. Mukherjee</td>
+<td class="p-4">Secretary</td>
+<td class="p-4">Principal (Ex-Officio)</td>
+<td class="p-4">2018</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-bold">Smt. Rita Das</td>
+<td class="p-4">Teacher Representative</td>
+<td class="p-4">Elected Member</td>
+<td class="p-4">2022</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-bold">Sri Partha Sen</td>
+<td class="p-4">Guardian Representative</td>
+<td class="p-4">Parent Body</td>
+<td class="p-4">2023</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Infrastructure Highlights -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-10 border-l-4 border-secondary pl-4">Infrastructure &amp; Facilities</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-xl transition-all">
+<div class="h-48 bg-cover bg-center" data-alt="A modern, high-tech school science laboratory with rows of clean workstations, microscopes, glass test tubes in racks, and digital whiteboards. The lighting is bright and clinical yet inviting. Students in uniforms are blurred in the background to focus on the advanced equipment, emphasizing excellence in STEM education." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5ecUzjTYeQPbwR2MKTyp9nvpwfTh0ECeY_DBOx_gc9bL48qEOMiK2sxf6zJK28ThFZuKeut1tDpPL7s6c_qmWSULc0vCnTZuSqGB6Rqp51x2AqM-Z-n0Ven1ondk3O4m5HiL09Lxd8A3X23j_ngKcVHMWPWicU1Y4-w0JvjJced6-8xL_dP6n4tQUyIrOka486TIwjK3sB-VLyEp7cBDJQRgWOBNF8xoHWIzaE6thXIBlJgyXl_JZOw')"></div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Modern Laboratories</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Fully equipped Physics, Chemistry, and Biology labs with the latest digital microscopy and chemical safety systems.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-xl transition-all">
+<div class="h-48 bg-cover bg-center" data-alt="An expansive school library with floor-to-ceiling wooden bookshelves filled with diverse books, comfortable reading pods, and a central study area with large oak tables. Sunlight streams through large windows, creating a peaceful, scholarly atmosphere. The scene is organized and reflects a serious academic environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcE1Kt3sALK98wXh72jm4-V1uI9nRRSrOuL4mcNLhIhz--8HsVQnKNFmQ2loa_W6hoZW1KLjouCLMFdBMDJW2XKuz8s3lHRMsPqAL2ig4dF51385AnNgaHjp2AOaOirvpxHnR6kaiiK1OICXilcqq9MnlUYSm_jizvRP7H5f_uQA0YnFtSrAbbORf5RmHu3VA_bSly_9xLgCmnsCwI6Df8RQrBE7v0wDOoZa4VfHk09ZC4g9JPizRGOA')"></div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Central Library</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Over 15,000 titles including rare academic journals, digital archives, and a dedicated reading zone for senior students.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-xl transition-all">
+<div class="h-48 bg-cover bg-center" data-alt="A vast, vibrant green school playground with a professional football pitch, a paved basketball court, and athletics track. The background shows the school building and a clear blue sky. The scene is energetic and implies health, sportsmanship, and physical development in a well-maintained government institution." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrNPPtjtWKz5bxxOKOPWdoDVCpypRwNpDqwaba0H7yyFDKj4VcQLp9wyBz59qOenh4QZsAQQgZnG03Guq5NJ80sBhsdrlB477y37c4GZTZXtx1maagrv6Zn0bETpAyEw80sJdWmqIt1VzpBDzyazkze7yaNg-4b_9jd4cLQE6aTO503IE6o6JGUZc-c1N0OjYuIXzMheuv0fD0yoUzj6LLKH2lATkQ9LvKQdBpuCPj4YZ0ibdvs2glgg')"></div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Sports Complex</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">A multi-purpose ground for football and cricket, along with indoor facilities for table tennis, chess, and yoga.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Accreditation Badges -->
+<section class="bg-surface-container-low py-16">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h3 class="font-label-md text-label-md text-ash-gray uppercase tracking-widest mb-10">Government Recognition &amp; Accreditations</h3>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex flex-col items-center gap-3">
+<div class="h-20 w-20 bg-white rounded-full flex items-center justify-center p-2 shadow-sm">
+<img class="h-full object-contain" data-alt="Official logo of West Bengal Board of Secondary Education (WBBSE), featuring a clean professional seal design with symbolic regional elements in blue and gold. The style is classic and official, indicating legitimate government accreditation for high schools." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2SqozEM0jAF_B9eG0FsFk6nZcwjgRxygyBn8AzDZ5_BpEGjBGBuhrRIMkoxTLMddvBDR1nf8u0Jq-zRFOK4DL5WtbG4LrWClNsLKaxaL_ip9SWkebFGb0dFfANl7sf5ZNYo2kbOsQoPFdecc8UUS3A-1CCyivVgX36nHvLMJuPcYgj3XZcTRvelyn4PietSWnmSMKwBc7MVdezatIyOVgYZ20s8kXQLxljdgQ0hQwXSW0MgbL2YbwIg"/>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">WBBSE</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="h-20 w-20 bg-white rounded-full flex items-center justify-center p-2 shadow-sm">
+<img class="h-full object-contain" data-alt="Official logo of West Bengal Council of Higher Secondary Education (WBCHSE), a professional circular emblem with intricate details in deep blue and white. Represents the highest academic standards for higher secondary education in the state." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFH5fM6WfM6UxfoXqFuZJLx4iYc4Un7ywhb9_gl5LRS7J6chYTI-KRgVM0A5P9yMM17c4mZ2X_d3kGKktIUTrXyQjUVcaH0CTghWAOx4lyJ-Y8L173_IY4vt0y_a4W7XHj-ymbTFp0afHOluhZibPd8OnP9YtapGL79ISq7UtGOfVJJsXxhVGvnjpihCu7QHvyK3cwVlc9AJ6Ufsw89DmwqDFgL9lU58ETABiOcSeapruUNYyu1sydJA"/>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">WBCHSE</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="h-20 w-20 bg-white rounded-full flex items-center justify-center p-2 shadow-sm">
+<img class="h-full object-contain" data-alt="A stylized GIGW (Guidelines for Indian Government Websites) compliance seal, with a professional blue tick and clean text 'Compliant 3.0'. Minimalist design, high-quality vector style, indicating technological and accessibility standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL7h1T0MMNndK63O5NZftA8b4NtEu0TjC6v-8VC2Q6jE5HnPAzot8JIKXoV5KVLEVCpiWgZDjcfZOZN1cRMlhqh-sQl6GyCxkVenoxNCbCDqGnTEVXEbn7dhphng0tbusxpyKp09RK6NbVIT7Fe_LdjOqn90cPbcSu1fEr2bK3UI9NQxuO8Jcb0QoVCXzPqqbBByx9QWjMx85uk5P3ulNciM24JLWvkVnb8hBZqHIB3ChXnhyZeGWFWg"/>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">GIGW 3.0</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-8 px-margin-desktop bg-primary text-on-primary border-t-4 border-secondary-fixed">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-2">
+<h2 class="font-headline-md text-headline-md font-bold text-on-primary mb-4">Durgapur High School</h2>
+<p class="font-body-md text-body-md text-on-primary/80 mb-6">A Government-sponsored Higher Secondary Institution serving the community through knowledge, wisdom, and heritage since 1954.</p>
+<div class="flex gap-4">
+<a class="p-2 bg-on-primary/10 rounded-full hover:bg-on-primary/20 transition-all" href="#"><span class="material-symbols-outlined">qr_code_2</span></a>
+<a class="p-2 bg-on-primary/10 rounded-full hover:bg-on-primary/20 transition-all" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-secondary-fixed uppercase mb-4">Important Links</h3>
+<ul class="flex flex-col gap-3 font-label-sm text-label-sm text-on-primary/80">
+<li><a class="hover:underline decoration-secondary-fixed" href="#">RTI Disclosure</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">Privacy Policy</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">India.gov.in</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">MeitY</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">West Bengal Portal</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-secondary-fixed uppercase mb-4">Supportive Schemes</h3>
+<ul class="flex flex-col gap-3 font-label-sm text-label-sm text-on-primary/80">
+<li><a class="hover:underline decoration-secondary-fixed" href="#">Kanyashree Prakalpa</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">Shikshashree Scheme</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">Aikyashree Scholarship</a></li>
+<li><a class="hover:underline decoration-secondary-fixed" href="#">Sabuj Sathi</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-on-primary/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm opacity-60">© 2024 Durgapur High School. All Rights Reserved. Designed as per GIGW 3.0 Guidelines.</p>
+<p class="font-label-sm text-label-sm opacity-60">Last Updated: October 24, 2023</p>
+</div>
+</div>
+</footer>
+<!-- SideNavBar (Hidden on desktop, logic for mobile) -->
+<div class="fixed inset-0 z-[60] bg-black/50 hidden lg:hidden" id="mobile-nav">
+<div class="h-screen w-64 bg-surface flex flex-col p-4 shadow-lg transform -translate-x-full transition-transform">
+<div class="flex items-center gap-3 mb-8">
+<div class="h-10 w-10 bg-primary-container rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Miniature National Emblem of India for mobile navigation sidebar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsXYrb9p1mqH6ju5FBxL0fQFrCB9BSuNwouSzjigGURf5wABtYAxvZJDGA1WVXKvDisZnAyLgZawmYelissm5Udz7nipCatur1uwgt7_yR1X8B8nVFIi5jFLbTen6EVQh5IdRI0S-0bcAax1xm2stksOuUNaxxlem3tmWMOAbDYViq3BKFGgmzDV9W3EjhAHp5gAZPA_lhjbQHASlnTvupVHm5DKjLSVz-CFMadtbWdvgh_-lDYbyKvA"/>
+</div>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary">DHS</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Govt of WB</div>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-3 p-3 bg-primary-container text-on-primary-container rounded-lg font-bold" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-label-md">About School</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label-md text-label-md">Academics</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg" href="#">
+<span class="material-symbols-outlined">person_add</span>
+<span class="font-label-md text-label-md">Admission</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-md text-label-md">Fees</span>
+</a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-3 bg-primary text-on-primary rounded-lg font-bold font-label-md">Online Admission</button>
+</div>
+</div>
+</div>
+<!-- Scroll to Top FAB (Only on relevant pages) -->
+<button class="fixed bottom-8 right-8 h-14 w-14 bg-secondary-container text-on-secondary-container rounded-full shadow-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+</body></html>

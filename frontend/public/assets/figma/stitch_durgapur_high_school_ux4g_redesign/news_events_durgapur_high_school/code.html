@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>News &amp; Events | Durgapur High School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1a2b56;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-primary-container": "#8393c5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2e1500",
+                        "on-primary-fixed": "#051944",
+                        "secondary-fixed": "#ffdcc2",
+                        "surface-dim": "#F8F9FA",
+                        "primary": "#021541",
+                        "surface-container-low": "#f5f3f7",
+                        "on-tertiary-fixed-variant": "#663d16",
+                        "on-surface": "#1b1b1f",
+                        "on-surface-variant": "#45464f",
+                        "error-container": "#ffdad6",
+                        "surface": "#fbf8fd",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb77a",
+                        "tertiary-fixed-dim": "#f6ba88",
+                        "outline": "#757680",
+                        "primary-fixed": "#dae1ff",
+                        "tertiary": "#291300",
+                        "primary-fixed-dim": "#b5c5f9",
+                        "surface-variant": "#e4e2e6",
+                        "tertiary-fixed": "#ffdcc1",
+                        "outline-variant": "#c5c6d0",
+                        "inverse-on-surface": "#f2f0f4",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#efedf1",
+                        "on-tertiary-container": "#bf895b",
+                        "inverse-primary": "#b5c5f9",
+                        "secondary-container": "#fe9832",
+                        "primary-container": "#1a2b56",
+                        "surface-tint": "#4d5d8b",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "secondary": "#8f4e00",
+                        "tertiary-container": "#472400",
+                        "error": "#D32F2F",
+                        "surface-bright": "#fbf8fd",
+                        "surface-container-high": "#e9e7ec",
+                        "success": "#28A745",
+                        "on-background": "#1b1b1f",
+                        "ash-gray": "#6C757D",
+                        "background": "#fbf8fd",
+                        "inverse-surface": "#303034",
+                        "on-primary-fixed-variant": "#354572",
+                        "warning": "#FFC107",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e4e2e6",
+                        "info": "#17A2B8",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#683700",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Noto Sans"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "bengali-body": ["Noto Sans"],
+                        "label-md": ["Noto Sans"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "bengali-body": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex flex-col items-center bg-primary dark:bg-primary-container shadow-md border-b-4 border-secondary">
+<div class="w-full flex items-center justify-between px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden">
+<img class="w-10 h-10 object-contain" data-alt="Official National Emblem of India in a clean, high-contrast gold and white vector style, centered on a pristine white circular background. The lighting is bright and even, evoking a sense of official government authority and prestige. This emblem represents the official status of the educational institution within the West Bengal state hierarchy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMLxbqY-dTNX0Mo7A2DGx5eBxi8GrY5OipD4oZ-xc6mPeQtd57QxegXufKWYqrsLSH2J590OfVygZJ9fkMYGObJaMM0Bwpo5ocEAyn90i2mkuiiNgj4KUdjDCqORUMuNUPjqCdp0CyZwtmmD3U1O7etNIRe8svvBtUIwttKv8-Ki5jdhzdy4xhpnt6wT46Y4NPIHxUKUlEXVkHqGjqyifue6ZeT4g-Ll1Tk8QCdbIXqyydaOnvJViI6A"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-on-primary tracking-tight">Durgapur High School | দুর্গাপুর উচ্চ বিদ্যালয়</h1>
+<p class="font-label-sm text-label-sm text-on-primary/80 uppercase tracking-widest">Govt. of West Bengal</p>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<nav class="flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Academics</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Admissions</a>
+<a class="font-label-md text-label-md text-on-primary border-b-2 border-secondary-fixed pb-1" href="#">Student Corner</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">RTI</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-3 border-l border-on-primary/20 pl-6">
+<button class="material-symbols-outlined text-on-primary hover:bg-primary-container/50 p-2 rounded-full transition-colors">contrast</button>
+<button class="material-symbols-outlined text-on-primary hover:bg-primary-container/50 p-2 rounded-full transition-colors">format_size</button>
+<button class="material-symbols-outlined text-on-primary hover:bg-primary-container/50 p-2 rounded-full transition-colors">language</button>
+</div>
+</div>
+<button class="md:hidden material-symbols-outlined text-on-primary">menu</button>
+</div>
+</header>
+<main class="mt-28 min-h-screen">
+<!-- Breadcrumbs -->
+<nav class="px-margin-desktop py-4 flex items-center gap-2 text-ash-gray font-label-md">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface font-bold">News &amp; Events</span>
+</nav>
+<!-- Featured Section (Bento Style) -->
+<section class="px-margin-desktop mb-12">
+<h2 class="font-display-lg text-display-lg text-primary mb-8 border-l-8 border-secondary pl-6">Latest Updates</h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Featured Hero Card -->
+<div class="lg:col-span-8 group relative overflow-hidden rounded-xl shadow-lg aspect-video lg:aspect-auto h-[500px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A wide-angle, cinematic photograph of a modern school science exhibition held in a brightly lit, high-ceilinged hall. Students in clean white uniforms are enthusiastically demonstrating robotics projects to a group of smiling teachers and judges. The lighting is natural and vibrant, filtering through large glass windows, highlighting the professional academic atmosphere and the school's commitment to technology and innovation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCS_QJXjckeGY0Yew6ot92YW2nfjMJkq7D9WJm14el5puxlFnVEKCpXMVup0JY1eqrTyIc2gop3PTibE870qjblEDl01TwFuN5NryuRoo3s9RnTq-NZaJLbJsflFNgL7Q9Z1wc8nKU57i339Q109Ym275xR01UpA909ic77AWVkbIyPzbKC6mYyDoUL3TOLIf_cGJUtCZSGkAab5UHJtvMKYz_8Vfm1jXNBf8m2Rxy9t17FdOzKM4zh0g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block px-4 py-1 bg-secondary text-on-secondary font-label-md rounded-full mb-4">Featured News</span>
+<h3 class="font-headline-lg text-headline-lg text-white mb-2 max-w-2xl">Durgapur High School Wins Regional Science Excellence Award 2024</h3>
+<p class="font-body-lg text-body-lg text-white/80 max-w-xl mb-6">Our students showcased groundbreaking projects in renewable energy and automation, securing the first position among 50 participating schools.</p>
+<div class="flex items-center gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-6 py-3 rounded-lg font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                                Read Full Story <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="flex gap-2">
+<button class="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white backdrop-blur-md material-symbols-outlined">share</button>
+<button class="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white backdrop-blur-md material-symbols-outlined">bookmark</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Trending Side Cards -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<div class="flex-1 bg-surface-container rounded-xl p-6 border border-outline-variant hover:shadow-md transition-all">
+<span class="text-ash-gray font-label-sm uppercase tracking-wider mb-2 block">12 Oct 2024</span>
+<h4 class="font-headline-md text-headline-md text-primary mb-3">New Digital Literacy Program Launched</h4>
+<p class="text-on-surface-variant font-body-md line-clamp-2">Collaborating with state IT initiatives to provide specialized coding workshops for Class IX-XII students.</p>
+<a class="mt-4 inline-flex items-center text-secondary font-bold hover:underline" href="#">View details <span class="material-symbols-outlined text-[18px] ml-1">open_in_new</span></a>
+</div>
+<div class="flex-1 bg-primary text-on-primary rounded-xl p-6 relative overflow-hidden">
+<div class="relative z-10">
+<span class="text-white/60 font-label-sm uppercase tracking-wider mb-2 block">Upcoming Deadline</span>
+<h4 class="font-headline-md text-headline-md text-white mb-3">Admission Forms: Phase 2 Closing Soon</h4>
+<p class="text-white/80 font-body-md mb-4">Last date for submission of applications for the academic session 2024-25 is October 30th.</p>
+<button class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-label-md">Apply Now</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-white/5 opacity-20 rotate-12" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Events Section -->
+<section class="bg-surface-dim py-16">
+<div class="px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">School Calendar &amp; Events</h2>
+<p class="text-ash-gray">Stay updated with the latest happenings at Durgapur High School.</p>
+</div>
+<!-- Tabs -->
+<div class="flex bg-surface-container-high p-1 rounded-full w-fit">
+<button class="px-8 py-2 rounded-full font-bold transition-all bg-primary text-on-primary shadow-sm" id="tab-upcoming" onclick="switchTabs('upcoming')">Upcoming Events</button>
+<button class="px-8 py-2 rounded-full font-bold transition-all text-on-surface-variant hover:text-primary" id="tab-past" onclick="switchTabs('past')">Past Events</button>
+</div>
+</div>
+<!-- Events Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="events-container">
+<!-- Event Card 1 -->
+<div class="bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="A colorful and vibrant close-up of traditional Indian instruments and clay lamps arranged on a decorated stage for a school cultural festival. The scene is illuminated with warm golden stage lighting, creating a festive and celebratory mood that reflects the rich heritage of West Bengal's educational institutions. The composition is artistic and professional, fitting for a modern school's news portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0W-D1yfWpAEerckjiOB-SubmTr7hOEGuvLgjV_Cx7SSrLMiSB2V-M64xFvB8RDx2NysfEcYXokFT754tkvw9k4xhxdaNCKb3A53xxu1EgcBfdS-WG2GIpIxf83TCuP0uQVL0Q3mZvmA_Vccihzcd3X1-0iwW_Sq0b4qrdo_GDItcgJJ_hLnf0JpwQVakJnFzNl2VxnfyJbymEsNs09gS70vD-lMNZeZrScbalCHzX_ILIVsdjMNt7fg"/>
+<div class="absolute top-4 left-4 bg-white px-3 py-1 rounded shadow-md text-center">
+<span class="block font-bold text-primary text-xl">25</span>
+<span class="block text-ash-gray text-[10px] uppercase font-bold">OCT</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Annual Cultural Fest: 'Bijoy Utsav 2024'</h3>
+<div class="flex items-center gap-2 text-ash-gray font-label-md mb-4">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Main Auditorium, School Campus</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6">A grand celebration of art, music, and dance featuring performances from students of all primary and secondary wings.</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+<button class="text-primary font-bold flex items-center hover:gap-2 transition-all">Details <span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+<div class="flex gap-3">
+<button class="material-symbols-outlined text-ash-gray hover:text-blue-600 transition-colors">share</button>
+<button class="material-symbols-outlined text-ash-gray hover:text-primary transition-colors">calendar_add_on</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Action shot of a high school track and field event where a student is crossing the finish line on a bright, sunny morning. The school's green playing field is well-maintained, and spectators in the background are cheering. The colors are vivid and energetic, with a high-key lighting style that emphasizes the vitality and sportsmanship of the students at Durgapur High School." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYTukhisAz8ejVLoRTkJrXaE0N6LdHgvYC0xAekieaPnz_bcLMjhhfiffjwgc9xq6hGI1Mdbgt8jSotmBukkBqVK43Ulfs_u7A_xf-WVYjLaiWO_L8swZxrfMSkkN8eLh_hrqMifUXAf1vUE76eOMp2HvCvo2im8BPncCjituEh7oYSSduX1l86WDyRci6TNY4Ue-ldzmfqQ3g6JEgYAOmfXdTWm2e3dC_64kRf3m7fjAhodKnj0Ia9A"/>
+<div class="absolute top-4 left-4 bg-white px-3 py-1 rounded shadow-md text-center">
+<span class="block font-bold text-primary text-xl">05</span>
+<span class="block text-ash-gray text-[10px] uppercase font-bold">NOV</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Annual Sports Meet &amp; Inter-House Tournament</h3>
+<div class="flex items-center gap-2 text-ash-gray font-label-md mb-4">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>School Athletic Ground</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6">Witness the competitive spirit as four houses battle for the overall championship trophy in various track and field events.</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+<button class="text-primary font-bold flex items-center hover:gap-2 transition-all">Details <span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+<div class="flex gap-3">
+<button class="material-symbols-outlined text-ash-gray hover:text-blue-600 transition-colors">share</button>
+<button class="material-symbols-outlined text-ash-gray hover:text-primary transition-colors">calendar_add_on</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-lg transition-all group">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="A focused and intimate classroom scene where a guest lecturer is speaking to a group of attentive high school seniors. The room is modern, with books and educational posters in the background. The lighting is soft and professional, creating a serious yet inspiring atmosphere. This image highlights the school's dedication to career guidance and higher academic preparation for its students." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI5soiNw5XQNX-dWLHSDJK6Qk7O8B-YkgMer-ewLNzFjDDhD9ZniZhTS8a5-Gix4xYWuHzEOOtkJmKS8ckW4dS7757wvHntz-UIaHWxBOx2In9YrGPul-UEOHuNt7t2wEQ9Nke0xRcsru4GyfNGm5ofBCVjGQlRNerA8SpCKkvcuNfIrYN5LgNDjt6o03z0vM4XJrhN3lwIdSINjYe-oJ2TXBtQEyHy8oo4pG0rtK0nOpuJNANHPliRw"/>
+<div class="absolute top-4 left-4 bg-white px-3 py-1 rounded shadow-md text-center">
+<span class="block font-bold text-primary text-xl">12</span>
+<span class="block text-ash-gray text-[10px] uppercase font-bold">NOV</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">Career Counseling: Pathways to Higher Education</h3>
+<div class="flex items-center gap-2 text-ash-gray font-label-md mb-4">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Conference Hall (Block B)</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6">Expert counselors and alumni share insights on entrance exams, vocational training, and choosing the right undergraduate streams.</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+<button class="text-primary font-bold flex items-center hover:gap-2 transition-all">Details <span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+<div class="flex gap-3">
+<button class="material-symbols-outlined text-ash-gray hover:text-blue-600 transition-colors">share</button>
+<button class="material-symbols-outlined text-ash-gray hover:text-primary transition-colors">calendar_add_on</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all">Download Full Academic Calendar (PDF)</button>
+</div>
+</div>
+</section>
+<!-- Newsletter / Social CTA -->
+<section class="px-margin-desktop py-16">
+<div class="bg-primary-container rounded-2xl p-8 lg:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Never miss an update from Durgapur High School</h2>
+<p class="text-on-primary-container font-body-lg mb-8">Subscribe to our digital bulletin for weekly news, event notifications, and official announcements delivered to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:ring-2 focus:ring-secondary outline-none" placeholder="Enter your email address" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform" type="submit">Subscribe Now</button>
+</form>
+</div>
+<div class="flex flex-col items-center gap-4 relative z-10">
+<p class="text-white font-label-md">Follow our official handles</p>
+<div class="flex gap-4">
+<a class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors" href="#"><span class="material-symbols-outlined">qr_code_2</span></a>
+<a class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors" href="#"><span class="material-symbols-outlined">video_library</span></a>
+</div>
+</div>
+<!-- Abstract Bg Shape -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary text-on-primary border-t-4 border-secondary-fixed">
+<div class="px-margin-desktop py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden">
+<img class="w-8 h-8 object-contain" data-alt="Small version of the official National Emblem of India, rendered in deep navy and white for a professional footer appearance. The image maintains strict government design standards, portraying a sense of reliability and official presence at the bottom of the page." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbNSNswpvP4VMYcXM35XHTQPdJMm8JcfaKIYrxUVQ5OmFnArFinhE5EdMYzNWfLxunXXgx6Y16Dql2oWIvJJupx89VsHNcJAtRD15-oBBXiS9ZoHxCybq4MP8lipSEnM04to8DpzGmA3dSAGbwz_YT_ZXn75ah-8MeDjrzJmA-ANneTbu8xaTaxQ5Xo-3-hwSS-9I5TkBCxAj835RvVw_HXUpgbIzQ9rnEACtrrc4BSmZFm1kC-hTUSw"/>
+</div>
+<span class="font-headline-md text-headline-md font-bold">Durgapur High School</span>
+</div>
+<p class="text-on-primary/70 font-body-md max-w-md mb-6">A premier institution committed to academic excellence and holistic development under the Department of Education, Government of West Bengal.</p>
+<div class="space-y-2 text-label-md">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">location_on</span> Durgapur, West Bengal, India - 713201</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> info@durgapurhighschool.edu.in</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> +91 (343) 250-XXXX</p>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-secondary-fixed mb-6 uppercase tracking-wider">Quick Links</h4>
+<ul class="space-y-3 font-label-md">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">RTI Disclosure</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">India.gov.in</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">MeitY</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">West Bengal Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-secondary-fixed mb-6 uppercase tracking-wider">State Projects</h4>
+<ul class="space-y-3 font-label-md">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Kanyashree Prakalpa</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Shikshashree Scheme</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Aikyashree Portal</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all" href="#">Banglar Shiksha</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full border-t border-white/10 py-6 px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4 text-label-sm text-on-primary/60">
+<p>© 2024 Durgapur High School. All Rights Reserved. Designed as per GIGW 3.0 Guidelines.</p>
+<p>Last Updated: October 18, 2024</p>
+</div>
+</footer>
+<!-- FAB (Suppressed on this detail-rich page as per guidelines, but adding for interaction showcase) -->
+<button class="fixed bottom-8 right-8 bg-secondary text-on-secondary w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform z-40 group">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="absolute right-full mr-4 bg-primary text-white px-4 py-2 rounded-lg text-label-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl">Help Desk</span>
+</button>
+<script>
+        function switchTabs(target) {
+            const upcomingBtn = document.getElementById('tab-upcoming');
+            const pastBtn = document.getElementById('tab-past');
+            const container = document.getElementById('events-container');
+
+            if (target === 'upcoming') {
+                upcomingBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+                upcomingBtn.classList.remove('text-on-surface-variant');
+                pastBtn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+                pastBtn.classList.add('text-on-surface-variant');
+                
+                // Mock content change for demo
+                container.style.opacity = '0';
+                setTimeout(() => {
+                    container.innerHTML = generateEventCards('upcoming');
+                    container.style.opacity = '1';
+                }, 200);
+            } else {
+                pastBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+                pastBtn.classList.remove('text-on-surface-variant');
+                upcomingBtn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+                upcomingBtn.classList.add('text-on-surface-variant');
+                
+                container.style.opacity = '0';
+                setTimeout(() => {
+                    container.innerHTML = generateEventCards('past');
+                    container.style.opacity = '1';
+                }, 200);
+            }
+        }
+
+        function generateEventCards(type) {
+            const data = {
+                upcoming: [
+                    { date: '25', month: 'OCT', title: "Annual Cultural Fest: 'Bijoy Utsav 2024'", location: 'Main Auditorium', desc: "A grand celebration of art, music, and dance featuring performances from students." },
+                    { date: '05', month: 'NOV', title: "Annual Sports Meet & Inter-House Tournament", location: 'School Athletic Ground', desc: "Witness the competitive spirit as houses battle for the overall championship trophy." },
+                    { date: '12', month: 'NOV', title: "Career Counseling: Pathways to Higher Education", location: 'Conference Hall', desc: "Expert counselors share insights on entrance exams and choosing undergraduate streams." }
+                ],
+                past: [
+                    { date: '15', month: 'AUG', title: "78th Independence Day Celebration", location: 'School Forecourt', desc: "A solemn flag hoisting ceremony followed by patriotic songs and speeches by senior faculty." },
+                    { date: '05', month: 'SEP', title: "Teacher's Day Recognition Ceremony", location: 'Assembly Hall', desc: "Students organized a heartfelt tribute to their mentors with special stage acts and awards." },
+                    { date: '02', month: 'OCT', title: "Swachh Bharat Abhiyan: Cleanliness Drive", location: 'Local Area', desc: "DHS students and staff participated in a community cleaning drive around the Durgapur vicinity." }
+                ]
+            };
+
+            return data[type].map(item => `
+                <div class="bg-white rounded-xl overflow-hidden border border-outline-variant shadow-sm hover:shadow-lg transition-all group animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <div class="h-48 bg-surface-container relative overflow-hidden flex items-center justify-center">
+                        <img src="placeholder" data-alt="Educational environment at Durgapur High School, showcasing ${item.title}. The lighting is clean and professional, using a light-mode aesthetic with high-quality focus. The style is consistent with government educational portals, emphasizing tradition and modern pedagogy." class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700">
+                        <div class="absolute top-4 left-4 bg-white px-3 py-1 rounded shadow-md text-center">
+                            <span class="block font-bold text-primary text-xl">${item.date}</span>
+                            <span class="block text-ash-gray text-[10px] uppercase font-bold">${item.month}</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-2 line-clamp-2">${item.title}</h3>
+                        <div class="flex items-center gap-2 text-ash-gray font-label-md mb-4">
+                            <span class="material-symbols-outlined text-[18px]">location_on</span>
+                            <span>${item.location}</span>
+                        </div>
+                        <p class="text-on-surface-variant font-body-md mb-6">${item.desc}</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+                            <button class="text-primary font-bold flex items-center hover:gap-2 transition-all">Details <span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+                            <div class="flex gap-3">
+                                <button class="material-symbols-outlined text-ash-gray hover:text-blue-600 transition-colors">share</button>
+                                <button class="material-symbols-outlined text-ash-gray hover:text-primary transition-colors">calendar_add_on</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+    </script>
+</body></html>

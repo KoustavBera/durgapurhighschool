@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Faculty Directory | Durgapur High School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#2e1500",
+                    "on-primary-container": "#8393c5",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-primary-fixed": "#051944",
+                    "secondary-fixed": "#ffdcc2",
+                    "surface-dim": "#F8F9FA",
+                    "primary": "#021541",
+                    "surface-container-low": "#f5f3f7",
+                    "on-tertiary-fixed-variant": "#663d16",
+                    "on-surface": "#1b1b1f",
+                    "on-surface-variant": "#45464f",
+                    "error-container": "#ffdad6",
+                    "surface": "#fbf8fd",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "tertiary-fixed-dim": "#f6ba88",
+                    "outline": "#757680",
+                    "primary-fixed": "#dae1ff",
+                    "tertiary": "#291300",
+                    "primary-fixed-dim": "#b5c5f9",
+                    "surface-variant": "#e4e2e6",
+                    "tertiary-fixed": "#ffdcc1",
+                    "outline-variant": "#c5c6d0",
+                    "inverse-on-surface": "#f2f0f4",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efedf1",
+                    "on-tertiary-container": "#bf895b",
+                    "inverse-primary": "#b5c5f9",
+                    "secondary-container": "#fe9832",
+                    "primary-container": "#1a2b56",
+                    "surface-tint": "#4d5d8b",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "secondary": "#8f4e00",
+                    "tertiary-container": "#472400",
+                    "error": "#D32F2F",
+                    "surface-bright": "#fbf8fd",
+                    "surface-container-high": "#e9e7ec",
+                    "success": "#28A745",
+                    "on-background": "#1b1b1f",
+                    "ash-gray": "#6C757D",
+                    "background": "#fbf8fd",
+                    "inverse-surface": "#303034",
+                    "on-primary-fixed-variant": "#354572",
+                    "warning": "#FFC107",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e4e2e6",
+                    "info": "#17A2B8",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#683700",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Noto Sans"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "bengali-body": ["Noto Sans"],
+                    "label-md": ["Noto Sans"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "bengali-body": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .faculty-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
+        .faculty-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex flex-col items-center bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container shadow-md border-b-4 border-secondary">
+<div class="w-full max-w-[1200px] flex items-center justify-between px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+<img class="w-10 h-10 object-contain" data-alt="Official National Emblem of India, the Lion Capital of Ashoka, rendered in high contrast black and white with gold accents. The image is set against a clean, professional white background suitable for a government institution's official logo. Minimalist and authoritative aesthetic for a state-run high school's digital portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfdUAx-va4RuN2BmhwC62PQcniay0_FsM_I0BubfBz22waXhVPKVO48TkYqrA8khXw9ITcsqFwBQrNplEJ2zy3xt5_LaJmDIsC4uj1Rhl27QMzjndzJdIEP0J_Ul5HHcYbAEHluQ4NPf93qXsGJ2XRKbGwY_smewJQgPBkTzBhkOssXY9DodFH1T5YRAOam1jIZPVgFK1gcq4eayog2TXarsGIkN_Rqx-835lvjq6PYMqDhU3V1yQMrQ"/>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-md text-headline-md font-bold text-on-primary leading-tight">Durgapur High School | দুর্গাপুর উচ্চ বিদ্যালয়</h1>
+<span class="text-label-sm font-label-sm opacity-80 uppercase tracking-wider">Education Department, Govt. of West Bengal</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-primary border-b-2 border-secondary-fixed pb-1" href="#">Academics</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Admissions</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Student Corner</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">RTI</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="material-symbols-outlined p-2 hover:bg-primary-container/50 rounded-full transition-colors scale-95 active:scale-90" title="Contrast">contrast</button>
+<button class="material-symbols-outlined p-2 hover:bg-primary-container/50 rounded-full transition-colors scale-95 active:scale-90" title="Text Size">format_size</button>
+<button class="material-symbols-outlined p-2 hover:bg-primary-container/50 rounded-full transition-colors scale-95 active:scale-90" title="Language">language</button>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Desktop Only) -->
+<aside class="hidden lg:flex flex-col h-full w-64 fixed left-0 top-0 pt-32 p-4 bg-surface dark:bg-inverse-surface shadow-lg z-40">
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg faculty-transition" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex items-center gap-4 p-3 bg-primary-container text-on-primary-container rounded-lg font-bold translate-x-1 faculty-transition" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-label-md">Academics</span>
+</a>
+<a class="flex items-center gap-4 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg faculty-transition" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label-md text-label-md">Results</span>
+</a>
+<a class="flex items-center gap-4 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg faculty-transition" href="#">
+<span class="material-symbols-outlined">person_add</span>
+<span class="font-label-md text-label-md">Admission</span>
+</a>
+<a class="flex items-center gap-4 p-3 text-on-surface-variant hover:bg-surface-variant rounded-lg faculty-transition" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-label-md text-label-md">Fees</span>
+</a>
+</div>
+<div class="mt-auto p-4 bg-surface-container-low rounded-xl">
+<p class="font-label-sm text-label-sm text-ash-gray mb-2">Portal Access</p>
+<button class="w-full bg-primary text-on-primary py-2 rounded-lg font-bold hover:opacity-90 transition-opacity">
+                Online Admission
+            </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="lg:pl-64 pt-32 pb-16 min-h-screen">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-8 text-ash-gray font-label-md text-label-md">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Academics</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface font-bold">Faculty Directory</span>
+</nav>
+<div class="mb-12">
+<h2 class="font-headline-lg text-headline-lg mb-2 text-primary">Faculty Directory</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    Our dedicated educators are the pillar of Durgapur High School. Browse through our diverse team of subject matter experts committed to academic excellence.
+                </p>
+</div>
+<!-- Filters and Search -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm mb-12 grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
+<div class="md:col-span-5">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Search Faculty</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-ash-gray">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg outline-none transition-all" placeholder="Search by name or keyword..." type="text"/>
+</div>
+</div>
+<div class="md:col-span-4">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Filter by Department</label>
+<select class="w-full px-4 py-2 bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg outline-none transition-all">
+<option value="all">All Departments</option>
+<option value="science">Science</option>
+<option value="humanities">Humanities</option>
+<option value="commerce">Commerce</option>
+<option value="language">Language</option>
+<option value="physical">Physical Education</option>
+</select>
+</div>
+<div class="md:col-span-3">
+<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">filter_list</span>
+                        Apply Filters
+                    </button>
+</div>
+</div>
+<!-- Faculty Grid (Bento Style) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Faculty Card 1 -->
+<div class="faculty-card faculty-transition bg-white border border-outline-variant rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional portrait of a senior male professor in his late 50s, wearing a formal Nehru jacket. He is standing in a brightly lit school library with books in the soft-focus background. The lighting is warm and authoritative, reflecting the modern digital identity of an Indian educational institution. Professional studio-quality photography with a clean, high-key light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeHVwkelnb885twM-t0geb6zMxaFwxcFKJ1EakKs6KJY7CpAXRZIsNFoIoEIMZIxoNZkBz5cvsrhk8_NNm-PiVxd8Srd6gs0LNT2clW3MnLjspAXpkyS2ZHIQmzF3-fzKgUFhJqr-pn9zu-OeP5eJMWoFswwcJRSz4gTEiRAs82WvvUUJ6zBHcnEW-gd020cyQGMCtIpTc7uTUbgFOMuf-x8npPWtJia-8ap1PPxJa0e6IF_akQAJU4w"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-3 py-1 rounded-full text-label-sm font-label-sm shadow-sm">
+                            H.O.D
+                        </div>
+</div>
+<div class="p-6">
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-widest mb-1">Science Department</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Dr. Amitava Roy</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Senior PGT (Physics)</p>
+<div class="space-y-2 border-t border-outline-variant pt-4">
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-label-md font-label-md">Ph.D. in Astrophysics, JU</span>
+</div>
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-label-md font-label-md">24 Years Experience</span>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary py-2 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 2 -->
+<div class="faculty-card faculty-transition bg-white border border-outline-variant rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional portrait of a female teacher in her late 30s, wearing a sophisticated white and blue silk saree. She has a warm, confident smile and is positioned in a modern classroom setting with a clean, digital blackboard visible in the background. The lighting is natural and crisp, adhering to the professional, official corporate style of the educational portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlkNN-EpHFZqIIM3YTk4CTpN1h8HBtcc6HSOFq4v3kChZ-pwHl6s4fso2pt6hfDzzhI7LcbBcYpyeeMKNQoZHGyIxpUPpRw9P74kWEAhlNgAXBiUkmloHK5cZlGk8_ql2xOg3e7YVNv9ggmsjOLhz-lcpMqe7L6XiUgi8kmyIkoYww5zHSQaNL6gjDx78IPb_2A3xyY6Puw4EQYfbNfdTJBPtfqBXY7SYUBLNjQ4q45LwdSZ7GCC2o0A"/>
+</div>
+<div class="p-6">
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-widest mb-1">Humanities Department</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Ms. Sunita Sharma</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">PGT (English Literature)</p>
+<div class="space-y-2 border-t border-outline-variant pt-4">
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-label-md font-label-md">M.A., M.Ed, Calcutta University</span>
+</div>
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-label-md font-label-md">12 Years Experience</span>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary py-2 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 3 -->
+<div class="faculty-card faculty-transition bg-white border border-outline-variant rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a young male educator in his early 30s, wearing a smart casual light-colored shirt. He is sitting at a desk with a laptop and some engineering models, suggesting a technology or science background. The environment is a clean, bright, modern school lab. Professional lighting, shallow depth of field, minimalist Indian academic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bfUPwu9IM6tiKnQiTqNcZTgwmXWFQ6Jy0yAyLWRHfpfi-F6_b9RgVAV1RU5F2mtWvNeN-tH3n69Nkv-x2ThCbCCNxmCb1HQXuHgN5KVOL_-YQXH5KbykFaX3uR9cgPsaXZ7kr2cAxYbmPhaAlZWlY-XLh5Es7qwBpWyBdUUc4QFSoov9cTuQbejwenvWgdTTS3nblQ_kgDzzKH4IDS39POVuUug5PTAdL6XtjO2TucOBgr453pQi1Q"/>
+</div>
+<div class="p-6">
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-widest mb-1">Science Department</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Mr. Subhankar Das</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">PGT (Mathematics)</p>
+<div class="space-y-2 border-t border-outline-variant pt-4">
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-label-md font-label-md">M.Sc. (Math), B.Ed</span>
+</div>
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-label-md font-label-md">8 Years Experience</span>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary py-2 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 4 -->
+<div class="faculty-card faculty-transition bg-white border border-outline-variant rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional studio portrait of an elderly male teacher with gray hair, wearing a traditional beige kurta. He has a kind, scholarly expression and is holding a leather-bound book. Background is a soft-focus wooden bookshelf. High-key lighting, professional photography, representing the cultural and educational heritage of an established Indian high school." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCwaEe5JBb2DXqK9j2Adq4EHtpqa8ajrLPO16rCqbQwKalK3dTY4a02y60viRoKBrFUfb7zcS17TkT5Lx2NEwKc3Qxa-oVBKhSo5EISax0gVh8-u4TlNhRMLVZWLcrJ8F0ndskprNU2WUTohwCl3bT3MwHgfGI3aCahGpfItGPQ8vATJCA9T15474mqDMMVFpDWQY0aWOBKsNsV-MfFGPVfTgo2L6hNiyicX_zhGLX8V_dNFTiPqYuA"/>
+<div class="absolute top-4 right-4 bg-success text-white px-3 py-1 rounded-full text-label-sm font-label-sm shadow-sm">
+                            Awardee
+                        </div>
+</div>
+<div class="p-6">
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-widest mb-1">Language Department</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Mr. Bimal Chatterjee</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">Senior TGT (Bengali)</p>
+<div class="space-y-2 border-t border-outline-variant pt-4">
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-label-md font-label-md">M.A. (Bengali Literature)</span>
+</div>
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-label-md font-label-md">31 Years Experience</span>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary py-2 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 5 -->
+<div class="faculty-card faculty-transition bg-white border border-outline-variant rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional headshot of a female teacher in her 40s, wearing a vibrant orange saree with a navy blue border. She is standing near a window with soft morning light illuminating her face. The style is clean, modern, and official, suitable for a West Bengal government school portal. Crisp focus, professional composition, bright and airy light-mode feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVFB3ErjqCwdi3ZF78Yo-n_3aNmzzHHES-0fWdhnVjTHkd5MN2sLpo24rz8UkynJs880XiF1YO_igSby2QjF3oHOvsjjjwV8FMLdfJH0FCX0l77aiaidCPgSojfydrXoU5S9A7uYQqiMRWJIJqfVEsslzablj0te6GG40z6DqvuyluX_tALCsGCzgwtWHP7jLOYBTe0RYvnyfYnRZh7SU4ZkTMgeI1S_OOhPuuER8mtY7RRKyqyBj25w"/>
+</div>
+<div class="p-6">
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-widest mb-1">Science Department</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Dr. Tanushree Mondal</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">PGT (Biology)</p>
+<div class="space-y-2 border-t border-outline-variant pt-4">
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-label-md font-label-md">Ph.D. in Botany, NBU</span>
+</div>
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-label-md font-label-md">15 Years Experience</span>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary py-2 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Faculty Card 6 -->
+<div class="faculty-card faculty-transition bg-white border border-outline-variant rounded-xl overflow-hidden group">
+<div class="h-48 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a female physical education teacher in her late 20s, wearing a professional navy blue track suit with a school emblem. She is holding a whistle and standing on a green school field with track lines visible in the background. Bright, daylight lighting, energetic and professional aesthetic. Clean composition with a modern light-mode theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaxrILQHcvrh34y3KWOaS96DrGCC9UiuvPtwM5gpTFXpK4uLni2JPZZqxH6VcSBR3cQlDEe3XDnJvxsIIWsYxCzH0mfBe85oni1w-WQHCL7jtqV2pbb7dw3A8kbvJ3ooksxdMEBChpKlsfxIDdOgvy4SglB1PnwG26L0zbmzjtYS-Ht0JaY9i7ohUGwuDiyMxYb1KLNcDNRJue_ea2Muv9HCo_jtTUTlLGSxacOUIN-lA-4IMqoNZl9w"/>
+</div>
+<div class="p-6">
+<p class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-widest mb-1">Physical Education</p>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Ms. Priyanka Sen</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">TGT (Physical Science)</p>
+<div class="space-y-2 border-t border-outline-variant pt-4">
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-label-md font-label-md">M.P.Ed, Gold Medalist</span>
+</div>
+<div class="flex items-center gap-3 text-ash-gray">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-label-md font-label-md">5 Years Experience</span>
+</div>
+</div>
+<button class="mt-6 w-full border border-primary text-primary py-2 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2">
+                            View Profile
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex items-center justify-center gap-4">
+<button class="p-2 rounded-lg border border-outline-variant hover:bg-surface-container-high transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined">navigate_before</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-lg bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 rounded-lg border border-outline-variant hover:bg-surface-container-high transition-colors font-bold text-on-surface-variant">2</button>
+<button class="w-10 h-10 rounded-lg border border-outline-variant hover:bg-surface-container-high transition-colors font-bold text-on-surface-variant">3</button>
+<span class="px-2">...</span>
+<button class="w-10 h-10 rounded-lg border border-outline-variant hover:bg-surface-container-high transition-colors font-bold text-on-surface-variant">8</button>
+</div>
+<button class="p-2 rounded-lg border border-outline-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">navigate_next</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop bg-primary text-on-primary border-t-4 border-secondary-fixed">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 lg:col-span-1">
+<h3 class="font-headline-md text-headline-md font-bold mb-4">Durgapur High School</h3>
+<p class="text-body-md font-body-md text-on-primary/80 mb-6">Providing quality education and fostering excellence since 1958. A premier government institution under West Bengal Board.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-6 text-secondary-fixed">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">About Us</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">Academics</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">Admissions</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">Examination Results</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-6 text-secondary-fixed">Government Portals</h4>
+<ul class="space-y-4">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">West Bengal Portal</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">India.gov.in</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">MeitY</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed" href="#">RTI Disclosure</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-6 text-secondary-fixed">Contact Info</h4>
+<div class="space-y-4 text-on-primary/80">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined">location_on</span>
+<p>Main Road, Durgapur, Paschim Bardhaman, West Bengal - 713201</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">call</span>
+<p>0343-254XXXX</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">mail</span>
+<p>info@durgapurhighschool.edu.in</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-on-primary/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-primary/60">© 2024 Durgapur High School. All Rights Reserved. Designed as per GIGW 3.0 Guidelines.</p>
+<div class="flex gap-6 text-label-sm font-label-sm text-on-primary/60">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Use</a>
+<span class="text-secondary-fixed font-bold">Last Updated: Oct 2024</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation for Mobile -->
+<nav class="fixed bottom-0 left-0 w-full bg-white md:hidden border-t border-outline-variant grid grid-cols-4 py-2 z-50">
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="text-[10px] font-bold">Faculty</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">description</span>
+<span class="text-[10px] font-medium">Notices</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+<span class="text-[10px] font-medium">Menu</span>
+</button>
+</nav>
+<script>
+        // Micro-interaction for search bar focus
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('scale-[1.01]');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('scale-[1.01]');
+        });
+    </script>
+</body></html>

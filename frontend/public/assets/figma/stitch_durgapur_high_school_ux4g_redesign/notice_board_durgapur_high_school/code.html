@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notice Board | Durgapur High School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#2e1500",
+                    "on-primary-container": "#8393c5",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#2e1500",
+                    "on-primary-fixed": "#051944",
+                    "secondary-fixed": "#ffdcc2",
+                    "surface-dim": "#F8F9FA",
+                    "primary": "#021541",
+                    "surface-container-low": "#f5f3f7",
+                    "on-tertiary-fixed-variant": "#663d16",
+                    "on-surface": "#1b1b1f",
+                    "on-surface-variant": "#45464f",
+                    "error-container": "#ffdad6",
+                    "surface": "#fbf8fd",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb77a",
+                    "tertiary-fixed-dim": "#f6ba88",
+                    "outline": "#757680",
+                    "primary-fixed": "#dae1ff",
+                    "tertiary": "#291300",
+                    "primary-fixed-dim": "#b5c5f9",
+                    "surface-variant": "#e4e2e6",
+                    "tertiary-fixed": "#ffdcc1",
+                    "outline-variant": "#c5c6d0",
+                    "inverse-on-surface": "#f2f0f4",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#efedf1",
+                    "on-tertiary-container": "#bf895b",
+                    "inverse-primary": "#b5c5f9",
+                    "secondary-container": "#fe9832",
+                    "primary-container": "#1a2b56",
+                    "surface-tint": "#4d5d8b",
+                    "on-secondary-fixed-variant": "#6d3a00",
+                    "secondary": "#8f4e00",
+                    "tertiary-container": "#472400",
+                    "error": "#D32F2F",
+                    "surface-bright": "#fbf8fd",
+                    "surface-container-high": "#e9e7ec",
+                    "success": "#28A745",
+                    "on-background": "#1b1b1f",
+                    "ash-gray": "#6C757D",
+                    "background": "#fbf8fd",
+                    "inverse-surface": "#303034",
+                    "on-primary-fixed-variant": "#354572",
+                    "warning": "#FFC107",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e4e2e6",
+                    "info": "#17A2B8",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#683700",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Noto Sans"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "bengali-body": ["Noto Sans"],
+                    "label-md": ["Noto Sans"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "bengali-body": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .high-contrast-focus:focus-visible {
+            outline: 2px solid #021541;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex flex-col items-center bg-primary border-b-4 border-secondary shadow-md">
+<div class="w-full max-w-container-max flex items-center justify-between py-4 px-margin-mobile md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden">
+<img class="w-10 h-10 object-contain" data-alt="The National Emblem of India, the Lion Capital of Ashoka, rendered as a crisp vector illustration for a government educational institution. The style is official and formal, utilizing clean lines and a professional monochrome palette that complements a deep blue and saffron school brand identity. The lighting is even and flat, suitable for a digital school portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGeFHzDudQgNl8t0zaFdfoxCrZtZHz2Jo1oYdyIGPrMyFpF6yn0Sp0IQy_3ag4s6uSvSuoYKyFrCCYQ5GFD1l9Q0hWuHfCrKAulXgQ1jSe_uV09lZ4Y9jzKLkK-WAyiIpEP4hnCeSuTBW-ZNMthIrExD2iw_roa_uObTtWMCFDQvgmYUL8p7ir7r13LwEywkAUWVK21_HNz2ZUOqFLNNjDlSmKhKWMGRMerSThL61NTRHa4nmTLZy3Q"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-on-primary leading-tight">Durgapur High School | দুর্গাপুর উচ্চ বিদ্যালয়</h1>
+<p class="font-label-sm text-label-sm text-on-primary/80">Govt. of West Bengal | Recognized Institution</p>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Academics</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">Admissions</a>
+<a class="font-label-md text-label-md text-on-primary border-b-2 border-secondary-fixed pb-1" href="#">Student Corner</a>
+<a class="font-label-md text-label-md text-on-primary/90 hover:text-white transition-colors" href="#">RTI</a>
+<div class="flex items-center gap-2 ml-4">
+<button class="p-2 text-on-primary hover:bg-primary-container/50 rounded-lg transition-colors"><span class="material-symbols-outlined">contrast</span></button>
+<button class="p-2 text-on-primary hover:bg-primary-container/50 rounded-lg transition-colors"><span class="material-symbols-outlined">format_size</span></button>
+<button class="p-2 text-on-primary hover:bg-primary-container/50 rounded-lg transition-colors"><span class="material-symbols-outlined">language</span></button>
+</div>
+</nav>
+</div>
+</header>
+<main class="mt-24 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Breadcrumbs -->
+<nav class="py-6 flex items-center gap-2 text-ash-gray font-label-md">
+<a class="hover:text-primary flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[18px]">home</span> Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary" href="#">Student Corner</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Notice Board</span>
+</nav>
+<!-- Page Header Section -->
+<section class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Notice Board</h2>
+<p class="text-ash-gray font-body-md max-w-2xl">Access all official circulars, academic notices, and examination schedules for Durgapur High School. All notices are compliant with GIGW 3.0 accessibility guidelines.</p>
+</section>
+<!-- Search and Filter Bar -->
+<div class="bg-surface-container border border-outline-variant rounded-lg p-6 mb-8">
+<div class="flex flex-col lg:flex-row gap-4 items-end">
+<div class="w-full lg:flex-1">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="notice-search">Search Notices</label>
+<div class="relative">
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" id="notice-search" placeholder="Search by title or keyword..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+</div>
+</div>
+<div class="w-full lg:w-48">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="category-filter">Category</label>
+<select class="w-full py-3 px-4 bg-surface-container-lowest border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" id="category-filter">
+<option>All Notices</option>
+<option>Admission</option>
+<option>Academics</option>
+<option>Examination</option>
+<option>General</option>
+</select>
+</div>
+<div class="w-full lg:w-48">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="year-filter">Academic Year</label>
+<select class="w-full py-3 px-4 bg-surface-container-lowest border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" id="year-filter">
+<option>2024-25</option>
+<option>2023-24</option>
+<option>2022-23</option>
+</select>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-primary-container transition-colors active:scale-95">
+<span class="material-symbols-outlined">filter_list</span> Apply Filters
+                </button>
+</div>
+</div>
+<!-- Recent Notices Table -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden shadow-sm mb-12">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary-container text-on-primary-container font-label-md border-b border-outline-variant">
+<th class="px-6 py-4 font-bold">Date</th>
+<th class="px-6 py-4 font-bold">Notice Title</th>
+<th class="px-6 py-4 font-bold">Category</th>
+<th class="px-6 py-4 font-bold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<!-- Notice Row 1 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="px-6 py-4 text-ash-gray font-label-md whitespace-nowrap">Oct 24, 2024</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="bg-error text-on-error text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">New</span>
+<a class="font-bold text-primary hover:underline" href="#">Selection List for Class XI Science Stream - 2024 Phase 2</a>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-secondary-container/20 text-secondary border border-secondary-fixed rounded-full font-label-sm">Admission</span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-bold hover:text-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span> PDF (1.2 MB)
+                                </a>
+</td>
+</tr>
+<!-- Notice Row 2 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="px-6 py-4 text-ash-gray font-label-md whitespace-nowrap">Oct 22, 2024</td>
+<td class="px-6 py-4">
+<a class="font-bold text-primary hover:underline" href="#">Notification regarding Half-Yearly Examination Schedule for VI-X</a>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-primary-container/10 text-primary border border-outline-variant rounded-full font-label-sm">Examination</span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-bold hover:text-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span> PDF (850 KB)
+                                </a>
+</td>
+</tr>
+<!-- Notice Row 3 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="px-6 py-4 text-ash-gray font-label-md whitespace-nowrap">Oct 18, 2024</td>
+<td class="px-6 py-4">
+<a class="font-bold text-primary hover:underline" href="#">Revised Holiday List for the Month of November 2024</a>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant border border-outline-variant rounded-full font-label-sm">General</span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-bold hover:text-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span> PDF (420 KB)
+                                </a>
+</td>
+</tr>
+<!-- Notice Row 4 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="px-6 py-4 text-ash-gray font-label-md whitespace-nowrap">Oct 15, 2024</td>
+<td class="px-6 py-4">
+<a class="font-bold text-primary hover:underline" href="#">Parent-Teacher Meeting Schedule for Middle School Section</a>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant border border-tertiary-fixed-dim rounded-full font-label-sm">Academics</span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-bold hover:text-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span> PDF (310 KB)
+                                </a>
+</td>
+</tr>
+<!-- Notice Row 5 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="px-6 py-4 text-ash-gray font-label-md whitespace-nowrap">Oct 10, 2024</td>
+<td class="px-6 py-4">
+<a class="font-bold text-primary hover:underline" href="#">Tender Notification for School Building Maintenance 2024-25</a>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-surface-variant text-on-surface-variant border border-outline-variant rounded-full font-label-sm">General</span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-bold hover:text-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span> PDF (2.4 MB)
+                                </a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="bg-surface-container-low px-6 py-4 flex items-center justify-between border-t border-outline-variant">
+<p class="font-label-sm text-ash-gray">Showing 1 to 5 of 124 notices</p>
+<div class="flex items-center gap-2">
+<button class="p-2 border border-outline-variant rounded hover:bg-surface-variant disabled:opacity-50" disabled=""><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="px-3 py-1 bg-primary text-on-primary rounded font-bold">1</button>
+<button class="px-3 py-1 border border-outline-variant rounded hover:bg-surface-variant">2</button>
+<button class="px-3 py-1 border border-outline-variant rounded hover:bg-surface-variant">3</button>
+<span class="px-2">...</span>
+<button class="px-3 py-1 border border-outline-variant rounded hover:bg-surface-variant">25</button>
+<button class="p-2 border border-outline-variant rounded hover:bg-surface-variant"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+</div>
+<!-- Archive Section -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-headline-md text-primary">Notice Archive</h3>
+<a class="text-primary font-bold flex items-center gap-1 hover:underline" href="#">View All Archive <span class="material-symbols-outlined">arrow_right_alt</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Archive Card 1 -->
+<div class="bg-surface-container-low border border-outline-variant p-6 rounded-lg hover:shadow-md transition-shadow">
+<div class="flex items-center gap-2 text-ash-gray font-label-sm mb-3">
+<span class="material-symbols-outlined text-[16px]">folder</span> Academic Year 2023-24
+                    </div>
+<h4 class="font-bold text-primary mb-4">Past Academic Notices &amp; Circulars</h4>
+<ul class="space-y-3 mb-6">
+<li class="flex items-start gap-2 group">
+<span class="material-symbols-outlined text-ash-gray group-hover:text-primary">description</span>
+<a class="text-on-surface-variant hover:text-primary text-label-md" href="#">Final Board Exam Guidelines 2023</a>
+</li>
+<li class="flex items-start gap-2 group">
+<span class="material-symbols-outlined text-ash-gray group-hover:text-primary">description</span>
+<a class="text-on-surface-variant hover:text-primary text-label-md" href="#">Summer Vacation Circular 2023</a>
+</li>
+</ul>
+<button class="w-full py-2 bg-surface-container-highest border border-outline-variant rounded text-primary font-bold hover:bg-outline-variant transition-colors">Access Folder</button>
+</div>
+<!-- Archive Card 2 -->
+<div class="bg-surface-container-low border border-outline-variant p-6 rounded-lg hover:shadow-md transition-shadow">
+<div class="flex items-center gap-2 text-ash-gray font-label-sm mb-3">
+<span class="material-symbols-outlined text-[16px]">folder</span> Admission Reports
+                    </div>
+<h4 class="font-bold text-primary mb-4">Previous Year Selection Lists</h4>
+<ul class="space-y-3 mb-6">
+<li class="flex items-start gap-2 group">
+<span class="material-symbols-outlined text-ash-gray group-hover:text-primary">description</span>
+<a class="text-on-surface-variant hover:text-primary text-label-md" href="#">Class V Admission Results 2022-23</a>
+</li>
+<li class="flex items-start gap-2 group">
+<span class="material-symbols-outlined text-ash-gray group-hover:text-primary">description</span>
+<a class="text-on-surface-variant hover:text-primary text-label-md" href="#">Transfer Intake Notification 2022</a>
+</li>
+</ul>
+<button class="w-full py-2 bg-surface-container-highest border border-outline-variant rounded text-primary font-bold hover:bg-outline-variant transition-colors">Access Folder</button>
+</div>
+<!-- Archive Card 3 -->
+<div class="bg-surface-container-low border border-outline-variant p-6 rounded-lg hover:shadow-md transition-shadow">
+<div class="flex items-center gap-2 text-ash-gray font-label-sm mb-3">
+<span class="material-symbols-outlined text-[16px]">history</span> Legacy Archives
+                    </div>
+<h4 class="font-bold text-primary mb-4">Digitized Records (2018-2022)</h4>
+<p class="text-ash-gray font-label-md mb-6">Historical circulars and administrative notices from the legacy portal system.</p>
+<button class="w-full py-2 bg-surface-container-highest border border-outline-variant rounded text-primary font-bold hover:bg-outline-variant transition-colors">Search Archive</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-8 px-margin-mobile md:px-margin-desktop bg-primary text-on-primary border-t-4 border-secondary-fixed">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-headline-md text-headline-md font-bold text-on-primary mb-4">Durgapur High School</h2>
+<p class="font-body-md text-on-primary/80 mb-4 max-w-md">Empowering students through quality education and discipline since 1952. A government-recognized premier institution in the heart of Durgapur.</p>
+<div class="flex items-center gap-4">
+<img class="h-12 w-auto grayscale brightness-200" data-alt="Official logo of West Bengal Government Education Department, featuring the 'Biswa Bangla' emblem in a refined digital format. The design is integrated cleanly into the footer of the school portal, utilizing professional white and light blue tones to maintain institutional authority and trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0R-zyikkkUDHujsn831RRjo5wQcJyBspg5kFb1EVfeRSrksUEJSvkfOFTuMZPHzfjavDB5oG4Z-rms-NtGlr22p4X0h2Lx7gag7oxCSYo4cyJeQRAN7tp7ttHIQOGaj9TS3H2BocoB2MNfWbAc-sBQz3yC0ZkX6uC-RQt1uwv45OzzzeeN4ogZND_-9c1nb1tlV8V-t_lsecjFLPXQp-THzO3nJ0X3HmedHxvpw9Tae9N7TPXmhXD7Q"/>
+<img class="h-12 w-auto grayscale brightness-200" data-alt="The 'Satyamev Jayate' National Emblem of India, presented as a professional official watermark for a government website footer. The aesthetic is clean, minimalist, and compliant with national digital branding standards, rendered in a soft white against a deep blue background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYuj79qtZlFZxY-3ngvm24GaN0eW3lQ14BcZ4P50s5A0Tk_qZKbfZJXxJi9g3DewyQsjdni-SMDh8CW2CXDPKuSLy5UOxKRf0mhpFRKIGsZIfmCPjO9bRXnaT8DV5t5BGrqcMh9dzQIscnQok3_Diz2yisPe4UK9qnywu-CI57mNT7JR9aJPV4T3Axj7nLftM1c6a4hQiyywHO-huJ3uRQHzPSt_mSdKbMHBqdu9dXnosT2vzqtXtA_g"/>
+</div>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-secondary-fixed mb-4 uppercase tracking-wider">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">RTI Disclosure</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">Academic Calendar</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">Kanyashree Portal</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-secondary-fixed mb-4 uppercase tracking-wider">State Portals</h3>
+<ul class="space-y-2">
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">India.gov.in</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">MeitY</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">West Bengal Portal</a></li>
+<li><a class="text-on-primary/80 hover:text-white hover:underline decoration-secondary-fixed transition-all font-label-sm" href="#">Banglar Shiksha</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-on-primary/10 pt-6 flex flex-col md:row items-center justify-between gap-4">
+<p class="font-label-sm text-label-sm text-on-primary/70">© 2024 Durgapur High School. All Rights Reserved. Designed as per GIGW 3.0 Guidelines.</p>
+<p class="font-label-sm text-label-sm text-on-primary/70 italic">Last Updated: October 26, 2024</p>
+</div>
+</div>
+</footer>
+<!-- Side Navigation (Mobile Only Trigger) -->
+<button class="lg:hidden fixed bottom-6 right-6 w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full shadow-lg flex items-center justify-center z-[100] active:scale-90 transition-transform" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+<script>
+        // Simple search interactivity
+        const searchInput = document.getElementById('notice-search');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                const title = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+                if (title.includes(query)) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Language Switcher Placeholder
+        const langBtn = document.querySelector('button .material-symbols-outlined:contains("language")');
+        if(langBtn) {
+            langBtn.parentElement.addEventListener('click', () => {
+                alert('Language translation in progress. Bengali/English toggle will be available soon.');
+            });
+        }
+    </script>
+</body></html>
