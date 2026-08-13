@@ -1,0 +1,10 @@
+{
+  "name": "durgapur-high-school-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:backend": "bun --cwd backend run dev",
+    "dev:frontend": "bun --cwd frontend run dev",
+    "install:all": "cd backend && bun install && cd ../frontend && bun install"
+  }
+}
