@@ -1,0 +1,57 @@
+[
+  {
+    "id": "EVT-2024-001",
+    "title": "Annual Cultural Fest: 'Bijoy Utsav 2024'",
+    "titleBn": "বার্ষিক সাংস্কৃতিক উৎসব: বিজয় উৎসব ২০২৪",
+    "date": "2024-10-25",
+    "time": "10:00 AM - 4:30 PM",
+    "venue": "Main School Auditorium",
+    "category": "Cultural",
+    "isUpcoming": true,
+    "description": "A grand celebration of music, recitation, classical drama, and traditional folk dance featuring performances from students across all wings."
+  },
+  {
+    "id": "EVT-2024-002",
+    "title": "Inter-School Science Model Exhibition & Quiz Competition",
+    "titleBn": "আন্তঃবিদ্যালয় বিজ্ঞান মডেল প্রদর্শনী ও কুইজ প্রতিযোগিতা",
+    "date": "2024-11-14",
+    "time": "09:30 AM - 3:00 PM",
+    "venue": "Science Block & Exhibition Hall",
+    "category": "Academics",
+    "isUpcoming": true,
+    "description": "Annual Children's Day science fair where students display functional robotic, renewable energy, and bio-science working prototypes."
+  },
+  {
+    "id": "EVT-2024-003",
+    "title": "Annual Athletic Meet & Sports Championship 2024-25",
+    "titleBn": "বার্ষিক অ্যাথলেটিক মিট ও স্পোর্টস চ্যাম্পিয়নশিপ ২০২৪-২৫",
+    "date": "2024-12-18",
+    "time": "08:30 AM - 5:00 PM",
+    "venue": "Durgapur High School Sports Pavilion Ground",
+    "category": "Sports",
+    "isUpcoming": true,
+    "description": "Track and field events including sprints, relay races, high jump, shot put, and traditional parade inspection."
+  },
+  {
+    "id": "EVT-2024-004",
+    "title": "Netaji Subhash Chandra Bose Jayanti & Republic Day Parade",
+    "titleBn": "নেতাজি জন্মজয়ন্তী ও সাধারণতন্ত্র দিবস কুচকাওয়াজ",
+    "date": "2025-01-23",
+    "time": "08:00 AM - 11:30 AM",
+    "venue": "School Central Quadrangle",
+    "category": "National",
+    "isUpcoming": true,
+    "description": "Flag hoisting, NCC cadet march past, patriotic song choir, and felicitation of student achievers."
+  },
+  {
+    "id": "EVT-2024-005",
+    "title": "Saraswati Puja & Art Exhibition 'Pratibha'",
+    "titleBn": "শ্রী শ্রী সরস্বতী পূজা ও কলা প্রদর্শনী 'প্রতিভা'",
+    "date": "2025-02-02",
+    "time": "09:00 AM - 4:00 PM",
+    "venue": "School Campus & Art Room",
+    "category": "Festival",
+    "isUpcoming": true,
+    "description": "Traditional worship of the Goddess of Learning followed by an open-air student painting exhibition and community feast."
+  }
+]

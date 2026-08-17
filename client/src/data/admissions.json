@@ -1,0 +1,155 @@
+{
+  "academicSession": "2025-2026",
+  "admissionStatus": "Open",
+  "helpline": {
+    "phone": "+91 343 256 4201",
+    "email": "admissions@durgapurhighschool.wb.gov.in",
+    "timings": "10:30 AM - 4:30 PM (Mon-Fri)"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "title": "Online Registration",
+      "titleBn": "অনলাইন নিবন্ধন",
+      "description": "Create student profile, enter Aadhaar/Banglar Shiksha ID, and fill in academic details.",
+      "icon": "app_registration"
+    },
+    {
+      "step": 2,
+      "title": "Document Upload",
+      "titleBn": "নথিপত্র আপলোড",
+      "description": "Upload scanned copies of birth certificate, marksheet, caste certificate, and passport photo.",
+      "icon": "upload_file"
+    },
+    {
+      "step": 3,
+      "title": "Scrutiny & Merit List",
+      "titleBn": "যাচাইকরণ ও মেধা তালিকা",
+      "description": "Verification of candidate records as per West Bengal Board admission norms.",
+      "icon": "verified_user"
+    },
+    {
+      "step": 4,
+      "title": "Fee Payment & Verification",
+      "titleBn": "ফি প্রদান ও চূড়ান্ত ভর্তি",
+      "description": "Pay government-subsidized admission fee online or at school counter to confirm seat.",
+      "icon": "task_alt"
+    }
+  ],
+  "eligibility": [
+    {
+      "classLevel": "Class V - VI (Primary to Upper Primary)",
+      "ageRange": "10+ to 11+ years as on 01.01.2025",
+      "criteria": "Passed Class IV/V from any recognized government or aided school.",
+      "stream": "General (Bengali / English 1st Language)"
+    },
+    {
+      "classLevel": "Class IX (Secondary)",
+      "ageRange": "13+ to 14+ years as on 01.01.2025",
+      "criteria": "Minimum 55% marks in Class VIII annual examination.",
+      "stream": "WBBSE Secondary Curriculum"
+    },
+    {
+      "classLevel": "Class XI - Science Stream",
+      "ageRange": "Below 18 years as on 01.01.2025",
+      "criteria": "Minimum 65% aggregate with 70% in Physical Science & Mathematics in Madhyamik.",
+      "stream": "Physics, Chemistry, Math, Biology / Computer Science"
+    },
+    {
+      "classLevel": "Class XI - Commerce Stream",
+      "ageRange": "Below 18 years as on 01.01.2025",
+      "criteria": "Minimum 50% aggregate in Madhyamik / equivalent.",
+      "stream": "Accountancy, Business Studies, Economics, Commercial Law / Math"
+    },
+    {
+      "classLevel": "Class XI - Humanities (Arts) Stream",
+      "ageRange": "Below 18 years as on 01.01.2025",
+      "criteria": "Passed Madhyamik / equivalent examination.",
+      "stream": "History, Geography, Political Science, Philosophy / Education"
+    }
+  ],
+  "importantDates": [
+    {
+      "event": "Commencement of Online Application",
+      "date": "November 01, 2024",
+      "status": "Completed"
+    },
+    {
+      "event": "Last Date of Application Submission (Phase 1)",
+      "date": "November 25, 2024",
+      "status": "Active"
+    },
+    {
+      "event": "Publication of First Provisional Merit List",
+      "date": "December 05, 2024",
+      "status": "Upcoming"
+    },
+    {
+      "event": "Physical Verification of Documents",
+      "date": "December 10 - 15, 2024",
+      "status": "Upcoming"
+    },
+    {
+      "event": "Commencement of New Academic Classes",
+      "date": "January 02, 2025",
+      "status": "Upcoming"
+    }
+  ],
+  "requiredDocuments": [
+    "Original & Attested Photocopy of Birth Certificate (Digital)",
+    "Banglar Shiksha e-Portal Student Transfer Certificate",
+    "Previous Class Final Examination Marksheet",
+    "Aadhaar Card copy of Student and Guardian",
+    "SC / ST / OBC / PWD Certificate (if applicable, issued by SDO/BDO)",
+    "Passport Size Color Photographs (3 copies)",
+    "Bank Account Passbook Front Page Copy (for Kanyashree/Shikshashree)"
+  ],
+  "feeStructure": [
+    {
+      "category": "Class V - VIII",
+      "admissionFee": "₹ 0 (Free)",
+      "tuitionFee": "₹ 0 (Govt Subsidized)",
+      "examDevelopment": "₹ 240 / year",
+      "total": "₹ 240 / year"
+    },
+    {
+      "category": "Class IX - X",
+      "admissionFee": "₹ 150 (One Time)",
+      "tuitionFee": "₹ 20 / month",
+      "examDevelopment": "₹ 350 / year",
+      "total": "₹ 740 / year"
+    },
+    {
+      "category": "Class XI - XII (Science)",
+      "admissionFee": "₹ 300 (One Time)",
+      "tuitionFee": "₹ 110 / month",
+      "examDevelopment": "₹ 600 / year (incl. Lab)",
+      "total": "₹ 2,220 / year"
+    },
+    {
+      "category": "Class XI - XII (Commerce / Arts)",
+      "admissionFee": "₹ 250 (One Time)",
+      "tuitionFee": "₹ 80 / month",
+      "examDevelopment": "₹ 450 / year",
+      "total": "₹ 1,660 / year"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How can I apply for Class XI admission online?",
+      "answer": "Click on the 'Apply Online Now' button on this portal, fill in your Madhyamik marks and subject preferences, upload scanned copies of your marksheet, and submit the application."
+    },
+    {
+      "question": "Is there any reservation for SC/ST/OBC and PWD candidates?",
+      "answer": "Yes, standard Government of West Bengal reservation guidelines (22% SC, 6% ST, 17% OBC-A/B, and 3% PWD) are strictly implemented for all stream allocations."
+    },
+    {
+      "question": "What is the medium of instruction at Durgapur High School?",
+      "answer": "The primary medium of instruction is Bengali, with English taught as the compulsory First/Second Language. Science stream subjects in Higher Secondary also provide English terminology references."
+    },
+    {
+      "question": "Are scholarship schemes like Kanyashree and Medhashree available?",
+      "answer": "Yes, our school office has a dedicated nodal officer facilitating all state government scholarships including Kanyashree (K1/K2), Shikshashree, Medhashree, and Oasis."
+    }
+  ]
+}

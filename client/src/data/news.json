@@ -1,0 +1,80 @@
+[
+  {
+    "id": "NEWS-001",
+    "title": "Durgapur High School Wins Regional Science Excellence Award 2024",
+    "titleBn": "আঞ্চলিক বিজ্ঞান প্রদর্শনীতে দুর্গাপুর উচ্চ বিদ্যালয়ের শ্রেষ্ঠত্বের পুরস্কার জয়",
+    "category": "Achievements",
+    "date": "2024-10-24",
+    "excerpt": "Our students showcased groundbreaking projects in renewable energy and automation, securing the first position among 50 participating schools.",
+    "content": "In a momentous achievement for our institution, students of Durgapur High School won first prize at the State-Level Science & Technology Exhibition held at Asansol. The project, titled 'IoT-Based Solar Water Harvesting and Smart Irrigation', designed by Class XI Science students, received widespread commendation from university professors and state education dignitaries.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCS_QJXjckeGY0Yew6ot92YW2nfjMJkq7D9WJm14el5puxlFnVEKCpXMVup0JY1eqrTyIc2gop3PTibE870qjblEDl01TwFuN5NryuRoo3s9RnTq-NZaJLbJsflFNgL7Q9Z1wc8nKU57i339Q109Ym275xR01UpA909ic77AWVkbIyPzbKC6mYyDoUL3TOLIf_cGJUtCZSGkAab5UHJtvMKYz_8Vfm1jXNBf8m2Rxy9t17FdOzKM4zh0g",
+    "isFeatured": true,
+    "author": "Science Department",
+    "readTime": "3 min read"
+  },
+  {
+    "id": "NEWS-002",
+    "title": "New State-of-the-Art Computer & Robotics Lab Inaugurated",
+    "titleBn": "নতুন আধুনিক কম্পিউটার ও রোবোটিক্স ল্যাবরেটরির উদ্বোধন",
+    "category": "Infrastructure",
+    "date": "2024-10-12",
+    "excerpt": "Equipped with 60 modern terminals, high-speed fiber connectivity, and IoT experimental kits to boost digital literacy across all grades.",
+    "content": "As part of the ICT @ Schools initiative, Durgapur High School inaugurated its newly renovated modern computing center. The facility features dual-boot workstations, interactive digital smartboards, and coding resources for Python, Web Development, and Robotics.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB5ecUzjTYeQPbwR2MKTyp9nvpwfTh0ECeY_DBOx_gc9bL48qEOMiK2sxf6zJK28ThFZuKeut1tDpPL7s6c_qmWSULc0vCnTZuSqGB6Rqp51x2AqM-Z-n0Ven1ondk3O4m5HiL09Lxd8A3X23j_ngKcVHMWPWicU1Y4-w0JvjJced6-8xL_dP6n4tQUyIrOka486TIwjK3sB-VLyEp7cBDJQRgWOBNF8xoHWIzaE6thXIBlJgyXl_JZOw",
+    "isFeatured": false,
+    "author": "IT Coordinator",
+    "readTime": "2 min read"
+  },
+  {
+    "id": "NEWS-003",
+    "title": "DHS Football Team Lifts Paschim Bardhaman District Inter-School Trophy",
+    "titleBn": "পশ্চিম বর্ধমান জেলা আন্তঃস্কুল ফুটবল প্রতিযোগিতায় চ্যাম্পিয়ন ডিএইচএস",
+    "category": "Sports",
+    "date": "2024-09-30",
+    "excerpt": "A thrilling 2-1 victory in the finals against Burnpur High School secured the district championship for our senior football team.",
+    "content": "Our senior football team showcased remarkable determination and teamwork in the final clash held at Durgapur Nehru Stadium. Striker Rohan Mondal scored the winning goal in extra time, leading the school to lift the coveted district trophy for the third time in five years.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3KkBGMXckUqvkbEmGAm94KWBI_5fEpeQ_YZnDinDJlXlCm9edr56XnXR8XOLViWCHIZ1mI48ow6PwVkmkp92MUrzrXs5k4GEypCWtLm6Xe02Iq8bC0rUDBytyRF4RorLGrsdTpyK1yREKGvDqeKlAa4u0w434ZbYfw2w9iRD78zZ9pYEuCbReRsR0_d6Fv-uEGHYQCy04qhq7T2uQg5GFAflZ3Ql2rlyQmKc6KngIpfcNPODT9NFpQ",
+    "isFeatured": false,
+    "author": "Sports Committee",
+    "readTime": "3 min read"
+  },
+  {
+    "id": "NEWS-004",
+    "title": "Grand Celebration of Rabindra Jayanti and Cultural Fest 'Srijon'",
+    "titleBn": "পঁচিশে বৈশাখ রবীন্দ্র জয়ন্তী ও সাংস্কৃতিক উৎসব 'সৃজন' উদযাপন",
+    "category": "Events",
+    "date": "2024-05-09",
+    "excerpt": "Students and faculty came together to pay homage to Kobiguru Rabindranath Tagore through music, recitation, drama, and dance.",
+    "content": "The school courtyard reverberated with melody and rhythm as students presented excerpts from 'Chandalika' and 'Tasher Desh'. The annual school literary magazine 'Durgapur Darpan' was also unveiled during the morning assembly.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAJu_k18Cf6Es7IezvOM62csm5DCmxMYJQ-LHK6xRQRXyNzw2htvtc--IR19V-vjgCKrGXVjjXvOUrIqofPt9y4f993ARGgpkZMaM_H9k9-1La4oDHDbKmDu-5j_Zk02DgXTdnpDPLGItkFzX87PD5Y0jHiJqWzDr0kpM3iiohOAU1sXBm1exDFmq1kAk9X8yZZdPWwDaxU5VIYbc_P3y1WsrdfPimJkSWcdrh2fr-We1ZylR9Pq6N6vA",
+    "isFeatured": false,
+    "author": "Cultural Committee",
+    "readTime": "4 min read"
+  },
+  {
+    "id": "NEWS-005",
+    "title": "Outstanding 100% Pass Rate in WBBSE Madhyamik & WBCHSE Higher Secondary 2024",
+    "titleBn": "মাধ্যমিক ও উচ্চ মাধ্যমিক ২০২৪ পরীক্ষায় ১০০% সাফল্যের গৌরবময় ফলাফল",
+    "category": "Academics",
+    "date": "2024-06-15",
+    "excerpt": "Over 48 students scored above 90% in Madhyamik, with Sourav Karmakar securing a top-10 district rank.",
+    "content": "The academic session 2023-24 witnessed stellar performances across both secondary and higher secondary streams. The Governing Body and teachers felicitated the toppers in a special ceremony at the Vivekananda Auditorium.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCjDQGp9JW1CLShUAt-YgQFGKqn9EChesx6YAL6jwLXexemWu62JcJrYf7MaHWQz5FYwxc3f8oenceNxrzjRih6scYNIlN54iZFSmBnzVNbKdD3CaDuUbd5QRvtRpYwRqg51TZJHrsohmFHkKNDfzt6BiVdJMj0afssuhBpDnGK6Q6SoO_LawCAlG9scNjRFnwTEeZaBzS3vXjJwPANY9GfUSPUHUdG0NX_iSI4M9CObUKfE6YSuoe_aA",
+    "isFeatured": false,
+    "author": "Academic Council",
+    "readTime": "3 min read"
+  },
+  {
+    "id": "NEWS-006",
+    "title": "Tree Plantation Drive & Eco-Club Environmental Awareness Campaign",
+    "titleBn": "বৃক্ষরোপণ কর্মসূচি ও পরিবেশ সচেতনতা অভিযান",
+    "category": "Events",
+    "date": "2024-07-20",
+    "excerpt": "Eco-Club members planted over 300 saplings across the school perimeter to celebrate Van Mahotsav week.",
+    "content": "DHS Eco-Club organized an eco-friendly awareness rally promoting plastic reduction, rainwater preservation, and urban greening, attended by local environmentalists and ward representatives.",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDrNPPtjtWKz5bxxOKOPWdoDVCpypRwNpDqwaba0H7yyFDKj4VcQLp9wyBz59qOenh4QZsAQQgZnG03Guq5NJ80sBhsdrlB477y37c4GZTZXtx1maagrv6Zn0bETpAyEw80sJdWmqIt1VzpBDzyazkze7yaNg-4b_9jd4cLQE6aTO503IE6o6JGUZc-c1N0OjYuIXzMheuv0fD0yoUzj6LLKH2lATkQ9LvKQdBpuCPj4YZ0ibdvs2glgg",
+    "isFeatured": false,
+    "author": "Eco Club DHS",
+    "readTime": "2 min read"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "students": "2500+",
+  "studentsLabel": "Students Enrolled",
+  "studentsLabelBn": "মোট শিক্ষার্থী",
+  "faculty": "85+",
+  "facultyLabel": "Expert Teachers & Staff",
+  "facultyLabelBn": "অভিজ্ঞ শিক্ষক ও শিক্ষিকা",
+  "labs": "12",
+  "labsLabel": "Modern Laboratories & ICT",
+  "labsLabelBn": "উন্নত গবেষণাগার ও কম্পিউটার ল্যাব",
+  "smartClasses": "24",
+  "smartClassesLabel": "Smart Digital Classrooms",
+  "smartClassesLabelBn": "স্মার্ট ডিজিটাল ক্লাসরুম",
+  "passPercentage": "100%",
+  "passPercentageLabel": "Board Exam Success Rate",
+  "passPercentageLabelBn": "বোর্ড পরীক্ষার সাফল্য",
+  "establishedYear": 1952,
+  "campusArea": "8.5 Acres",
+  "libraryBooks": "15,000+"
+}
