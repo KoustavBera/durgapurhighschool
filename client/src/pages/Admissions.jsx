@@ -1,23 +1,53 @@
 import React from 'react';
 import Breadcrumb from '../components/common/Breadcrumb';
 import PageHero from '../components/common/PageHero';
-import admissionsData from '../data/admissions.json';
+import EligibilityCard from '../components/admissions/EligibilityCard';
+import ImportantDates from '../components/admissions/ImportantDates';
+import AdmissionSteps from '../components/admissions/AdmissionSteps';
+import DocumentChecklist from '../components/admissions/DocumentChecklist';
+import ApplicationCTA from '../components/admissions/ApplicationCTA';
+import FAQAccordion from '../components/admissions/FAQAccordion';
 
 const Admissions = () => {
   return (
     <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop py-6">
+      {/* Breadcrumb Navigation */}
       <Breadcrumb items={[{ label: 'Admissions' }]} />
-      <PageHero
-        title="Admissions 2025-26"
-        subtitle="Join our tradition of educational distinction. Applications are invited for Class V, IX, and XI Science, Commerce & Arts streams."
-        tag="Admissions Open"
-        bgImage="https://lh3.googleusercontent.com/aida-public/AB6AXuCbMIJvXY9xuZdJPVOp38Cxrao7ApBo5VY2-dBye2YWKPDxllN8WDkWSWZxx_tho1uuvvZxK_LXS8cmbMK1xdZHD2KgqZv5s6tljMA0zSM4jVufnJYUmudOf5t63przH1Wq6zxu5nT4HMCZJFMn5VdmJygZNw0eiWPH9ZWYpod6sUJnqiCQpl3yR3zvN5qmaVo7NpEY5UpRPJj0N2LbzmPeqdiNEHrgS1RJtRcC0u41HVVmSn_Rs4MsRQ"
-      >
-        <button className="bg-secondary-container hover:bg-secondary text-on-secondary-container hover:text-on-secondary font-bold px-8 py-3.5 rounded-lg flex items-center gap-2 shadow-lg transition-all active:scale-95">
-          <span>Apply Online Now</span>
-          <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-        </button>
-      </PageHero>
+
+      {/* Hero Banner */}
+      <div className="mb-12 md:mb-16">
+        <PageHero
+          title="Admissions 2024-25"
+          subtitle="Join our legacy of academic excellence and discipline. Applications are open for Primary, Secondary, and Higher Secondary streams."
+          tag="Enrolment Portal"
+          ctaText="Inquire Online"
+          ctaLink="#apply-form"
+          bgImage="https://lh3.googleusercontent.com/aida-public/AB6AXuCbMIJvXY9xuZdJPVOp38Cxrao7ApBo5VY2-dBye2YWKPDxllN8WDkWSWZxx_tho1uuvvZxK_LXS8cmbMK1xdZHD2KgqZv5s6tljMA0zSM4jVufnJYUmudOf5t63przH1Wq6zxu5nT4HMCZJFMn5VdmJygZNw0eiWPH9ZWYpod6sUJnqiCQpl3yR3zvN5qmaVo7NpEY5UpRPJj0N2LbzmPeqdiNEHrgS1RJtRcC0u41HVVmSn_Rs4MsRQ"
+        />
+      </div>
+
+      {/* Bento Grid Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+        {/* 1. Eligibility Criteria (8 cols) */}
+        <EligibilityCard />
+
+        {/* 2. Key Deadlines (4 cols) */}
+        <ImportantDates />
+
+        {/* 3. 4-Step Process (12 cols) */}
+        <AdmissionSteps />
+
+        {/* 4. Mandatory Document Checklist (5 cols) */}
+        <DocumentChecklist />
+
+        {/* 5. Interactive Application & Inquiry Form (7 cols) */}
+        <div id="apply-form" className="md:col-span-7">
+          <ApplicationCTA />
+        </div>
+
+        {/* 6. FAQ Accordion (12 cols) */}
+        <FAQAccordion />
+      </div>
     </div>
   );
 };

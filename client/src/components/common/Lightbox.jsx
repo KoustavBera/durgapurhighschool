@@ -43,13 +43,17 @@ const Lightbox = ({
     >
       {/* Top Close button */}
       <button
-        onClick={onClose}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }}
         className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white p-2.5 bg-white/10 hover:bg-white/20 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-secondary-fixed z-20"
         title="Close Lightbox (Esc)"
         aria-label="Close Lightbox"
       >
         <span className="material-symbols-outlined text-3xl">close</span>
       </button>
+
 
       {/* Navigation Arrows */}
       {onPrev && (

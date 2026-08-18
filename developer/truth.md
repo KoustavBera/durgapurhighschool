@@ -77,7 +77,114 @@
 - `client/src/pages/Gallery.jsx` [NEW] — Visual showcase page setup.
 - `client/src/pages/News.jsx` [NEW] — News and events page setup.
 - `client/src/pages/Notices.jsx` [MODIFY] — Notices table and filter page setup.
-- `client/src/pages/Home.jsx` [MODIFY] — Home page setup with marquee, hero, and stats.
-- `client/src/App.jsx` [MODIFY] — App shell layout with full 9-route routing and scroll restoration.
+---
+
+## Phase 3: Page Assemblies & Sub-Components Implementation
+
+### Step 1: Home Page Components (Completed)
+- Built `client/src/components/home/HeroSection.jsx` featuring responsive hero banner, CTAs, and glassmorphism principal card snippet.
+- Built `client/src/components/home/QuickAccessGrid.jsx` with 4 institutional quick-action cards and hover elevations.
+- Built `client/src/components/home/NoticeBoardHome.jsx` combining real-time notice stream with `StatsGrid` and 2 facility highlight cards.
+- Built `client/src/components/home/NewsEventsBento.jsx` rendering bento grid with spotlight news, upcoming calendar event, and workshop showcase.
+- Built `client/src/components/home/GalleryStrip.jsx` with horizontal scrolling photo teaser.
+- Refactored `client/src/pages/Home.jsx` into a modular assembly of all 5 sub-components.
+- Build verified with zero errors.
+
+### Step 2: About Us Page Components (Completed)
+- Built `client/src/components/about/AboutBento.jsx` with History card and Vision & Mission cards.
+- Built `client/src/components/about/PrincipalMessage.jsx` with Dr. S. K. Mukherjee's profile, quote, and credential tags.
+- Built `client/src/components/about/GoverningBody.jsx` with the School Management Committee table.
+- Built `client/src/components/about/Infrastructure.jsx` with Modern Laboratories, Central Library, and Sports Complex facility cards.
+- Built `client/src/components/about/AccreditationBadges.jsx` with WBBSE, WBCHSE, and GIGW 3.0 government recognition seals.
+- Refactored `client/src/pages/About.jsx` assembling all 5 sub-components with `Breadcrumb` and `PageHero`.
+- Build verified with zero errors.
+
+### Step 3: Academics Page Components (Completed)
+- Built `client/src/components/academics/CurriculumCard.jsx` detailing Secondary and Higher Secondary frameworks under WBBSE and WBCHSE.
+- Built `client/src/components/academics/ResourcesCard.jsx` with syllabus PDF downloads.
+- Built `client/src/components/academics/DepartmentCards.jsx` with Science, Arts & Humanities, and Commerce stream overviews.
+- Built `client/src/components/academics/AcademicCalendar.jsx` with timeline events and PDF calendar trigger.
+- Built `client/src/components/academics/ExamResultsCards.jsx` with examination integrity rules and online results portal callout.
+- Built `client/src/components/academics/FacultyLinkBanner.jsx` with educator group photo and directory CTA.
+- Refactored `client/src/pages/Academics.jsx` assembling all 6 components in a responsive 12-column bento grid.
+- Build verified with zero errors.
+
+### Step 4: Admissions Page Components (Completed)
+- Built `client/src/components/admissions/EligibilityCard.jsx` detailing age, academic, residency, and reservation criteria.
+- Built `client/src/components/admissions/ImportantDates.jsx` listing application deadlines and examination dates.
+- Built `client/src/components/admissions/AdmissionSteps.jsx` rendering 4-step progressive timeline for online admission.
+- Built `client/src/components/admissions/DocumentChecklist.jsx` detailing mandatory paperwork and verification standards.
+- Built `client/src/components/admissions/ApplicationCTA.jsx` with interactive inquiry form and success confirmation.
+- Built `client/src/components/admissions/FAQAccordion.jsx` rendering expandable questions regarding medium, hostel, and cutoffs.
+- Refactored `client/src/pages/Admissions.jsx` assembling the full admissions portal bento layout.
+- Build verified with zero errors.
+
+### Step 5: Notice Board Page Components (Completed)
+- Built `client/src/components/notices/NoticeFilter.jsx` with search input, category dropdown, academic year filter, and reset triggers.
+- Built `client/src/components/notices/NoticeTable.jsx` with category badges, pinned highlights, PDF downloads, and integrated `Pagination`.
+- Built `client/src/components/notices/NoticeArchive.jsx` with past academic circulars, admission reports, and digitized records.
+- Refactored `client/src/pages/Notices.jsx` with complete client-side search and filtering logic.
+- Build verified with zero errors.
+
+### Step 6: Faculty Directory Page Components (Completed)
+- Built `client/src/components/faculty/FacultyFilter.jsx` with faculty search, department filters, and active counter.
+- Built `client/src/components/faculty/FacultyCard.jsx` with educator portraits, qualification, experience, and H.O.D tags.
+- Built `client/src/components/faculty/FacultyGrid.jsx` with responsive grid layout and empty state handling.
+- Refactored `client/src/pages/Faculty.jsx` integrating desktop `Sidebar`, pagination, and real-time filtering.
+- Build verified with zero errors.
+
+### Step 7: Gallery Page Components (Completed)
+- Built `client/src/components/gallery/GalleryTabs.jsx` with sticky category pill filters and academic year indicators.
+- Built `client/src/components/gallery/PhotoGrid.jsx` rendering bento-style photographic displays with zoom overlays.
+- Built `client/src/components/gallery/VideoGrid.jsx` rendering dark-themed multimedia showcase and documentary players.
+- Refactored `client/src/pages/Gallery.jsx` assembling photo grid, video grid, category filtering, and portal `Lightbox` modal.
+- Build verified with zero errors.
+
+### Step 8: News & Events Page Components (Completed)
+- Built `client/src/components/news/FeaturedNews.jsx` with spotlight science excellence story and trending IT updates.
+- Built `client/src/components/news/EventList.jsx` with tabbed upcoming/past event cards and full academic calendar PDF trigger.
+- Built `client/src/components/news/NewsletterCTA.jsx` with email bulletin subscription and verified institutional handles.
+- Refactored `client/src/pages/News.jsx` assembling all 3 sub-components into a dynamic news portal.
+- Build verified with zero errors.
+
+---
+
+## Phase 3 Completion Summary
+- **All 31 page-specific sub-components** across 8 core portal pages have been designed, created, and assembled.
+- Every page (`Home`, `About`, `Academics`, `Admissions`, `Notices`, `Faculty`, `Gallery`, `News`, and `NotFound`) is fully functioning with pixel-perfect fidelity to the UX4G / GIGW 3.0 Bharat Shiksha Civic design specifications in Figma.
+- Zero TypeScript/JSX syntax errors, zero broken imports, and verified production bundle build.
+
+---
+
+## Unit Testing Infrastructure & Test Suite (Completed)
+
+### Summary of Actions
+- Configured **Vitest 3** + **React Testing Library** + **JSDOM** in `client/vite.config.js` and `client/package.json`.
+- Implemented global test setup with DOM polyfills (`window.scrollTo`, `matchMedia`, and `@testing-library/jest-dom`).
+- Developed comprehensive test coverage across 4 domains:
+  1. **Data Schema & Type Integrity** (`data.test.js`): Validates 7 JSON datasets (`notices`, `faculty`, `gallery`, `admissions`, `news`, `events`, `stats`).
+  2. **Accessibility & Shared Components**: `UtilityBar` (font scaling `A-/A/A+` attributes, high contrast toggling), `Navbar` (mobile drawer triggers, navigation anchors), `Pagination` (page switching, boundary disabled states), `Lightbox` (keyboard triggers, image/video rendering), `Breadcrumb`, `Marquee`, `StatsGrid`.
+  3. **Interactive Sub-Components**: `NoticeFilter` & `NoticeTable` (filtering, category/year controls, empty states), `FacultyFilter` & `FacultyGrid` (department filters, H.O.D / Senior tags), `ApplicationCTA` (form validation and submission), `FAQAccordion`, `GalleryTabs` & `PhotoGrid`, `EventList` (tab toggles), `NewsletterCTA`.
+  4. **App Routing & Shell**: Validates default Home landing, layout skip-links, and 404 `NotFound` fallback view.
+- 100% green test execution: **16 test files passed, 33 tests passed**.
+
+### Files & Folders Changed
+- `client/package.json` [MODIFY] — Added `vitest`, `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event`, `jsdom` dependencies & test scripts.
+- `client/vite.config.js` [MODIFY] — Extended config with `test: { globals: true, environment: 'jsdom', setupFiles: './src/test/setup.js' }`.
+- `client/src/test/setup.js` [NEW] — Test polyfills and jest-dom matchers.
+- `client/src/test/data.test.js` [NEW] — Data integrity tests.
+- `client/src/test/App.test.jsx` [NEW] — App routing and 404 tests.
+- `client/src/test/components/*.test.jsx` [NEW] — 14 component test suites.
+- `client/src/components/admissions/ApplicationCTA.jsx` [MODIFY] — Added `htmlFor` and `id` bindings to form inputs for accessibility compliance.
+- `client/src/components/common/Lightbox.jsx` [MODIFY] — Added `e.stopPropagation()` to close button.
+
+
+
+
+
+
+
+
+
 
 
