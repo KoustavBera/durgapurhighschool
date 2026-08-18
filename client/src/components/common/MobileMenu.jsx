@@ -1,18 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const NAV_ITEMS = [
-  { label: 'Home', path: '/', icon: 'home' },
-  { label: 'About', path: '/about', icon: 'school' },
-  { label: 'Academics', path: '/academics', icon: 'menu_book' },
-  { label: 'Admissions', path: '/admissions', icon: 'person_add' },
-  { label: 'Notice Board', path: '/notices', icon: 'campaign' },
-  { label: 'News & Events', path: '/news', icon: 'newspaper' },
-  { label: 'Gallery', path: '/gallery', icon: 'photo_library' },
-  { label: 'Faculty Directory', path: '/faculty', icon: 'groups' },
+  { labelKey: 'nav.home', path: '/', icon: 'home' },
+  { labelKey: 'nav.about', path: '/about', icon: 'school' },
+  { labelKey: 'nav.academics', path: '/academics', icon: 'menu_book' },
+  { labelKey: 'nav.admissions', path: '/admissions', icon: 'person_add' },
+  { labelKey: 'nav.noticeBoard', path: '/notices', icon: 'campaign' },
+  { labelKey: 'nav.newsEvents', path: '/news', icon: 'newspaper' },
+  { labelKey: 'nav.gallery', path: '/gallery', icon: 'photo_library' },
+  { labelKey: 'nav.facultyDirectory', path: '/faculty', icon: 'groups' },
 ];
 
 const MobileMenu = ({ isOpen, onClose }) => {
+  const { t } = useTranslation('common');
   const location = useLocation();
 
   useEffect(() => {
@@ -60,21 +62,21 @@ const MobileMenu = ({ isOpen, onClose }) => {
               <span className="material-symbols-outlined text-secondary-fixed text-2xl">account_balance</span>
             </div>
             <div>
-              <div className="font-headline-md text-[18px] font-bold text-primary leading-tight">DHS</div>
-              <div className="font-label-sm text-[12px] text-on-surface-variant">Govt. of West Bengal</div>
+              <div className="font-headline-md text-[18px] font-bold text-primary leading-tight">{t('school.shortName')}</div>
+              <div className="font-label-sm text-[12px] text-on-surface-variant">{t('school.governmentShort')}</div>
             </div>
           </div>
           <button
             onClick={onClose}
             className="p-1.5 rounded-full hover:bg-surface-container-high text-on-surface-variant transition-colors"
-            aria-label="Close navigation menu"
+            aria-label={t('a11y.closeMenu')}
           >
             <span className="material-symbols-outlined text-2xl">close</span>
           </button>
         </div>
 
         {/* Navigation Items */}
-        <nav className="flex flex-col gap-1.5 flex-grow" aria-label="Mobile Navigation">
+        <nav className="flex flex-col gap-1.5 flex-grow" aria-label={t('a11y.mobileNavigation')}>
           {NAV_ITEMS.map((item) => {
             const active = isActive(item.path);
             return (
@@ -89,7 +91,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
                 }`}
               >
                 <span className="material-symbols-outlined text-[22px]">{item.icon}</span>
-                <span>{item.label}</span>
+                <span>{t(item.labelKey)}</span>
               </Link>
             );
           })}
@@ -103,10 +105,10 @@ const MobileMenu = ({ isOpen, onClose }) => {
             className="w-full py-3 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-bold font-label-md flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 text-center"
           >
             <span className="material-symbols-outlined text-[18px]">how_to_reg</span>
-            <span>Online Admission</span>
+            <span>{t('mobileMenu.onlineAdmission')}</span>
           </Link>
           <div className="text-center font-label-sm text-ash-gray text-[11px]">
-            © Durgapur High School • Estd. 1952
+            {t('mobileMenu.copyright')}
           </div>
         </div>
       </div>

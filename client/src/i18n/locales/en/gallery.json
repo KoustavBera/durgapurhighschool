@@ -1,0 +1,28 @@
+{
+  "page": {
+    "title": "Visual Showcase & Campus Gallery",
+    "intro": "Explore the vibrant academic life, cultural traditions, sports milestones, and state-of-the-art laboratory infrastructure at Durgapur High School."
+  },
+  "tabs": {
+    "allPhotos": "All Photos",
+    "infrastructure": "Infrastructure",
+    "laboratories": "Laboratories",
+    "sports": "Sports",
+    "culturalEvents": "Cultural Events",
+    "annualDay": "Annual Day",
+    "archiveYear": "Archive Year:",
+    "archiveYearValue": "2024-25"
+  },
+  "photos": {
+    "emptyTitle": "No photographs found",
+    "emptyMessage": "No pictures available for this category at the moment.",
+    "loadMore": "Load More Memories",
+    "loadMoreAlert": "All campus photographs are currently loaded."
+  },
+  "videos": {
+    "tag": "Multimedia Highlights",
+    "heading": "Event Videos & Documentaries",
+    "intro": "Experience the energy and pride of our Annual Celebrations, Science Fairs, and Sports Days through video documentation.",
+    "youtubeLink": "Visit Official YouTube Channel"
+  }
+}

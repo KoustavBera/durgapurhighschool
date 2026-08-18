@@ -185,3 +185,44 @@ html.high-contrast button {
 ::-webkit-scrollbar-thumb:hover {
   background: #757680;
 }
+/* ==========================================================================
+   Bengali Typography
+   i18n sets <html lang> to the active language. Bengali conjuncts sit taller
+   than Latin glyphs, so the whole document switches to Noto Sans Bengali and
+   gains extra line height; otherwise ascenders and matras collide at the
+   tight leading the Latin type scale assumes.
+   ========================================================================== */
+
+html[lang="bn"] body {
+  font-family: 'Noto Sans Bengali', 'Noto Sans', system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3,
+html[lang="bn"] h4,
+html[lang="bn"] h5,
+html[lang="bn"] h6 {
+  line-height: 1.5;
+  /* Bengali has no case distinction, so uppercasing is a no-op that only
+     widens tracking; the letter-spacing used for Latin small caps hurts it. */
+  letter-spacing: normal;
+}
+
+html[lang="bn"] .uppercase {
+  text-transform: none;
+}
+
+html[lang="bn"] .tracking-widest,
+html[lang="bn"] .tracking-wider,
+html[lang="bn"] .tracking-tight {
+  letter-spacing: normal;
+}
+
+/* Material Symbols ligatures are ASCII keywords and must keep their own font
+   even inside a Bengali document. */
+html[lang="bn"] .material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  line-height: 1;
+}

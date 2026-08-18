@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Breadcrumb from '../components/common/Breadcrumb';
 import Sidebar from '../components/common/Sidebar';
 import Pagination from '../components/common/Pagination';
@@ -9,6 +10,7 @@ import facultyData from '../data/faculty.json';
 const PAGE_SIZE = 6;
 
 const Faculty = () => {
+  const { t } = useTranslation('faculty');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDept, setSelectedDept] = useState('All');
   const [currentPage, setCurrentPage] = useState(1);
@@ -64,18 +66,18 @@ const Faculty = () => {
         {/* Breadcrumb Navigation */}
         <Breadcrumb
           items={[
-            { label: 'Academics', link: '/academics' },
-            { label: 'Faculty Directory' },
+            { labelKey: 'nav.academics', href: '/academics' },
+            { labelKey: 'nav.facultyDirectory' },
           ]}
         />
 
         {/* Page Header */}
         <div className="mb-8">
           <h1 className="font-headline-lg text-3xl sm:text-4xl text-primary font-bold mb-2">
-            Faculty Directory
+            {t('page.title')}
           </h1>
           <p className="text-body-lg text-sm sm:text-base text-on-surface-variant max-w-2xl leading-relaxed">
-            Our dedicated educators are the pillar of Durgapur High School. Browse through our diverse team of subject matter experts committed to holistic academic excellence.
+            {t('page.intro')}
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Breadcrumb from '../components/common/Breadcrumb';
 import PageHero from '../components/common/PageHero';
 import CurriculumCard from '../components/academics/CurriculumCard';
@@ -9,17 +10,19 @@ import ExamResultsCards from '../components/academics/ExamResultsCards';
 import FacultyLinkBanner from '../components/academics/FacultyLinkBanner';
 
 const Academics = () => {
+  const { t } = useTranslation('academics');
+
   return (
     <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop py-6">
       {/* Breadcrumbs */}
-      <Breadcrumb items={[{ label: 'Academics' }]} />
+      <Breadcrumb items={[{ labelKey: 'nav.academics' }]} />
 
       {/* Hero Banner */}
       <div className="mb-12 md:mb-16">
         <PageHero
-          title="Excellence in Education"
-          subtitle="Providing a holistic, rigorous, and technologically advanced academic curriculum under WBBSE & WBCHSE."
-          tag="Academic Programs"
+          title={t('hero.title')}
+          subtitle={t('hero.subtitle')}
+          tag={t('hero.tag')}
           align="center"
           bgImage="https://lh3.googleusercontent.com/aida-public/AB6AXuDH9rFF6gf7s5RY7h-ujJmQcy03O3pA5j4CWOzT06Ae6zfwuUhE2Ig9k63HSesCrq310LkV2fsx3HqFjmedEX2CAefjGvUckC6pRlm7hWerTfO6Yu9zL2pM4S9Zc_Ngyk5Yr2LBWriqhbXWs0A14loqU2kkb5OAiA_aO594Ssbq5O77RMoAD0ZBNIzRpa1Xe0xEtV_YjA__6CCjv8UwEvtTvGXgXkH7ZEPru2BYakW34rVMfsoPqG8Mhw"
         />

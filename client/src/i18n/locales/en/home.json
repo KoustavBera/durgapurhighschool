@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "badge": "Established 1952",
+    "titleLine1": "Shaping Minds,",
+    "titleLine2": "Nurturing Futures",
+    "subtitle": "Providing excellence in education for over seven decades, fostering a holistic environment for the leaders of tomorrow.",
+    "applyOnline": "Apply Online",
+    "viewProspectus": "View Prospectus",
+    "campusAlt": "Durgapur High School Campus",
+    "principalName": "Dr. A.K. Sanyal",
+    "principalAlt": "Dr. A.K. Sanyal, Principal",
+    "principalLabel": "Principal's Message",
+    "principalQuote": "\"Our mission is to provide quality education that empowers every student to reach their fullest potential...\""
+  },
+  "quickAccess": {
+    "admission": {
+      "title": "Online Admission",
+      "desc": "Start your journey with us for the 2024-25 academic year."
+    },
+    "fees": {
+      "title": "Pay Fees",
+      "desc": "Secure and convenient online fee payment & receipt generation."
+    },
+    "results": {
+      "title": "Results",
+      "desc": "Access board and internal unit examination marks sheets."
+    },
+    "syllabus": {
+      "title": "Syllabus",
+      "desc": "Download the latest WBBSE & WBCHSE curriculum for all grades."
+    }
+  },
+  "noticeBoard": {
+    "heading": "Notice Board",
+    "headingBn": "বিজ্ঞপ্তি ফলক",
+    "viewAll": "View All",
+    "browseAll": "Browse All Official Circulars",
+    "newBadge": "New",
+    "statsHeading": "Excellence in Numbers",
+    "statsHeadingBn": "পরিসংখ্যানে শ্রেষ্ঠত্ব",
+    "statsIntro": "Durgapur High School is committed to providing a digitally-enabled environment where students thrive through modern technology and rooted cultural values.",
+    "digital": {
+      "tag": "Modern Facilities",
+      "title": "Digital Infrastructure",
+      "desc": "ICT-enabled learning with high-speed internet & smart boards.",
+      "alt": "Digital Infrastructure at Durgapur High School"
+    },
+    "library": {
+      "tag": "Knowledge Hub",
+      "title": "Central Library",
+      "desc": "Home to over 15,000 volumes across diverse academic disciplines.",
+      "alt": "Central Library at Durgapur High School"
+    }
+  },
+  "newsEvents": {
+    "heading": "News & Events",
+    "headingBn": "সংবাদ ও ঘটনাবলী",
+    "browseAll": "Browse All Stories",
+    "spotlight": "Spotlight",
+    "featuredTitle": "Annual Foundation Day Celebrations 2024",
+    "featuredExcerpt": "Durgapur High School celebrates its 72nd year of educational excellence with inspiring cultural performances, felicitations, and sports awards.",
+    "featuredAlt": "Annual Foundation Day Celebrations",
+    "readFullArticle": "Read Full Article",
+    "upcomingEvent": "Upcoming Event",
+    "scienceFairTitle": "Inter-School Science Fair",
+    "scienceFairDate": "Dec 12, 2024",
+    "workshopTag": "Workshop",
+    "workshopTitle": "Robotics & STEAM Laboratory Workshop",
+    "workshopAlt": "Robotics and STEAM Workshop"
+  },
+  "galleryStrip": {
+    "heading": "Campus Life Gallery",
+    "headingBn": "গ্যালারি ও ক্যাম্পাস চিত্র",
+    "viewAll": "View All Photos"
+  }
+}

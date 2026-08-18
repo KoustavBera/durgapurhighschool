@@ -1,0 +1,88 @@
+{
+  "page": {
+    "title": "Latest Updates & Campus Happenings",
+    "titleBn": "সংবাদ ও ঘটনাবলী",
+    "intro": "Stay connected with institutional milestones, student awards, departmental workshops, and upcoming cultural festivals."
+  },
+  "featured": {
+    "badge": "Featured Story",
+    "title": "Durgapur High School Wins Regional Science Excellence Award 2024",
+    "excerpt": "Our students showcased groundbreaking projects in renewable solar energy and school automation, securing 1st rank among 50 participating schools in Paschim Bardhaman.",
+    "readFullStory": "Read Full Story",
+    "readAlert": "Reading full story: Regional Science Excellence Award 2024",
+    "shareTitle": "Share Story",
+    "shareAlert": "Article link copied to clipboard!",
+    "bookmarkTitle": "Bookmark",
+    "bookmarkAlert": "Article bookmarked.",
+    "trending": {
+      "meta": "12 Oct 2024 • Academic Update",
+      "title": "New Digital Literacy & Robotics Program Launched",
+      "excerpt": "Collaborating with West Bengal state IT initiatives to provide hands-on coding and Python modules for Class IX-XII students.",
+      "cta": "View details",
+      "alert": "Viewing Digital Literacy Program details."
+    },
+    "deadline": {
+      "tag": "Upcoming Deadline",
+      "title": "Admission Forms: Phase 2 Closing Soon",
+      "desc": "Last date for submission of online applications for the upcoming 2024-25 session is October 30th.",
+      "cta": "Apply Now"
+    }
+  },
+  "events": {
+    "tag": "School Calendar",
+    "heading": "Events & Observances",
+    "subheading": "Stay updated with academic gatherings, celebrations, and sports meets.",
+    "upcomingTab": "Upcoming Events",
+    "pastTab": "Past Events",
+    "details": "Details",
+    "detailsAlert": "Event Details: {{title}}\nVenue: {{venue}}",
+    "shareTitle": "Share",
+    "shareAlert": "Share event",
+    "addCalendarTitle": "Add to Calendar",
+    "addCalendarAlert": "Add to calendar",
+    "downloadCalendar": "Download Full Annual Calendar (PDF)",
+    "downloadAlert": "Downloading official DHS Academic Calendar 2024-25 (PDF)",
+    "upcoming": {
+      "culturalFest": {
+        "title": "Annual Cultural Fest: 'Bijoy Utsav 2024'",
+        "location": "Main Auditorium, DHS Campus",
+        "desc": "A grand celebration of Bengali art, Rabindra Sangeet, drama, and classical dance performances from students of all wings."
+      },
+      "sportsMeet": {
+        "title": "Annual Sports Meet & Inter-House Tournament",
+        "location": "School Athletic Stadium",
+        "desc": "Witness the competitive spirit as four houses battle for the overall championship trophy in track and field events."
+      },
+      "careerGuidance": {
+        "title": "Career Guidance: Pathways to Higher Education",
+        "location": "Conference Hall (Block B)",
+        "desc": "Expert alumni and university counselors share strategies on national entrance exams (JEE, NEET, CUET) and undergraduate streams."
+      }
+    },
+    "past": {
+      "independenceDay": {
+        "title": "78th Independence Day Patriotic Celebrations",
+        "location": "Open Air Assembly Ground",
+        "desc": "Flag hoisting ceremony, March past parade by NCC cadets, and patriotic musical presentation by middle school choir."
+      },
+      "teachersDay": {
+        "title": "Teachers' Day & Felicitation Ceremony",
+        "location": "Main Auditorium",
+        "desc": "Students assumed teacher responsibilities for the day followed by a cultural tribute to honorable faculty members."
+      }
+    }
+  },
+  "newsletter": {
+    "tag": "Digital Communications",
+    "heading": "Never miss an update from Durgapur High School",
+    "intro": "Subscribe to our weekly e-bulletin for administrative circulars, exam schedules, cultural programs, and achievement stories delivered straight to your inbox.",
+    "success": "Thank you! You have been subscribed to our bulletin.",
+    "emailPlaceholder": "Enter your email address",
+    "subscribe": "Subscribe Now",
+    "handlesHeading": "Official Digital Handles",
+    "qrTitle": "Banglar Shiksha Portal",
+    "qrAlert": "School Portal QR verification",
+    "statePortalTitle": "State Education Portal",
+    "mediaChannelTitle": "DHS Media Channel"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "Educating Generations Since 1952",
+    "subtitle": "A beacon of knowledge, character, and discipline in the industrial heartland of Durgapur, West Bengal.",
+    "tag": "Legacy & Heritage"
+  },
+  "history": {
+    "tag": "Heritage & Roots",
+    "title": "Our Rich History",
+    "paragraph1": "Founded in the transformative post-independence era of 1952, Durgapur High School was established to provide top-tier academic foundation to the children of industrial township workers and neighboring communities.",
+    "paragraph2": "Over the decades, it has evolved into a premier Higher Secondary institution recognized by the West Bengal Board of Secondary Education (WBBSE) and Council of Higher Secondary Education (WBCHSE). Our alumni include distinguished scientists, civil servants, engineers, and educators serving across the globe.",
+    "statYears": "Years of Service",
+    "statYearsValue": "70+",
+    "statPass": "Board Pass Rate",
+    "statPassValue": "100%",
+    "statBoards": "Recognized",
+    "statBoardsValue": "WBBSE & WBCHSE"
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "To be a beacon of inclusive academic excellence, cultivating intellectual curiosity, moral integrity, and modern technological competency in every student."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "Fostering a nurturing, discipline-oriented environment with rigorous scientific temper, artistic creativity, and civic responsibility for nation-building."
+  },
+  "principal": {
+    "label": "Message from the Principal",
+    "role": "Principal",
+    "name": "Dr. S. K. Mukherjee",
+    "alt": "Dr. S. K. Mukherjee, Principal",
+    "quote": "\"Education is not merely the accumulation of facts, but the conscious training of the mind to think critically, act ethically, and contribute meaningfully to society.\"",
+    "bio": "With over 25 years of academic and administrative leadership in West Bengal's secondary education ecosystem, Dr. Mukherjee has spearheaded state-level digital learning paradigms and vocational enrichment programs. Under his stewardship, Durgapur High School continues its legacy of 100% board results and student-centered growth.",
+    "credential1": "Ph.D. in Educational Leadership",
+    "credential2": "Former State Advisory Panel Member",
+    "credential3": "President's Gold Medal Nominee"
+  },
+  "governingBody": {
+    "title": "School Management Committee",
+    "subtitle": "The apex governing council ensuring governance transparency, financial probity, and continuous institutional growth.",
+    "columnName": "Name",
+    "columnDesignation": "Designation",
+    "columnRole": "Role / Category",
+    "columnTenure": "Tenure",
+    "members": {
+      "president": {
+        "name": "Sri Aloke Ghoshal",
+        "designation": "President",
+        "role": "Nominated Member (Educationist)",
+        "tenure": "2021 - Present"
+      },
+      "secretary": {
+        "name": "Dr. S. K. Mukherjee",
+        "designation": "Secretary",
+        "role": "Principal (Ex-Officio)",
+        "tenure": "2018 - Present"
+      },
+      "teacherRep": {
+        "name": "Smt. Rita Das",
+        "designation": "Teacher Representative",
+        "role": "Elected Faculty Member",
+        "tenure": "2022 - Present"
+      },
+      "guardianRep": {
+        "name": "Sri Partha Sen",
+        "designation": "Guardian Representative",
+        "role": "Parent-Teacher Association Body",
+        "tenure": "2023 - Present"
+      }
+    }
+  },
+  "infrastructure": {
+    "heading": "Infrastructure & Campus Facilities",
+    "headingBn": "পরিকাঠামো ও সুবিধাসমূহ",
+    "labs": {
+      "title": "Modern Laboratories",
+      "desc": "Fully equipped Physics, Chemistry, and Biology laboratories with digital microscopes, gas benches, and chemical safety apparatus."
+    },
+    "library": {
+      "title": "Central Library",
+      "desc": "Over 15,000 titles including academic reference texts, regional literary archives, and a dedicated silent reading lounge."
+    },
+    "sports": {
+      "title": "Sports & Athletic Complex",
+      "desc": "Multi-purpose outdoor grounds for football and cricket, running track, and indoor facilities for table tennis, gymnastics, and yoga."
+    }
+  },
+  "accreditation": {
+    "heading": "Government Recognition & Institutional Accreditations",
+    "wbbse": {
+      "title": "West Bengal Board of Secondary Education",
+      "desc": "Affiliation Code: S-142"
+    },
+    "wbchse": {
+      "title": "West Bengal Council of Higher Secondary Education",
+      "desc": "Affiliation Code: HS-1092"
+    },
+    "gigw": {
+      "title": "Guidelines for Indian Government Websites",
+      "desc": "Digital Accessibility Compliant"
+    }
+  }
+}

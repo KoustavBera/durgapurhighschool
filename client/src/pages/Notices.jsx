@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Breadcrumb from '../components/common/Breadcrumb';
 import NoticeFilter from '../components/notices/NoticeFilter';
 import NoticeTable from '../components/notices/NoticeTable';
@@ -8,6 +9,7 @@ import noticesData from '../data/notices.json';
 const PAGE_SIZE = 6;
 
 const Notices = () => {
+  const { t } = useTranslation('notices');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedYear, setSelectedYear] = useState('All');
@@ -66,15 +68,15 @@ const Notices = () => {
   return (
     <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop py-6">
       {/* Breadcrumb Navigation */}
-      <Breadcrumb items={[{ label: 'Student Corner' }, { label: 'Notice Board' }]} />
+      <Breadcrumb items={[{ labelKey: 'nav.studentCorner' }, { labelKey: 'nav.noticeBoard' }]} />
 
       {/* Page Header Section */}
       <div className="mb-8">
         <h1 className="font-headline-lg text-3xl sm:text-4xl text-primary font-bold mb-2">
-          Official Notice Board
+          {t('page.title')}
         </h1>
         <p className="text-ash-gray font-body-md text-sm sm:text-base max-w-3xl leading-relaxed">
-          Access all official administrative circulars, examination schedules, and academic announcements for Durgapur High School. All notices are compliant with GIGW 3.0 digital accessibility guidelines.
+          {t('page.intro')}
         </p>
       </div>
 

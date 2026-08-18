@@ -10,7 +10,11 @@
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCS_QJXjckeGY0Yew6ot92YW2nfjMJkq7D9WJm14el5puxlFnVEKCpXMVup0JY1eqrTyIc2gop3PTibE870qjblEDl01TwFuN5NryuRoo3s9RnTq-NZaJLbJsflFNgL7Q9Z1wc8nKU57i339Q109Ym275xR01UpA909ic77AWVkbIyPzbKC6mYyDoUL3TOLIf_cGJUtCZSGkAab5UHJtvMKYz_8Vfm1jXNBf8m2Rxy9t17FdOzKM4zh0g",
     "isFeatured": true,
     "author": "Science Department",
-    "readTime": "3 min read"
+    "readTime": "3 min read",
+    "excerptBn": "নবীকরণযোগ্য শক্তি ও স্বয়ংক্রিয়করণ নিয়ে যুগান্তকারী প্রকল্প উপস্থাপন করে আমাদের শিক্ষার্থীরা ৫০টি অংশগ্রহণকারী বিদ্যালয়ের মধ্যে প্রথম স্থান অধিকার করেছে।",
+    "contentBn": "আমাদের প্রতিষ্ঠানের জন্য এক স্মরণীয় সাফল্য অর্জন করে আসানসোলে অনুষ্ঠিত রাজ্যস্তরীয় বিজ্ঞান ও প্রযুক্তি প্রদর্শনীতে দুর্গাপুর উচ্চ বিদ্যালয়ের শিক্ষার্থীরা প্রথম পুরস্কার লাভ করেছে। একাদশ শ্রেণির বিজ্ঞান বিভাগের শিক্ষার্থীদের তৈরি ‘আইওটি-ভিত্তিক সৌর জলসংরক্ষণ ও স্মার্ট সেচব্যবস্থা’ শীর্ষক প্রকল্পটি বিশ্ববিদ্যালয়ের অধ্যাপক ও রাজ্য শিক্ষা দপ্তরের বিশিষ্ট ব্যক্তিদের ভূয়সী প্রশংসা অর্জন করে।",
+    "authorBn": "বিজ্ঞান বিভাগ",
+    "readTimeBn": "৩ মিনিটের পাঠ"
   },
   {
     "id": "NEWS-002",
@@ -23,7 +27,10 @@
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB5ecUzjTYeQPbwR2MKTyp9nvpwfTh0ECeY_DBOx_gc9bL48qEOMiK2sxf6zJK28ThFZuKeut1tDpPL7s6c_qmWSULc0vCnTZuSqGB6Rqp51x2AqM-Z-n0Ven1ondk3O4m5HiL09Lxd8A3X23j_ngKcVHMWPWicU1Y4-w0JvjJced6-8xL_dP6n4tQUyIrOka486TIwjK3sB-VLyEp7cBDJQRgWOBNF8xoHWIzaE6thXIBlJgyXl_JZOw",
     "isFeatured": false,
     "author": "IT Coordinator",
-    "readTime": "2 min read"
+    "readTime": "2 min read",
+    "excerptBn": "সমস্ত শ্রেণিতে ডিজিটাল সাক্ষরতা বৃদ্ধির লক্ষ্যে ৬০টি আধুনিক টার্মিনাল, দ্রুতগতির ফাইবার সংযোগ ও আইওটি পরীক্ষামূলক কিট-সহ সুসজ্জিত।",
+    "authorBn": "তথ্যপ্রযুক্তি সমন্বয়কারী",
+    "readTimeBn": "২ মিনিটের পাঠ"
   },
   {
     "id": "NEWS-003",
@@ -36,7 +43,10 @@
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3KkBGMXckUqvkbEmGAm94KWBI_5fEpeQ_YZnDinDJlXlCm9edr56XnXR8XOLViWCHIZ1mI48ow6PwVkmkp92MUrzrXs5k4GEypCWtLm6Xe02Iq8bC0rUDBytyRF4RorLGrsdTpyK1yREKGvDqeKlAa4u0w434ZbYfw2w9iRD78zZ9pYEuCbReRsR0_d6Fv-uEGHYQCy04qhq7T2uQg5GFAflZ3Ql2rlyQmKc6KngIpfcNPODT9NFpQ",
     "isFeatured": false,
     "author": "Sports Committee",
-    "readTime": "3 min read"
+    "readTime": "3 min read",
+    "excerptBn": "ফাইনালে বার্নপুর হাই স্কুলের বিরুদ্ধে রুদ্ধশ্বাস ২-১ গোলের জয়ে আমাদের সিনিয়র ফুটবল দল জেলা চ্যাম্পিয়নশিপ নিশ্চিত করেছে।",
+    "authorBn": "ক্রীড়া কমিটি",
+    "readTimeBn": "৩ মিনিটের পাঠ"
   },
   {
     "id": "NEWS-004",
@@ -49,7 +59,10 @@
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAJu_k18Cf6Es7IezvOM62csm5DCmxMYJQ-LHK6xRQRXyNzw2htvtc--IR19V-vjgCKrGXVjjXvOUrIqofPt9y4f993ARGgpkZMaM_H9k9-1La4oDHDbKmDu-5j_Zk02DgXTdnpDPLGItkFzX87PD5Y0jHiJqWzDr0kpM3iiohOAU1sXBm1exDFmq1kAk9X8yZZdPWwDaxU5VIYbc_P3y1WsrdfPimJkSWcdrh2fr-We1ZylR9Pq6N6vA",
     "isFeatured": false,
     "author": "Cultural Committee",
-    "readTime": "4 min read"
+    "readTime": "4 min read",
+    "excerptBn": "সংগীত, আবৃত্তি, নাটক ও নৃত্যের মাধ্যমে কবিগুরু রবীন্দ্রনাথ ঠাকুরের প্রতি শ্রদ্ধা নিবেদনে একত্রিত হয়েছিলেন শিক্ষার্থী ও শিক্ষকমণ্ডলী।",
+    "authorBn": "সাংস্কৃতিক কমিটি",
+    "readTimeBn": "৪ মিনিটের পাঠ"
   },
   {
     "id": "NEWS-005",
@@ -62,7 +75,10 @@
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCjDQGp9JW1CLShUAt-YgQFGKqn9EChesx6YAL6jwLXexemWu62JcJrYf7MaHWQz5FYwxc3f8oenceNxrzjRih6scYNIlN54iZFSmBnzVNbKdD3CaDuUbd5QRvtRpYwRqg51TZJHrsohmFHkKNDfzt6BiVdJMj0afssuhBpDnGK6Q6SoO_LawCAlG9scNjRFnwTEeZaBzS3vXjJwPANY9GfUSPUHUdG0NX_iSI4M9CObUKfE6YSuoe_aA",
     "isFeatured": false,
     "author": "Academic Council",
-    "readTime": "3 min read"
+    "readTime": "3 min read",
+    "excerptBn": "মাধ্যমিকে ৪৮ জনেরও বেশি শিক্ষার্থী ৯০%-এর ঊর্ধ্বে নম্বর পেয়েছে; সৌরভ কর্মকার জেলার প্রথম দশে স্থান অর্জন করেছে।",
+    "authorBn": "শিক্ষা পরিষদ",
+    "readTimeBn": "৩ মিনিটের পাঠ"
   },
   {
     "id": "NEWS-006",
@@ -75,6 +91,9 @@
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDrNPPtjtWKz5bxxOKOPWdoDVCpypRwNpDqwaba0H7yyFDKj4VcQLp9wyBz59qOenh4QZsAQQgZnG03Guq5NJ80sBhsdrlB477y37c4GZTZXtx1maagrv6Zn0bETpAyEw80sJdWmqIt1VzpBDzyazkze7yaNg-4b_9jd4cLQE6aTO503IE6o6JGUZc-c1N0OjYuIXzMheuv0fD0yoUzj6LLKH2lATkQ9LvKQdBpuCPj4YZ0ibdvs2glgg",
     "isFeatured": false,
     "author": "Eco Club DHS",
-    "readTime": "2 min read"
+    "readTime": "2 min read",
+    "excerptBn": "বন মহোৎসব সপ্তাহ উদ্‌যাপনে ইকো-ক্লাবের সদস্যরা বিদ্যালয় চত্বরজুড়ে ৩০০-রও বেশি চারাগাছ রোপণ করেছে।",
+    "authorBn": "ইকো ক্লাব, দুর্গাপুর উচ্চ বিদ্যালয়",
+    "readTimeBn": "২ মিনিটের পাঠ"
   }
 ]

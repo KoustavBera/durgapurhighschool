@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation, Trans } from 'react-i18next';
+import { useLocale } from '../../hooks/useLocale';
 
 const Pagination = ({
   currentPage = 1,
@@ -8,6 +10,9 @@ const Pagination = ({
   itemsPerPage = 10,
   variant = 'centered',
 }) => {
+  const { t } = useTranslation('common');
+  const { num } = useLocale();
+
   if (totalPages <= 1) return null;
 
   const startItem = (currentPage - 1) * itemsPerPage + 1;
@@ -58,18 +63,25 @@ const Pagination = ({
       <div className="bg-surface-container-low px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-outline-variant rounded-b-lg">
         {totalItems && (
           <p className="font-label-sm text-ash-gray">
-            Showing <span className="font-bold text-on-surface">{startItem}</span> to{' '}
-            <span className="font-bold text-on-surface">{endItem}</span> of{' '}
-            <span className="font-bold text-on-surface">{totalItems}</span> records
+            <Trans
+              t={t}
+              i18nKey="pagination.showingRecords"
+              values={{ start: num(startItem), end: num(endItem), total: num(totalItems) }}
+              components={[
+                <span className="font-bold text-on-surface" key="start" />,
+                <span className="font-bold text-on-surface" key="end" />,
+                <span className="font-bold text-on-surface" key="total" />,
+              ]}
+            />
           </p>
         )}
-        <div className="flex items-center gap-1.5" role="navigation" aria-label="Pagination">
+        <div className="flex items-center gap-1.5" role="navigation" aria-label={t('pagination.navigation')}>
           <button
             onClick={() => onPageChange(currentPage - 1)}
             disabled={currentPage === 1}
             className="p-1.5 sm:p-2 border border-outline-variant rounded hover:bg-surface-variant disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-            title="Previous Page"
-            aria-label="Previous Page"
+            title={t('pagination.previous')}
+            aria-label={t('pagination.previous')}
           >
             <span className="material-symbols-outlined text-[18px]">chevron_left</span>
           </button>
@@ -94,7 +106,7 @@ const Pagination = ({
                 }`}
                 aria-current={isActive ? 'page' : undefined}
               >
-                {page}
+                {num(page)}
               </button>
             );
           })}
@@ -103,8 +115,8 @@ const Pagination = ({
             onClick={() => onPageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
             className="p-1.5 sm:p-2 border border-outline-variant rounded hover:bg-surface-variant disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-            title="Next Page"
-            aria-label="Next Page"
+            title={t('pagination.next')}
+            aria-label={t('pagination.next')}
           >
             <span className="material-symbols-outlined text-[18px]">chevron_right</span>
           </button>
@@ -118,14 +130,14 @@ const Pagination = ({
     <nav
       className="mt-12 md:mt-16 flex items-center justify-center gap-2 sm:gap-3"
       role="navigation"
-      aria-label="Pagination Navigation"
+      aria-label={t('pagination.navigation')}
     >
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         className="p-2 sm:p-2.5 rounded-lg border border-outline-variant hover:bg-surface-container-high disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-        title="Previous Page"
-        aria-label="Previous Page"
+        title={t('pagination.previous')}
+        aria-label={t('pagination.previous')}
       >
         <span className="material-symbols-outlined text-[20px]">navigate_before</span>
       </button>
@@ -151,7 +163,7 @@ const Pagination = ({
               }`}
               aria-current={isActive ? 'page' : undefined}
             >
-              {page}
+              {num(page)}
             </button>
           );
         })}
@@ -161,8 +173,8 @@ const Pagination = ({
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
         className="p-2 sm:p-2.5 rounded-lg border border-outline-variant hover:bg-surface-container-high disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
-        title="Next Page"
-        aria-label="Next Page"
+        title={t('pagination.next')}
+        aria-label={t('pagination.next')}
       >
         <span className="material-symbols-outlined text-[20px]">navigate_next</span>
       </button>

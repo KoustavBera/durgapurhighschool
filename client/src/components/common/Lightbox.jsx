@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { useTranslation } from 'react-i18next';
 
 const Lightbox = ({
   isOpen,
@@ -10,6 +11,8 @@ const Lightbox = ({
   onPrev,
   onNext,
 }) => {
+  const { t } = useTranslation('common');
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -39,7 +42,7 @@ const Lightbox = ({
       onClick={onClose}
       role="dialog"
       aria-modal="true"
-      aria-label={title || 'Media Lightbox Preview'}
+      aria-label={title || t('lightbox.label')}
     >
       {/* Top Close button */}
       <button
@@ -48,8 +51,8 @@ const Lightbox = ({
           onClose();
         }}
         className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white p-2.5 bg-white/10 hover:bg-white/20 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-secondary-fixed z-20"
-        title="Close Lightbox (Esc)"
-        aria-label="Close Lightbox"
+        title={t('lightbox.closeTitle')}
+        aria-label={t('lightbox.close')}
       >
         <span className="material-symbols-outlined text-3xl">close</span>
       </button>
@@ -63,8 +66,8 @@ const Lightbox = ({
             onPrev();
           }}
           className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 text-white p-3 bg-white/10 hover:bg-white/20 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-secondary-fixed z-20"
-          title="Previous Image (Left Arrow)"
-          aria-label="Previous Image"
+          title={t('lightbox.previousTitle')}
+          aria-label={t('lightbox.previous')}
         >
           <span className="material-symbols-outlined text-3xl sm:text-4xl">chevron_left</span>
         </button>
@@ -77,8 +80,8 @@ const Lightbox = ({
             onNext();
           }}
           className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 text-white p-3 bg-white/10 hover:bg-white/20 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-secondary-fixed z-20"
-          title="Next Image (Right Arrow)"
-          aria-label="Next Image"
+          title={t('lightbox.nextTitle')}
+          aria-label={t('lightbox.next')}
         >
           <span className="material-symbols-outlined text-3xl sm:text-4xl">chevron_right</span>
         </button>
@@ -91,7 +94,7 @@ const Lightbox = ({
       >
         <img
           src={imageSrc}
-          alt={title || 'Enlarged gallery view'}
+          alt={title || t('lightbox.enlargedAlt')}
           className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-scaleUp"
         />
       </div>

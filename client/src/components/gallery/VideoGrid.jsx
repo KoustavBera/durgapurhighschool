@@ -1,7 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import galleryData from '../../data/gallery.json';
+import { useLocale } from '../../hooks/useLocale';
+import { categoryLabel } from '../../i18n/categories';
 
 const VideoGrid = ({ onVideoSelect }) => {
+  const { t } = useTranslation(['gallery', 'common']);
+  const { field, num } = useLocale();
   const videos = galleryData.filter((item) => item.isVideo) || [];
 
   return (
@@ -14,13 +19,13 @@ const VideoGrid = ({ onVideoSelect }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
             <span className="text-secondary-fixed text-xs uppercase font-bold tracking-widest block mb-1">
-              Multimedia Highlights
+              {t('videos.tag')}
             </span>
             <h2 className="font-headline-lg text-2xl sm:text-3xl font-bold text-white mb-2">
-              Event Videos & Documentaries
+              {t('videos.heading')}
             </h2>
             <p className="text-white/70 text-sm max-w-xl leading-relaxed">
-              Experience the energy and pride of our Annual Celebrations, Science Fairs, and Sports Days through video documentation.
+              {t('videos.intro')}
             </p>
           </div>
           <a
@@ -29,7 +34,7 @@ const VideoGrid = ({ onVideoSelect }) => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-secondary-fixed hover:text-white font-label-md text-sm font-bold transition-colors w-fit"
           >
-            <span>Visit Official YouTube Channel</span>
+            <span>{t('videos.youtubeLink')}</span>
             <span className="material-symbols-outlined text-[18px]">open_in_new</span>
           </a>
         </div>
@@ -45,7 +50,7 @@ const VideoGrid = ({ onVideoSelect }) => {
               <div className="h-48 relative overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  alt={vid.title}
+                  alt={field(vid, 'title')}
                   src={vid.thumb || vid.url}
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
@@ -54,15 +59,15 @@ const VideoGrid = ({ onVideoSelect }) => {
                   </div>
                 </div>
                 <div className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] font-mono text-white">
-                  {vid.duration || '04:15'}
+                  {num(vid.duration || '04:15')}
                 </div>
               </div>
               <div className="p-5">
                 <span className="text-[11px] text-secondary-fixed font-bold uppercase tracking-wider block mb-1">
-                  {vid.category}
+                  {categoryLabel(t, vid.category)}
                 </span>
                 <h4 className="text-white font-bold text-sm sm:text-base line-clamp-2 group-hover:text-secondary-fixed transition-colors">
-                  {vid.title}
+                  {field(vid, 'title')}
                 </h4>
               </div>
             </div>

@@ -1,0 +1,182 @@
+{
+  "school": {
+    "name": "Durgapur High School",
+    "nameEn": "Durgapur High School",
+    "nameBn": "দুর্গাপুর উচ্চ বিদ্যালয়",
+    "shortName": "DHS",
+    "footerName": "Durgapur HS",
+    "government": "Government of West Bengal",
+    "governmentShort": "Govt. of West Bengal",
+    "masthead": "Govt. of West Bengal • Estd. 1952",
+    "addressLine1": "Durgapur High School, GT Road,",
+    "addressLine2": "City Centre, Durgapur,",
+    "addressLine3": "Paschim Bardhaman, WB - 713203",
+    "phone": "+91 343 254 6789 / 4201",
+    "email": "info@durgapurhighschool.edu.in",
+    "description": "Empowering students through academic rigor, character building, and digital literacy since 1952. A premier government-sponsored higher secondary institution."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "aboutUs": "About Us",
+    "academics": "Academics",
+    "admissions": "Admissions",
+    "studentCorner": "Student Corner",
+    "noticeBoard": "Notice Board",
+    "newsEvents": "News & Events",
+    "faculty": "Faculty",
+    "facultyDirectory": "Faculty Directory",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "noticesCirculars": "Notices & Circulars",
+    "visualShowcase": "Visual Showcase"
+  },
+  "a11y": {
+    "skipToMainBn": "মূল বিষয়বস্তুতে যান",
+    "mainNavigation": "Main Navigation",
+    "mobileNavigation": "Mobile Navigation",
+    "sidebarNavigation": "Section Navigation Sidebar",
+    "sidebarMenu": "Sidebar Menu",
+    "breadcrumb": "Breadcrumb",
+    "schoolHome": "Durgapur High School Home",
+    "openMobileMenu": "Open mobile menu",
+    "closeMenu": "Close navigation menu",
+    "utilityBar": "Accessibility and Utility Bar",
+    "announcementsTicker": "Latest Announcements Ticker",
+    "skipToMainEn": "Skip to Main Content"
+  },
+  "utilityBar": {
+    "languageToggleTitle": "Toggle Language (English / বাংলা)",
+    "languageToggleAria": "Toggle language between English and Bengali",
+    "languageEnglishFirst": "English / বাংলা",
+    "languageBengaliFirst": "বাংলা / English",
+    "screenReaderAccess": "Screen Reader Access",
+    "screenReaderTitle": "Skip directly to screen reader accessible content",
+    "textSizeGroup": "Text size adjustments",
+    "decreaseFont": "Decrease Font Size",
+    "decreaseFontTitle": "Decrease Font Size (A-)",
+    "resetFont": "Reset Font Size to Default",
+    "resetFontTitle": "Standard Font Size (A)",
+    "increaseFont": "Increase Font Size",
+    "increaseFontTitle": "Increase Font Size (A+)",
+    "contrastToggle": "Toggle High Contrast View",
+    "contrastEnable": "Enable High Contrast Mode",
+    "contrastDisable": "Disable High Contrast Mode",
+    "searchNotices": "Search Notices & Portal"
+  },
+  "topBar": {
+    "noticesLink": "Notices & Announcements"
+  },
+  "marquee": {
+    "badge": "Latest Notices"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "governmentPortals": "Government Portals",
+    "contactUs": "Contact Us",
+    "onlineAdmission": "Online Admission",
+    "circularsNoticeBoard": "Circulars & Notice Board",
+    "staffFacultyDirectory": "Staff & Faculty Directory",
+    "curriculumExamination": "Curriculum & Examination",
+    "campusMediaGallery": "Campus Media Gallery",
+    "latestNewsAchievements": "Latest News & Achievements",
+    "nationalPortal": "National Portal of India",
+    "banglarShiksha": "Banglar Shiksha e-Portal",
+    "wbPortal": "Govt. of West Bengal Portal",
+    "kanyashree": "Kanyashree Prakalpa",
+    "aikyashree": "Aikyashree & Scholarships",
+    "officialEmail": "Official Email",
+    "emailAria": "Send email to school administration",
+    "helpline": "School Helpline Phone",
+    "callAria": "Call school office",
+    "portalQr": "Official Portal QR",
+    "qrAria": "View official portal QR verification",
+    "copyright": "© {{year}} Durgapur High School. All Rights Reserved. Designed as per GIGW 3.0 Guidelines.",
+    "rtiDisclosure": "RTI Disclosure",
+    "privacyPolicy": "Privacy Policy",
+    "accessibilityStatement": "Accessibility Statement",
+    "lastUpdated": "Last Updated: {{date}}",
+    "lastUpdatedValue": "Nov 2024"
+  },
+  "mobileMenu": {
+    "onlineAdmission": "Online Admission",
+    "copyright": "© Durgapur High School • Estd. 1952"
+  },
+  "sidebar": {
+    "heading": "Navigation",
+    "admissionsBadge": "Admissions 2025",
+    "admissionsNote": "Session 2025-26 applications now live.",
+    "applyOnline": "Apply Online"
+  },
+  "pagination": {
+    "navigation": "Pagination",
+    "previous": "Previous Page",
+    "next": "Next Page",
+    "showingRecords": "Showing <0>{{start}}</0> to <1>{{end}}</1> of <2>{{total}}</2> records"
+  },
+  "lightbox": {
+    "label": "Media Lightbox Preview",
+    "close": "Close Lightbox",
+    "closeTitle": "Close Lightbox (Esc)",
+    "previous": "Previous Image",
+    "previousTitle": "Previous Image (Left Arrow)",
+    "next": "Next Image",
+    "nextTitle": "Next Image (Right Arrow)",
+    "enlargedAlt": "Enlarged gallery view"
+  },
+  "stats": {
+    "students": "Students Enrolled",
+    "faculty": "Expert Teachers & Staff",
+    "labs": "Modern Laboratories & ICT",
+    "smartClasses": "Smart Digital Classrooms",
+    "passPercentage": "Board Exam Success Rate"
+  },
+  "categories": {
+    "all": "All",
+    "admission": "Admission",
+    "academics": "Academics",
+    "examination": "Examination",
+    "general": "General",
+    "cultural": "Cultural",
+    "sports": "Sports",
+    "infrastructure": "Infrastructure",
+    "laboratories": "Laboratories",
+    "culturalEvents": "Cultural Events",
+    "annualDay": "Annual Day",
+    "workshop": "Workshop",
+    "national": "National",
+    "festival": "Festival",
+    "achievements": "Achievements",
+    "events": "Events"
+  },
+  "departments": {
+    "Science": "Science",
+    "Humanities": "Humanities",
+    "Commerce": "Commerce",
+    "Language": "Language",
+    "Physical Education": "Physical Education",
+    "Administration": "Administration"
+  },
+  "actions": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "explore": "Explore",
+    "applyOnline": "Apply Online",
+    "details": "Details",
+    "downloadPdf": "Download PDF",
+    "reset": "Reset",
+    "subscribe": "Subscribe Now"
+  },
+  "notFound": {
+    "code": "404",
+    "titleBn": "পৃষ্ঠাটি পাওয়া যায়নি",
+    "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "backHome": "Back to Home",
+    "viewNotices": "View Notice Board",
+    "titleEn": "Page Not Found"
+  },
+  "meta": {
+    "title": "Durgapur High School | দুর্গাপুর উচ্চ বিদ্যালয়",
+    "description": "Durgapur High School (দুর্গাপুর উচ্চ বিদ্যালয়) - Official portal for academic curriculum, admissions, faculty directory, notices, news, and student activities under Govt. of West Bengal."
+  }
+}

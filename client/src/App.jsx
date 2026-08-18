@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // Common Infrastructure Components
 import UtilityBar from './components/common/UtilityBar';
@@ -18,17 +19,27 @@ import Notices from './pages/Notices';
 import NotFound from './pages/NotFound';
 
 function AppLayout() {
+  const { t } = useTranslation('common');
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [pathname]);
 
+  // The document title and description ship in index.html for first paint;
+  // keep them in step once the reader picks a language.
+  useEffect(() => {
+    document.title = t('meta.title');
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute('content', t('meta.description'));
+  }, [t]);
+
   return (
     <div className="min-h-screen flex flex-col bg-surface text-on-surface">
       {/* GIGW 3.0 Accessibility Skip Link */}
       <a href="#main-content" className="skip-link">
-        Skip to Main Content / মূল বিষয়বস্তুতে যান
+        {t('a11y.skipToMainEn')} / {t('a11y.skipToMainBn')}
       </a>
 
       {/* Top Accessibility & Utility Toolbar */}

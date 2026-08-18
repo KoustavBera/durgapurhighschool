@@ -1,0 +1,33 @@
+{
+  "page": {
+    "title": "Faculty Directory",
+    "intro": "Our dedicated educators are the pillar of Durgapur High School. Browse through our diverse team of subject matter experts committed to holistic academic excellence."
+  },
+  "filter": {
+    "searchLabel": "Search Faculty by Name or Subject",
+    "searchPlaceholder": "Search educator or subject...",
+    "departmentLabel": "Filter by Department",
+    "allDepartments": "All Departments",
+    "options": {
+      "science": "Science (Physics/Chem/Bio/Math)",
+      "humanities": "Humanities & Social Sciences",
+      "commerce": "Commerce & Economics",
+      "language": "Language & Literature",
+      "physicalEducation": "Physical Education & Sports"
+    },
+    "reset": "Reset ({{total}})",
+    "showing": "Showing {{total}} Faculty"
+  },
+  "card": {
+    "departmentSuffix": "{{department}} Department",
+    "hod": "H.O.D",
+    "senior": "Senior Faculty",
+    "defaultExperience": "10+ Years Experience",
+    "viewProfile": "View Profile",
+    "profileAlert": "Profile details for {{name}}\nDesignation: {{designation}}\nEmail: {{email}}"
+  },
+  "empty": {
+    "title": "No faculty found",
+    "message": "Please try modifying your search query or department filter."
+  }
+}

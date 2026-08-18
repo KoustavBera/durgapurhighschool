@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "title": "Excellence in Education",
+    "subtitle": "Providing a holistic, rigorous, and technologically advanced academic curriculum under WBBSE & WBCHSE.",
+    "tag": "Academic Programs"
+  },
+  "curriculum": {
+    "heading": "Curriculum Structure",
+    "secondary": {
+      "title": "Secondary Section (Class V - X)",
+      "desc": "Affiliated with the West Bengal Board of Secondary Education (WBBSE). Emphasizes core foundations in Language, Mathematics, Physical & Life Sciences, History, and Geography.",
+      "point1": "Continuous & Comprehensive Evaluation (CCE)",
+      "point2": "Structured Madhyamik Pariksha Preparation",
+      "point3": "Computer Literacy & Work Education Modules"
+    },
+    "higherSecondary": {
+      "title": "Higher Secondary (Class XI - XII)",
+      "desc": "Affiliated with the West Bengal Council of Higher Secondary Education (WBCHSE). Offering specialized academic streams for engineering, medical, commerce, and civil services careers.",
+      "point1": "Practical Laboratory-Driven Curriculum",
+      "point2": "WBCHSE Higher Secondary Final Board Exams",
+      "point3": "Career Orientation & Competitive Exam Guidance"
+    }
+  },
+  "resources": {
+    "heading": "Academic Resources",
+    "intro": "Download official curriculum guidelines, question patterns, and syllabus PDFs approved by WBBSE & WBCHSE.",
+    "secondarySyllabus": "Secondary Syllabus (V-X) 2024-25",
+    "scienceSyllabus": "H.S. Science Stream Syllabus",
+    "humanitiesSyllabus": "H.S. Humanities & Arts Syllabus",
+    "commerceSyllabus": "H.S. Commerce Stream Syllabus"
+  },
+  "departments": {
+    "heading": "Our Academic Departments",
+    "subheading": "Specialized streams designed for comprehensive higher secondary and competitive preparation.",
+    "viewFaculty": "View Department Faculty",
+    "science": {
+      "name": "Science & Technology",
+      "desc": "Dedicated state-of-the-art labs for Physics, Chemistry, Biology, and Computer Science with hands-on experimental coursework.",
+      "subjects": ["Physics", "Chemistry", "Mathematics", "Biology", "Computer Science"]
+    },
+    "humanities": {
+      "name": "Arts & Humanities",
+      "desc": "Deep analytical and historical studies in Bengali, English Literature, History, Geography, Philosophy, and Political Science.",
+      "subjects": ["Bengali (1st Lang)", "English (2nd Lang)", "History", "Geography", "Pol Science"]
+    },
+    "commerce": {
+      "name": "Commerce & Business",
+      "desc": "Comprehensive modern coursework in Accountancy, Business Studies, Commercial Law, and Economics preparing students for corporate finance.",
+      "subjects": ["Accountancy", "Business Studies", "Economics", "Commercial Law", "Statistics"]
+    }
+  },
+  "calendar": {
+    "heading": "Academic Calendar 2024-25",
+    "subheading": "Key institutional dates and milestone timeline",
+    "downloadPdf": "Download PDF",
+    "downloadAlert": "Full academic calendar PDF download initiated.",
+    "unitTest": {
+      "title": "Unit Test - I Commencement",
+      "desc": "Applies to Class V through X. Detailed room allocations posted on official notice board."
+    },
+    "summerBreak": {
+      "title": "Summer Vacation Break",
+      "desc": "School closes for summer break. Reopens on June 18th for all sections."
+    },
+    "labSubmission": {
+      "title": "H.S. Lab Project Submissions",
+      "desc": "Final deadline for submitting Class XII Practical Lab Records & Computer Projects."
+    },
+    "preBoard": {
+      "title": "Pre-Board Mock Examinations",
+      "desc": "Madhyamik and Higher Secondary Test examination series commences."
+    }
+  },
+  "exams": {
+    "codeTitle": "Examination Code",
+    "codeDesc": "A minimum of 75% annual attendance is mandatory under WBBSE/WBCHSE norms to appear for final board examinations.",
+    "codeLink": "Read Evaluation Guidelines",
+    "resultsTitle": "Online Results Portal",
+    "resultsDesc": "Access unit evaluations, terminal report cards, and board result rankings using your Student Roll & DOB.",
+    "resultsCta": "Check Examination Results"
+  },
+  "facultyBanner": {
+    "tag": "Academic Mentors",
+    "title": "Meet Our Distinguished Faculty",
+    "desc": "Our qualified team of senior postgraduate teachers (PGTs) and trained graduate teachers (TGTs) bring decades of mentoring excellence to every classroom.",
+    "cta": "Browse Faculty Directory",
+    "alt": "Durgapur High School Educators"
+  }
+}

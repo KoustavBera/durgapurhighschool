@@ -9,14 +9,15 @@ describe('Gallery Components', () => {
     const handleCategoryChange = vi.fn();
     render(
       <GalleryTabs
-        activeCategory="All Photos"
+        activeCategory="all"
         onCategoryChange={handleCategoryChange}
       />
     );
 
     const sportsBtn = screen.getByRole('button', { name: /Sports/i });
     fireEvent.click(sportsBtn);
-    expect(handleCategoryChange).toHaveBeenCalledWith('Sports');
+    // Tabs emit the category slug used in gallery.json, not the visible label.
+    expect(handleCategoryChange).toHaveBeenCalledWith('sports');
   });
 
   it('renders photo items and triggers onPhotoClick in PhotoGrid', () => {

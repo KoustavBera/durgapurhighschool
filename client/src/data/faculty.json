@@ -10,7 +10,10 @@
     "email": "principal@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4201",
     "isHod": true,
-    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuD08g6j1h2PeMcJjDbVr-XlydPwq6o54FzsiUPH6-niVn5kSi183MD5CFGRutbJqqd8vcv1CvubPkYj9a5oDmSyXvq0J3PfQzFV8VL8RIlp7FAVUTu6czyzJNnEpGtN1vT_JeJlc4op7Bc9eACJ51TURwhSlkqnLS5x5fEMqt2Axv0BiGvJa0niBL4sDpf2OvNQY4jEWPAK6jBjQq5vD8lMB3yf5OcU0pMZsyGo2AFD8PWjjF-6jyF0hw"
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuD08g6j1h2PeMcJjDbVr-XlydPwq6o54FzsiUPH6-niVn5kSi183MD5CFGRutbJqqd8vcv1CvubPkYj9a5oDmSyXvq0J3PfQzFV8VL8RIlp7FAVUTu6czyzJNnEpGtN1vT_JeJlc4op7Bc9eACJ51TURwhSlkqnLS5x5fEMqt2Axv0BiGvJa0niBL4sDpf2OvNQY4jEWPAK6jBjQq5vD8lMB3yf5OcU0pMZsyGo2AFD8PWjjF-6jyF0hw",
+    "designationBn": "প্রধান শিক্ষক",
+    "qualificationBn": "শিক্ষা নেতৃত্বে পিএইচ.ডি., এম.এসসি. (পদার্থবিদ্যা), বি.এড.",
+    "experienceBn": "২৬ বছর"
   },
   {
     "id": "FAC-002",
@@ -23,7 +26,10 @@
     "email": "amitava.roy@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4202",
     "isHod": true,
-    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDeHVwkelnb885twM-t0geb6zMxaFwxcFKJ1EakKs6KJY7CpAXRZIsNFoIoEIMZIxoNZkBz5cvsrhk8_NNm-PiVxd8Srd6gs0LNT2clW3MnLjspAXpkyS2ZHIQmzF3-fzKgUFhJqr-pn9zu-OeP5eJMWoFswwcJRSz4gTEiRAs82WvvUUJ6zBHcnEW-gd020cyQGMCtIpTc7uTUbgFOMuf-x8npPWtJia-8ap1PPxJa0e6IF_akQAJU4w"
+    "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDeHVwkelnb885twM-t0geb6zMxaFwxcFKJ1EakKs6KJY7CpAXRZIsNFoIoEIMZIxoNZkBz5cvsrhk8_NNm-PiVxd8Srd6gs0LNT2clW3MnLjspAXpkyS2ZHIQmzF3-fzKgUFhJqr-pn9zu-OeP5eJMWoFswwcJRSz4gTEiRAs82WvvUUJ6zBHcnEW-gd020cyQGMCtIpTc7uTUbgFOMuf-x8npPWtJia-8ap1PPxJa0e6IF_akQAJU4w",
+    "designationBn": "প্রবীণ পি.জি.টি. (পদার্থবিদ্যা)",
+    "qualificationBn": "জ্যোতির্পদার্থবিদ্যায় পিএইচ.ডি. (যা.বি.), এম.এসসি. (পদার্থবিদ্যা), বি.এড.",
+    "experienceBn": "২৪ বছর"
   },
   {
     "id": "FAC-003",
@@ -36,7 +42,10 @@
     "email": "manashi.b@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4203",
     "isHod": false,
-    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "প্রবীণ পি.জি.টি. (গণিত)",
+    "qualificationBn": "ফলিত গণিতে এম.এসসি. (ক.বি.), বি.এড.",
+    "experienceBn": "১৯ বছর"
   },
   {
     "id": "FAC-004",
@@ -49,7 +58,10 @@
     "email": "debashis.sen@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4204",
     "isHod": false,
-    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "পি.জি.টি. (রসায়ন)",
+    "qualificationBn": "জৈব রসায়নে এম.এসসি. (ব.বি.), বি.এড.",
+    "experienceBn": "১৫ বছর"
   },
   {
     "id": "FAC-005",
@@ -62,7 +74,10 @@
     "email": "mousumi.c@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4205",
     "isHod": true,
-    "photo": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "প্রবীণ পি.জি.টি. (বাংলা সাহিত্য)",
+    "qualificationBn": "বাংলায় এম.এ. (বিশ্বভারতী), এম.ফিল., বি.এড.",
+    "experienceBn": "২২ বছর"
   },
   {
     "id": "FAC-006",
@@ -75,7 +90,10 @@
     "email": "anirban.b@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4206",
     "isHod": false,
-    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "পি.জি.টি. (ইংরেজি ভাষা ও সাহিত্য)",
+    "qualificationBn": "ইংরেজিতে এম.এ. (EFLU), CELTA, বি.এড.",
+    "experienceBn": "১৪ বছর"
   },
   {
     "id": "FAC-007",
@@ -88,7 +106,10 @@
     "email": "subhasish.c@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4207",
     "isHod": true,
-    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "প্রবীণ পি.জি.টি. (ইতিহাস)",
+    "qualificationBn": "আধুনিক ইতিহাসে এম.এ. (যা.বি.), বি.এড.",
+    "experienceBn": "২০ বছর"
   },
   {
     "id": "FAC-008",
@@ -101,7 +122,10 @@
     "email": "priyanka.k@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4208",
     "isHod": false,
-    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "পি.জি.টি. (ভূগোল)",
+    "qualificationBn": "ভূগোল ও জি.আই.এস.-এ এম.এসসি. (ব.বি.), বি.এড.",
+    "experienceBn": "১১ বছর"
   },
   {
     "id": "FAC-009",
@@ -114,7 +138,10 @@
     "email": "tanmoy.m@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4209",
     "isHod": true,
-    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "প্রবীণ পি.জি.টি. (হিসাবশাস্ত্র ও ব্যবসায় অধ্যয়ন)",
+    "qualificationBn": "এম.কম. (ক.বি.), এফ.সি.এ. (ইন্টার), বি.এড.",
+    "experienceBn": "১৮ বছর"
   },
   {
     "id": "FAC-010",
@@ -127,7 +154,10 @@
     "email": "soumen.d@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4210",
     "isHod": true,
-    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "শারীরশিক্ষা ও ক্রীড়া বিভাগের অধিকর্তা",
+    "qualificationBn": "এম.পি.এড. (কল্যাণী বিশ্ববিদ্যালয়), অ্যাথলেটিক্সে এন.আই.এস. ডিপ্লোমা",
+    "experienceBn": "১৬ বছর"
   },
   {
     "id": "FAC-011",
@@ -140,7 +170,10 @@
     "email": "biswajit.g@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4211",
     "isHod": false,
-    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "পি.জি.টি. (কম্পিউটার বিজ্ঞান ও কৃত্রিম বুদ্ধিমত্তা)",
+    "qualificationBn": "এম.সি.এ. (এন.আই.টি. দুর্গাপুর), বি.এড.",
+    "experienceBn": "১২ বছর"
   },
   {
     "id": "FAC-012",
@@ -153,6 +186,9 @@
     "email": "library@durgapurhighschool.wb.gov.in",
     "phone": "+91 343 256 4212",
     "isHod": false,
-    "photo": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=600&q=80"
+    "photo": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=600&q=80",
+    "designationBn": "প্রবীণ গ্রন্থাগারিক",
+    "qualificationBn": "এম.লিব.আই.এসসি. (যাদবপুর বিশ্ববিদ্যালয়), ইউ.জি.সি.-নেট",
+    "experienceBn": "১৭ বছর"
   }
 ]

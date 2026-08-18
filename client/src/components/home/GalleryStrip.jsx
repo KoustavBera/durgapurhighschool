@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import galleryData from '../../data/gallery.json';
+import { useLocale } from '../../hooks/useLocale';
+import { categoryLabel } from '../../i18n/categories';
 
 const GalleryStrip = () => {
+  const { t } = useTranslation(['home', 'common']);
+  const { field } = useLocale();
   const photoList = galleryData.filter((item) => !item.isVideo).slice(0, 6);
 
   return (
@@ -10,9 +15,9 @@ const GalleryStrip = () => {
       <div className="max-w-container-max mx-auto px-4 sm:px-6 md:px-margin-desktop mb-8 flex items-center justify-between">
         <div>
           <h2 className="font-headline-lg text-2xl md:text-headline-lg border-l-4 border-secondary pl-4 flex flex-col">
-            <span className="text-primary font-bold">Campus Life Gallery</span>
+            <span className="text-primary font-bold">{t('galleryStrip.heading')}</span>
             <span lang="bn" className="font-bengali-body text-sm text-on-surface-variant font-normal">
-              গ্যালারি ও ক্যাম্পাস চিত্র
+              {t('galleryStrip.headingBn')}
             </span>
           </h2>
         </div>
@@ -20,7 +25,7 @@ const GalleryStrip = () => {
           to="/gallery"
           className="text-primary font-bold hover:text-secondary transition-colors text-sm flex items-center gap-1"
         >
-          <span>View All Photos</span>
+          <span>{t('galleryStrip.viewAll')}</span>
           <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
         </Link>
       </div>
@@ -35,15 +40,15 @@ const GalleryStrip = () => {
           >
             <img
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              alt={item.title}
+              alt={field(item, 'title')}
               src={item.url}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-5">
               <span className="text-secondary-fixed text-xs font-bold uppercase tracking-wider mb-1">
-                {item.category}
+                {categoryLabel(t, item.category)}
               </span>
               <h4 className="text-white font-bold text-base leading-snug">
-                {item.title}
+                {field(item, 'title')}
               </h4>
             </div>
           </Link>

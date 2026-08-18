@@ -8,7 +8,10 @@
     "venue": "Main School Auditorium",
     "category": "Cultural",
     "isUpcoming": true,
-    "description": "A grand celebration of music, recitation, classical drama, and traditional folk dance featuring performances from students across all wings."
+    "description": "A grand celebration of music, recitation, classical drama, and traditional folk dance featuring performances from students across all wings.",
+    "timeBn": "সকাল ১০:০০ - বিকেল ৪:৩০",
+    "venueBn": "বিদ্যালয়ের প্রধান সভাগৃহ",
+    "descriptionBn": "সমস্ত বিভাগের শিক্ষার্থীদের পরিবেশনায় সংগীত, আবৃত্তি, ধ্রুপদী নাটক ও ঐতিহ্যবাহী লোকনৃত্যের এক বর্ণাঢ্য উদ্‌যাপন।"
   },
   {
     "id": "EVT-2024-002",
@@ -19,7 +22,10 @@
     "venue": "Science Block & Exhibition Hall",
     "category": "Academics",
     "isUpcoming": true,
-    "description": "Annual Children's Day science fair where students display functional robotic, renewable energy, and bio-science working prototypes."
+    "description": "Annual Children's Day science fair where students display functional robotic, renewable energy, and bio-science working prototypes.",
+    "timeBn": "সকাল ৯:৩০ - বিকেল ৩:০০",
+    "venueBn": "বিজ্ঞান ভবন ও প্রদর্শনী কক্ষ",
+    "descriptionBn": "বার্ষিক শিশু দিবসের বিজ্ঞান মেলা, যেখানে শিক্ষার্থীরা সক্রিয় রোবোটিক, নবীকরণযোগ্য শক্তি ও জীববিজ্ঞান বিষয়ক কার্যকর মডেল প্রদর্শন করে।"
   },
   {
     "id": "EVT-2024-003",
@@ -30,7 +36,10 @@
     "venue": "Durgapur High School Sports Pavilion Ground",
     "category": "Sports",
     "isUpcoming": true,
-    "description": "Track and field events including sprints, relay races, high jump, shot put, and traditional parade inspection."
+    "description": "Track and field events including sprints, relay races, high jump, shot put, and traditional parade inspection.",
+    "timeBn": "সকাল ৮:৩০ - বিকেল ৫:০০",
+    "venueBn": "দুর্গাপুর উচ্চ বিদ্যালয় ক্রীড়া প্যাভিলিয়ন মাঠ",
+    "descriptionBn": "দৌড়, রিলে, উচ্চ লম্ফ, গোলা নিক্ষেপ-সহ ট্র্যাক ও ফিল্ড প্রতিযোগিতা এবং ঐতিহ্যবাহী কুচকাওয়াজ পরিদর্শন।"
   },
   {
     "id": "EVT-2024-004",
@@ -41,7 +50,10 @@
     "venue": "School Central Quadrangle",
     "category": "National",
     "isUpcoming": true,
-    "description": "Flag hoisting, NCC cadet march past, patriotic song choir, and felicitation of student achievers."
+    "description": "Flag hoisting, NCC cadet march past, patriotic song choir, and felicitation of student achievers.",
+    "timeBn": "সকাল ৮:০০ - সকাল ১১:৩০",
+    "venueBn": "বিদ্যালয়ের কেন্দ্রীয় প্রাঙ্গণ",
+    "descriptionBn": "পতাকা উত্তোলন, এন.সি.সি. ক্যাডেটদের কুচকাওয়াজ, সমবেত দেশাত্মবোধক সংগীত এবং কৃতী শিক্ষার্থীদের সংবর্ধনা।"
   },
   {
     "id": "EVT-2024-005",
@@ -52,6 +64,9 @@
     "venue": "School Campus & Art Room",
     "category": "Festival",
     "isUpcoming": true,
-    "description": "Traditional worship of the Goddess of Learning followed by an open-air student painting exhibition and community feast."
+    "description": "Traditional worship of the Goddess of Learning followed by an open-air student painting exhibition and community feast.",
+    "timeBn": "সকাল ৯:০০ - বিকেল ৪:০০",
+    "venueBn": "বিদ্যালয় প্রাঙ্গণ ও চিত্রকলা কক্ষ",
+    "descriptionBn": "বিদ্যার দেবীর ঐতিহ্যবাহী আরাধনা, এরপর উন্মুক্ত প্রাঙ্গণে শিক্ষার্থীদের চিত্র প্রদর্শনী ও সম্মিলিত ভোজ।"
   }
 ]

@@ -1,49 +1,45 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import admissionsData from '../../data/admissions.json';
+import { useLocale } from '../../hooks/useLocale';
+
+// Accent colour per row, cycled so the list stays readable at any length.
+const BORDERS = ['border-primary', 'border-secondary', 'border-info', 'border-success'];
 
 const EligibilityCard = () => {
-  const criteria = admissionsData.eligibilityCriteria || [
-    {
-      title: 'Age Requirement',
-      desc: 'Candidates must be between 5 to 16 years of age as of April 1st of the academic admission session.',
-      border: 'border-primary',
-    },
-    {
-      title: 'Academic Record',
-      desc: 'Minimum 60% aggregate in the previous qualifying examination from a recognized education board.',
-      border: 'border-secondary',
-    },
-    {
-      title: 'Residency Priority',
-      desc: 'Priority given to bonafide residents of Durgapur subdivision and surrounding Paschim Bardhaman regions.',
-      border: 'border-info',
-    },
-    {
-      title: 'Reservation Norms',
-      desc: 'Statutory reservations apply for SC / ST / OBC-A / OBC-B and PwD candidates as per Govt. of West Bengal orders.',
-      border: 'border-success',
-    },
-  ];
+  const { t } = useTranslation('admissions');
+  const { field } = useLocale();
+  const criteria = admissionsData.eligibility || [];
 
   return (
     <div className="md:col-span-8 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-outline-variant flex flex-col justify-between">
       <div>
         <div className="flex items-center gap-3 mb-6">
           <span className="material-symbols-outlined text-primary text-3xl">verified</span>
-          <h3 className="font-headline-md text-2xl font-bold text-primary">Eligibility Criteria</h3>
+          <h3 className="font-headline-md text-2xl font-bold text-primary">{t('eligibility.heading')}</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {criteria.map((item, idx) => (
             <div
-              key={idx}
-              className={`p-5 bg-surface-container rounded-xl border-l-4 ${item.border || 'border-primary'}`}
+              key={field(item, 'classLevel') || idx}
+              className={`p-5 bg-surface-container rounded-xl border-l-4 ${BORDERS[idx % BORDERS.length]}`}
             >
               <h4 className="font-label-md text-base font-bold text-primary mb-2">
-                {item.title}
+                {field(item, 'classLevel')}
               </h4>
-              <p className="font-body-md text-sm text-on-surface-variant leading-relaxed">
-                {item.desc}
+              <p className="font-body-md text-sm text-on-surface-variant leading-relaxed mb-2">
+                {field(item, 'criteria')}
               </p>
+              <dl className="font-label-sm text-xs text-ash-gray space-y-0.5">
+                <div className="flex gap-1.5">
+                  <dt className="font-bold">{t('eligibility.ageRange')}:</dt>
+                  <dd>{field(item, 'ageRange')}</dd>
+                </div>
+                <div className="flex gap-1.5">
+                  <dt className="font-bold">{t('eligibility.stream')}:</dt>
+                  <dd>{field(item, 'stream')}</dd>
+                </div>
+              </dl>
             </div>
           ))}
         </div>

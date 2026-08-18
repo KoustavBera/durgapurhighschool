@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "title": "Admissions 2024-25",
+    "subtitle": "Join our legacy of academic excellence and discipline. Applications are open for Primary, Secondary, and Higher Secondary streams.",
+    "tag": "Enrolment Portal"
+  },
+  "eligibility": {
+    "heading": "Eligibility Criteria",
+    "ageRange": "Age Range",
+    "stream": "Stream"
+  },
+  "dates": {
+    "heading": "Important Deadlines",
+    "footnote": "Dates subject to official WBBSE circulars",
+    "status": {
+      "Completed": "Completed",
+      "Active": "Active",
+      "Upcoming": "Upcoming"
+    }
+  },
+  "steps": {
+    "tag": "Simple & Transparent",
+    "heading": "Step-by-Step Admission Process",
+    "subheading": "Admissions are conducted strictly on merit and statutory guidelines. Follow these four simple steps:"
+  },
+  "documents": {
+    "heading": "Required Documents",
+    "intro": "Please keep digitized copies ready prior to initiating the online registration portal.",
+    "privacyNote": "All uploaded documents are verified under strict digital privacy norms."
+  },
+  "form": {
+    "heading": "Application Preview & Inquiry",
+    "subheading": "Submit your preliminary details to receive registration instructions.",
+    "sessionBadge": "2024-25",
+    "validationAlert": "Please fill out all required fields and accept the declaration.",
+    "successTitle": "Inquiry Submitted!",
+    "successMessage": "Thank you, {{name}}. Your preliminary inquiry for {{class}} has been recorded. Our admission helpdesk will reach out shortly.",
+    "submitAnother": "Submit Another Inquiry",
+    "fullName": "Student Full Name *",
+    "fullNamePlaceholder": "As per Birth Certificate",
+    "dob": "Date of Birth *",
+    "guardianName": "Guardian's Full Name *",
+    "guardianNamePlaceholder": "Father / Mother / Guardian",
+    "appliedClass": "Class Applying For *",
+    "selectClass": "Select Grade / Stream",
+    "classOptions": {
+      "v": "Class V (Primary Wing)",
+      "vi": "Class VI (Middle Wing)",
+      "ix": "Class IX (Secondary)",
+      "xiScience": "Class XI - Science Stream",
+      "xiArts": "Class XI - Humanities / Arts",
+      "xiCommerce": "Class XI - Commerce Stream"
+    },
+    "address": "Permanent Address",
+    "addressPlaceholder": "Town/Village, PO, District, PIN Code",
+    "declaration": "I hereby declare that the information provided is accurate to the best of my knowledge and complies with school admission rules.",
+    "submit": "Submit Initial Inquiry"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "subheading": "Find answers to common queries regarding admission cycles, documents, and academic criteria."
+  }
+}

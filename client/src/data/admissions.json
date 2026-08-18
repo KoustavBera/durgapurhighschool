@@ -4,7 +4,8 @@
   "helpline": {
     "phone": "+91 343 256 4201",
     "email": "admissions@durgapurhighschool.wb.gov.in",
-    "timings": "10:30 AM - 4:30 PM (Mon-Fri)"
+    "timings": "10:30 AM - 4:30 PM (Mon-Fri)",
+    "timingsBn": "সকাল ১০:৩০ - বিকেল ৪:৩০ (সোম-শুক্র)"
   },
   "steps": [
     {
@@ -12,28 +13,32 @@
       "title": "Online Registration",
       "titleBn": "অনলাইন নিবন্ধন",
       "description": "Create student profile, enter Aadhaar/Banglar Shiksha ID, and fill in academic details.",
-      "icon": "app_registration"
+      "icon": "app_registration",
+      "descriptionBn": "শিক্ষার্থীর প্রোফাইল তৈরি করুন, আধার/বাংলার শিক্ষা আইডি লিখুন এবং শিক্ষাগত তথ্য পূরণ করুন।"
     },
     {
       "step": 2,
       "title": "Document Upload",
       "titleBn": "নথিপত্র আপলোড",
       "description": "Upload scanned copies of birth certificate, marksheet, caste certificate, and passport photo.",
-      "icon": "upload_file"
+      "icon": "upload_file",
+      "descriptionBn": "জন্ম শংসাপত্র, নম্বরপত্র, জাতিগত শংসাপত্র ও পাসপোর্ট মাপের ছবির স্ক্যান কপি আপলোড করুন।"
     },
     {
       "step": 3,
       "title": "Scrutiny & Merit List",
       "titleBn": "যাচাইকরণ ও মেধা তালিকা",
       "description": "Verification of candidate records as per West Bengal Board admission norms.",
-      "icon": "verified_user"
+      "icon": "verified_user",
+      "descriptionBn": "পশ্চিমবঙ্গ পর্ষদের ভর্তি বিধি অনুযায়ী প্রার্থীর নথি যাচাইকরণ।"
     },
     {
       "step": 4,
       "title": "Fee Payment & Verification",
       "titleBn": "ফি প্রদান ও চূড়ান্ত ভর্তি",
       "description": "Pay government-subsidized admission fee online or at school counter to confirm seat.",
-      "icon": "task_alt"
+      "icon": "task_alt",
+      "descriptionBn": "আসন নিশ্চিত করতে সরকার-ভর্তুকিযুক্ত ভর্তি ফি অনলাইনে বা বিদ্যালয়ের কাউন্টারে জমা দিন।"
     }
   ],
   "eligibility": [
@@ -41,58 +46,88 @@
       "classLevel": "Class V - VI (Primary to Upper Primary)",
       "ageRange": "10+ to 11+ years as on 01.01.2025",
       "criteria": "Passed Class IV/V from any recognized government or aided school.",
-      "stream": "General (Bengali / English 1st Language)"
+      "stream": "General (Bengali / English 1st Language)",
+      "classLevelBn": "পঞ্চম - ষষ্ঠ শ্রেণি (প্রাথমিক থেকে উচ্চ প্রাথমিক)",
+      "ageRangeBn": "০১.০১.২০২৫ তারিখে ১০+ থেকে ১১+ বছর",
+      "criteriaBn": "যে কোনও সরকারি বা সরকার-পোষিত বিদ্যালয় থেকে চতুর্থ/পঞ্চম শ্রেণি উত্তীর্ণ।",
+      "streamBn": "সাধারণ (বাংলা / ইংরেজি প্রথম ভাষা)"
     },
     {
       "classLevel": "Class IX (Secondary)",
       "ageRange": "13+ to 14+ years as on 01.01.2025",
       "criteria": "Minimum 55% marks in Class VIII annual examination.",
-      "stream": "WBBSE Secondary Curriculum"
+      "stream": "WBBSE Secondary Curriculum",
+      "classLevelBn": "নবম শ্রেণি (মাধ্যমিক)",
+      "ageRangeBn": "০১.০১.২০২৫ তারিখে ১৩+ থেকে ১৪+ বছর",
+      "criteriaBn": "অষ্টম শ্রেণির বার্ষিক পরীক্ষায় ন্যূনতম ৫৫% নম্বর।",
+      "streamBn": "WBBSE মাধ্যমিক পাঠ্যক্রম"
     },
     {
       "classLevel": "Class XI - Science Stream",
       "ageRange": "Below 18 years as on 01.01.2025",
       "criteria": "Minimum 65% aggregate with 70% in Physical Science & Mathematics in Madhyamik.",
-      "stream": "Physics, Chemistry, Math, Biology / Computer Science"
+      "stream": "Physics, Chemistry, Math, Biology / Computer Science",
+      "classLevelBn": "একাদশ শ্রেণি - বিজ্ঞান বিভাগ",
+      "ageRangeBn": "০১.০১.২০২৫ তারিখে ১৮ বছরের কম",
+      "criteriaBn": "মাধ্যমিকে ন্যূনতম ৬৫% সামগ্রিক নম্বর এবং ভৌত বিজ্ঞান ও গণিতে ৭০% নম্বর।",
+      "streamBn": "পদার্থবিদ্যা, রসায়ন, গণিত, জীববিদ্যা / কম্পিউটার বিজ্ঞান"
     },
     {
       "classLevel": "Class XI - Commerce Stream",
       "ageRange": "Below 18 years as on 01.01.2025",
       "criteria": "Minimum 50% aggregate in Madhyamik / equivalent.",
-      "stream": "Accountancy, Business Studies, Economics, Commercial Law / Math"
+      "stream": "Accountancy, Business Studies, Economics, Commercial Law / Math",
+      "classLevelBn": "একাদশ শ্রেণি - বাণিজ্য বিভাগ",
+      "ageRangeBn": "০১.০১.২০২৫ তারিখে ১৮ বছরের কম",
+      "criteriaBn": "মাধ্যমিক / সমতুল্য পরীক্ষায় ন্যূনতম ৫০% সামগ্রিক নম্বর।",
+      "streamBn": "হিসাবশাস্ত্র, ব্যবসায় অধ্যয়ন, অর্থনীতি, বাণিজ্যিক আইন / গণিত"
     },
     {
       "classLevel": "Class XI - Humanities (Arts) Stream",
       "ageRange": "Below 18 years as on 01.01.2025",
       "criteria": "Passed Madhyamik / equivalent examination.",
-      "stream": "History, Geography, Political Science, Philosophy / Education"
+      "stream": "History, Geography, Political Science, Philosophy / Education",
+      "classLevelBn": "একাদশ শ্রেণি - কলা বিভাগ",
+      "ageRangeBn": "০১.০১.২০২৫ তারিখে ১৮ বছরের কম",
+      "criteriaBn": "মাধ্যমিক / সমতুল্য পরীক্ষায় উত্তীর্ণ।",
+      "streamBn": "ইতিহাস, ভূগোল, রাষ্ট্রবিজ্ঞান, দর্শন / শিক্ষাবিজ্ঞান"
     }
   ],
   "importantDates": [
     {
       "event": "Commencement of Online Application",
       "date": "November 01, 2024",
-      "status": "Completed"
+      "status": "Completed",
+      "eventBn": "অনলাইন আবেদন প্রক্রিয়ার সূচনা",
+      "dateBn": "০১ নভেম্বর, ২০২৪"
     },
     {
       "event": "Last Date of Application Submission (Phase 1)",
       "date": "November 25, 2024",
-      "status": "Active"
+      "status": "Active",
+      "eventBn": "আবেদন জমা দেওয়ার শেষ তারিখ (প্রথম পর্যায়)",
+      "dateBn": "২৫ নভেম্বর, ২০২৪"
     },
     {
       "event": "Publication of First Provisional Merit List",
       "date": "December 05, 2024",
-      "status": "Upcoming"
+      "status": "Upcoming",
+      "eventBn": "প্রথম অস্থায়ী মেধা তালিকা প্রকাশ",
+      "dateBn": "০৫ ডিসেম্বর, ২০২৪"
     },
     {
       "event": "Physical Verification of Documents",
       "date": "December 10 - 15, 2024",
-      "status": "Upcoming"
+      "status": "Upcoming",
+      "eventBn": "নথিপত্রের সশরীর যাচাইকরণ",
+      "dateBn": "১০ - ১৫ ডিসেম্বর, ২০২৪"
     },
     {
       "event": "Commencement of New Academic Classes",
       "date": "January 02, 2025",
-      "status": "Upcoming"
+      "status": "Upcoming",
+      "eventBn": "নতুন শিক্ষাবর্ষের ক্লাস শুরু",
+      "dateBn": "০২ জানুয়ারি, ২০২৫"
     }
   ],
   "requiredDocuments": [
@@ -137,19 +172,36 @@
   "faqs": [
     {
       "question": "How can I apply for Class XI admission online?",
-      "answer": "Click on the 'Apply Online Now' button on this portal, fill in your Madhyamik marks and subject preferences, upload scanned copies of your marksheet, and submit the application."
+      "answer": "Click on the 'Apply Online Now' button on this portal, fill in your Madhyamik marks and subject preferences, upload scanned copies of your marksheet, and submit the application.",
+      "questionBn": "একাদশ শ্রেণিতে ভর্তির জন্য অনলাইনে কীভাবে আবেদন করব?",
+      "answerBn": "এই পোর্টালের ‘এখনই অনলাইনে আবেদন করুন’ বোতামে ক্লিক করে মাধ্যমিকের নম্বর ও বিষয়ের পছন্দক্রম পূরণ করুন, নম্বরপত্রের স্ক্যান কপি আপলোড করুন এবং আবেদনপত্র জমা দিন।"
     },
     {
       "question": "Is there any reservation for SC/ST/OBC and PWD candidates?",
-      "answer": "Yes, standard Government of West Bengal reservation guidelines (22% SC, 6% ST, 17% OBC-A/B, and 3% PWD) are strictly implemented for all stream allocations."
+      "answer": "Yes, standard Government of West Bengal reservation guidelines (22% SC, 6% ST, 17% OBC-A/B, and 3% PWD) are strictly implemented for all stream allocations.",
+      "questionBn": "তফসিলি জাতি/উপজাতি/ওবিসি ও প্রতিবন্ধী প্রার্থীদের জন্য কি সংরক্ষণ রয়েছে?",
+      "answerBn": "হ্যাঁ, সমস্ত বিভাগে আসন বণ্টনে পশ্চিমবঙ্গ সরকারের প্রচলিত সংরক্ষণ নীতি (২২% তফসিলি জাতি, ৬% তফসিলি উপজাতি, ১৭% ওবিসি-এ/বি এবং ৩% প্রতিবন্ধী) কঠোরভাবে অনুসরণ করা হয়।"
     },
     {
       "question": "What is the medium of instruction at Durgapur High School?",
-      "answer": "The primary medium of instruction is Bengali, with English taught as the compulsory First/Second Language. Science stream subjects in Higher Secondary also provide English terminology references."
+      "answer": "The primary medium of instruction is Bengali, with English taught as the compulsory First/Second Language. Science stream subjects in Higher Secondary also provide English terminology references.",
+      "questionBn": "দুর্গাপুর উচ্চ বিদ্যালয়ে পঠনপাঠনের মাধ্যম কী?",
+      "answerBn": "পঠনপাঠনের প্রধান মাধ্যম বাংলা, এবং ইংরেজি আবশ্যিক প্রথম/দ্বিতীয় ভাষা হিসেবে পড়ানো হয়। উচ্চ মাধ্যমিকের বিজ্ঞান বিভাগের বিষয়গুলিতে ইংরেজি পরিভাষার সহায়ক নির্দেশও দেওয়া হয়।"
     },
     {
       "question": "Are scholarship schemes like Kanyashree and Medhashree available?",
-      "answer": "Yes, our school office has a dedicated nodal officer facilitating all state government scholarships including Kanyashree (K1/K2), Shikshashree, Medhashree, and Oasis."
+      "answer": "Yes, our school office has a dedicated nodal officer facilitating all state government scholarships including Kanyashree (K1/K2), Shikshashree, Medhashree, and Oasis.",
+      "questionBn": "কন্যাশ্রী ও মেধাশ্রীর মতো বৃত্তি প্রকল্প কি এখানে পাওয়া যায়?",
+      "answerBn": "হ্যাঁ, আমাদের বিদ্যালয়ের দপ্তরে একজন নির্দিষ্ট নোডাল আধিকারিক রয়েছেন, যিনি কন্যাশ্রী (কে১/কে২), শিক্ষাশ্রী, মেধাশ্রী ও ওয়েসিস-সহ রাজ্য সরকারের সমস্ত বৃত্তির ব্যবস্থা করেন।"
     }
+  ],
+  "requiredDocumentsBn": [
+    "জন্ম শংসাপত্রের মূল ও সত্যায়িত প্রতিলিপি (ডিজিটাল)",
+    "বাংলার শিক্ষা ই-পোর্টালের ছাত্র স্থানান্তর শংসাপত্র",
+    "পূর্ববর্তী শ্রেণির চূড়ান্ত পরীক্ষার নম্বরপত্র",
+    "শিক্ষার্থী ও অভিভাবকের আধার কার্ডের প্রতিলিপি",
+    "তফসিলি জাতি / উপজাতি / ওবিসি / প্রতিবন্ধকতার শংসাপত্র (প্রযোজ্য ক্ষেত্রে, এস.ডি.ও./বি.ডি.ও. প্রদত্ত)",
+    "পাসপোর্ট মাপের রঙিন ছবি (৩ কপি)",
+    "ব্যাঙ্ক পাসবইয়ের প্রথম পাতার প্রতিলিপি (কন্যাশ্রী/শিক্ষাশ্রীর জন্য)"
   ]
 }

@@ -1,0 +1,60 @@
+{
+  "page": {
+    "title": "Official Notice Board",
+    "intro": "Access all official administrative circulars, examination schedules, and academic announcements for Durgapur High School. All notices are compliant with GIGW 3.0 digital accessibility guidelines."
+  },
+  "filter": {
+    "searchLabel": "Search Notices & Circulars",
+    "searchPlaceholder": "Search by title, number or keyword...",
+    "categoryLabel": "Notice Category",
+    "allCategories": "All Categories",
+    "categoryGeneral": "General / Administrative",
+    "yearLabel": "Academic Year",
+    "allYears": "All Years",
+    "reset": "Reset Filters"
+  },
+  "table": {
+    "date": "Date",
+    "title": "Notice Title & Reference",
+    "category": "Category",
+    "action": "Action",
+    "newBadge": "New",
+    "pdfLabel": "PDF ({{size}})",
+    "downloadAlert": "Downloading official notice: {{title}}",
+    "downloadPdfAlert": "Downloading PDF for notice #{{id}}",
+    "emptyTitle": "No notices found matching your filter criteria.",
+    "emptyMessage": "Try searching with a different keyword or resetting filters.",
+    "showing": "Showing {{start}} to {{end}} of {{total}} official notices"
+  },
+  "archive": {
+    "heading": "Notice Archive",
+    "subheading": "Historical records & previous academic years",
+    "viewAll": "View All Archives",
+    "viewAllAlert": "Accessing full historical records repository.",
+    "openFolder": "Access Folder Records",
+    "openFolderAlert": "Opening archive folder: {{title}}",
+    "pastYear": {
+      "year": "Academic Year 2023-24",
+      "title": "Past Academic Notices & Circulars",
+      "notices": [
+        "Final Board Exam Routine & Guidelines 2023",
+        "Summer Vacation Administrative Circular 2023",
+        "Kanyashree K2 Beneficiary Enrolment 2023"
+      ]
+    },
+    "admissionReports": {
+      "year": "Admission Reports",
+      "title": "Previous Year Selection Lists",
+      "notices": [
+        "Class V Admission Merit Results 2022-23",
+        "Class XI Science Intake Final Merit 2023",
+        "Transfer Vacancy Intake Notification 2022"
+      ]
+    },
+    "legacy": {
+      "year": "Legacy Records",
+      "title": "Digitized Archive (2018 - 2022)",
+      "desc": "Historical gazette circulars, state education orders, and administrative meeting minutes from previous academic councils."
+    }
+  }
+}

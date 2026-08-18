@@ -1,12 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useLocale } from '../../hooks/useLocale';
+import { categoryLabel } from '../../i18n/categories';
 
 const PhotoGrid = ({ photos = [], onPhotoClick }) => {
+  const { t } = useTranslation(['gallery', 'common']);
+  const { field } = useLocale();
+
   if (photos.length === 0) {
     return (
       <div className="bg-white rounded-2xl border border-outline-variant p-12 text-center text-ash-gray mb-12 shadow-sm">
         <span className="material-symbols-outlined text-5xl text-outline mb-3 block">image_not_supported</span>
-        <h4 className="font-headline-md text-lg font-bold text-primary mb-1">No photographs found</h4>
-        <p className="text-sm">No pictures available for this category at the moment.</p>
+        <h4 className="font-headline-md text-lg font-bold text-primary mb-1">{t('photos.emptyTitle')}</h4>
+        <p className="text-sm">{t('photos.emptyMessage')}</p>
       </div>
     );
   }
@@ -27,19 +33,19 @@ const PhotoGrid = ({ photos = [], onPhotoClick }) => {
           >
             <img
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              alt={featured.title}
+              alt={field(featured, 'title')}
               src={featured.url}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 sm:p-8">
               <span className="text-secondary-fixed font-bold font-label-sm text-xs uppercase tracking-wider mb-2">
-                {featured.category}
+                {categoryLabel(t, featured.category)}
               </span>
               <h3 className="text-white font-headline-md text-xl sm:text-2xl font-bold">
-                {featured.title}
+                {field(featured, 'title')}
               </h3>
               {featured.caption && (
                 <p className="text-white/80 text-sm mt-1 line-clamp-2 max-w-xl">
-                  {featured.caption}
+                  {field(featured, 'caption')}
                 </p>
               )}
             </div>
@@ -58,14 +64,14 @@ const PhotoGrid = ({ photos = [], onPhotoClick }) => {
           >
             <img
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              alt={photo.title}
+              alt={field(photo, 'title')}
               src={photo.url}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-5">
               <span className="text-secondary-fixed text-[11px] uppercase font-bold tracking-wider">
-                {photo.category}
+                {categoryLabel(t, photo.category)}
               </span>
-              <h4 className="text-white font-bold text-sm leading-snug">{photo.title}</h4>
+              <h4 className="text-white font-bold text-sm leading-snug">{field(photo, 'title')}</h4>
             </div>
             <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
               <span className="material-symbols-outlined text-white text-3xl">zoom_in</span>
@@ -82,14 +88,14 @@ const PhotoGrid = ({ photos = [], onPhotoClick }) => {
           >
             <img
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              alt={photo.title}
+              alt={field(photo, 'title')}
               src={photo.url}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
               <span className="text-secondary-fixed text-[10px] uppercase font-bold tracking-wider mb-0.5">
-                {photo.category}
+                {categoryLabel(t, photo.category)}
               </span>
-              <h4 className="text-white font-bold text-xs sm:text-sm line-clamp-2">{photo.title}</h4>
+              <h4 className="text-white font-bold text-xs sm:text-sm line-clamp-2">{field(photo, 'title')}</h4>
             </div>
             <div className="absolute top-3 right-3 bg-black/40 backdrop-blur-sm p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
               <span className="material-symbols-outlined text-sm">zoom_in</span>
@@ -101,10 +107,10 @@ const PhotoGrid = ({ photos = [], onPhotoClick }) => {
       {/* Load More Button */}
       <div className="mt-12 flex justify-center">
         <button
-          onClick={() => alert('All campus photographs are currently loaded.')}
+          onClick={() => alert(t('photos.loadMoreAlert'))}
           className="group flex items-center gap-2 px-8 py-3.5 bg-white border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all shadow-sm text-sm active:scale-95"
         >
-          <span>Load More Memories</span>
+          <span>{t('photos.loadMore')}</span>
           <span className="material-symbols-outlined group-hover:translate-y-1 transition-transform text-[18px]">
             keyboard_double_arrow_down
           </span>
